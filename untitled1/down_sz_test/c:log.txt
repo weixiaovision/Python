@@ -1,0 +1,1522 @@
+ACTIVITY MANAGER PENDING INTENTS (dumpsys activity intents)
+  * PendingIntentRecord{429e4700 com.huawei.systemmanager broadcastIntent}
+  * PendingIntentRecord{4298a110 com.google.android.gms broadcastIntent}
+  * PendingIntentRecord{428afd80 com.google.android.gms broadcastIntent}
+  * PendingIntentRecord{42438008 android broadcastIntent}
+  * PendingIntentRecord{429ebe30 com.huawei.hwid startService}
+  * PendingIntentRecord{429e8750 com.huawei.appmarket startService}
+  * PendingIntentRecord{429388e8 com.google.android.gms broadcastIntent}
+  * PendingIntentRecord{42dff3e0 com.google.android.gms broadcastIntent}
+  * PendingIntentRecord{42996f80 com.huawei.android.thememanager broadcastIntent}
+  * PendingIntentRecord{423a5d30 com.huawei.systemmanager startService}
+  * PendingIntentRecord{42495750 com.qihoo.appstore startService}
+  * PendingIntentRecord{4306c1a0 com.google.android.gms startService}
+  * PendingIntentRecord{4248b0d8 com.huawei.bd broadcastIntent}
+  * PendingIntentRecord{42afb5f0 com.otaku.CrusadersQuest.huawei startActivity}
+  * PendingIntentRecord{428ca9c8 com.qihoo.appstore startService}
+  * PendingIntentRecord{42c034e8 com.google.android.gms broadcastIntent}
+  * PendingIntentRecord{424226f0 android startActivity}
+  * PendingIntentRecord{423d2f48 com.google.android.gms broadcastIntent}
+  * PendingIntentRecord{42860578 com.google.android.gms startService}
+  * PendingIntentRecord{42a5e470 com.google.android.gms startService}
+  * PendingIntentRecord{422606d8 android broadcastIntent}
+  * PendingIntentRecord{4232f948 com.google.android.gms broadcastIntent}
+  * PendingIntentRecord{422567c0 com.google.android.gms broadcastIntent}
+  * PendingIntentRecord{42a97d38 com.google.android.gms broadcastIntent}
+  * PendingIntentRecord{43869000 com.snda.wifilocating broadcastIntent}
+  * PendingIntentRecord{42a4ad18 com.google.android.gms broadcastIntent}
+  * PendingIntentRecord{42ec0d88 com.qihoo360.mobilesafe startActivity}
+  * PendingIntentRecord{42875810 com.huawei.lcagent startService}
+  * PendingIntentRecord{42872310 com.qihoo.appstore startActivity}
+  * PendingIntentRecord{420f2c28 android broadcastIntent}
+  * PendingIntentRecord{42c02280 com.google.android.gms startService}
+  * PendingIntentRecord{4295bc10 com.google.android.gms broadcastIntent}
+  * PendingIntentRecord{427dd5a8 com.huawei.ca broadcastIntent}
+  * PendingIntentRecord{42b44298 com.google.android.gms broadcastIntent}
+  * PendingIntentRecord{42956460 com.google.android.gms broadcastIntent}
+  * PendingIntentRecord{4240a230 com.huawei.systemmanager startService}
+  * PendingIntentRecord{43537448 com.road7.sgame startService}
+  * PendingIntentRecord{4215cc20 com.huawei.appmarket startActivity}
+  * PendingIntentRecord{42854690 com.huawei.android.launcher broadcastIntent}
+  * PendingIntentRecord{429d3d80 com.huawei.systemmanager broadcastIntent}
+  * PendingIntentRecord{4274cab8 com.google.android.gms startService}
+  * PendingIntentRecord{42a48058 com.qihoo.appstore startActivity}
+  * PendingIntentRecord{429d9c80 com.google.android.gms broadcastIntent}
+  * PendingIntentRecord{42adbe98 com.qihoo.appstore startService}
+  * PendingIntentRecord{4291f8f0 com.android.vending startService}
+  * PendingIntentRecord{427a82e8 com.huawei.lcagent startService}
+  * PendingIntentRecord{429cea50 com.google.android.gms broadcastIntent}
+  * PendingIntentRecord{4319a048 com.qihoo360.mobilesafe startActivity}
+  * PendingIntentRecord{42a07ef0 com.huawei.systemmanager startService}
+  * PendingIntentRecord{42923e70 com.android.vending startActivity}
+  * PendingIntentRecord{42a38928 com.qihoo.appstore startService}
+  * PendingIntentRecord{41d30928 com.qihoo360.mobilesafe startActivity}
+  * PendingIntentRecord{42897b50 com.huawei.android.totemweather broadcastIntent}
+  * PendingIntentRecord{42a09350 android startActivity}
+  * PendingIntentRecord{42406c40 android broadcastIntent}
+  * PendingIntentRecord{4289e848 com.google.android.gms startService}
+  * PendingIntentRecord{431950e0 com.qihoo360.mobilesafe startActivity}
+  * PendingIntentRecord{42b44048 com.changic.runehero startService}
+  * PendingIntentRecord{428b14e8 com.google.android.gms broadcastIntent}
+  * PendingIntentRecord{42906860 com.google.android.gms broadcastIntent}
+  * PendingIntentRecord{429ac200 com.cootek.smartdialer_oem_module broadcastIntent}
+  * PendingIntentRecord{4313fe78 com.google.android.gms startService}
+  * PendingIntentRecord{429718d8 com.google.android.gms broadcastIntent}
+  * PendingIntentRecord{42c057e0 com.snda.wifilocating broadcastIntent}
+  * PendingIntentRecord{42a9dd30 com.google.android.gms broadcastIntent}
+  * PendingIntentRecord{42452878 com.android.providers.calendar broadcastIntent}
+  * PendingIntentRecord{42796590 com.qihoo.appstore startService}
+  * PendingIntentRecord{42463150 android broadcastIntent}
+  * PendingIntentRecord{42991bd0 com.huawei.systemmanager broadcastIntent}
+  * PendingIntentRecord{41d058f8 com.tencent.txeim startActivity}
+  * PendingIntentRecord{424523d0 android broadcastIntent}
+  * PendingIntentRecord{42a34f80 com.huawei.appmarket startActivity}
+  * PendingIntentRecord{42a4cbf8 com.google.android.gms broadcastIntent}
+  * PendingIntentRecord{42be5a88 com.google.android.gms broadcastIntent}
+  * PendingIntentRecord{42193368 com.huawei.android.thememanager startActivity}
+  * PendingIntentRecord{42400b58 android startActivity}
+  * PendingIntentRecord{4294d1a8 com.android.providers.downloads broadcastIntent}
+  * PendingIntentRecord{42a91108 com.google.android.gms startService}
+  * PendingIntentRecord{4298e5d8 com.qihoo.appstore startService}
+  * PendingIntentRecord{41fb3ae8 com.huawei.appmarket startService}
+  * PendingIntentRecord{42330010 android broadcastIntent}
+  * PendingIntentRecord{42950b10 com.google.android.gms broadcastIntent}
+  * PendingIntentRecord{4293e860 com.google.android.gms broadcastIntent}
+  * PendingIntentRecord{423847a0 com.qihoo.permmgr broadcastIntent}
+  * PendingIntentRecord{4390cd98 com.google.android.gms broadcastIntent}
+  * PendingIntentRecord{42850ef0 com.qihoo.appstore startActivity}
+  * PendingIntentRecord{428f5458 com.google.android.gms broadcastIntent}
+  * PendingIntentRecord{428ba138 com.google.android.gms broadcastIntent}
+  * PendingIntentRecord{428ddee8 com.google.android.gms broadcastIntent}
+  * PendingIntentRecord{42a65b30 com.google.android.gms broadcastIntent}
+  * PendingIntentRecord{42bb79e8 com.tencent.txeim broadcastIntent}
+  * PendingIntentRecord{423904a0 android broadcastIntent}
+  * PendingIntentRecord{423fa7f0 com.changic.runehero broadcastIntent}
+  * PendingIntentRecord{42918278 com.huawei.android.ds broadcastIntent}
+  * PendingIntentRecord{429b73f8 com.google.android.gms broadcastIntent}
+  * PendingIntentRecord{42979c88 com.huawei.systemmanager broadcastIntent}
+  * PendingIntentRecord{4297afe0 com.google.android.gms broadcastIntent}
+  * PendingIntentRecord{427d2168 com.google.android.gms startService}
+  * PendingIntentRecord{42a5d708 com.google.android.gms startService}
+  * PendingIntentRecord{42062cb0 android broadcastIntent}
+  * PendingIntentRecord{420fedc0 com.google.android.gms startService}
+  * PendingIntentRecord{42937c50 com.google.android.gms broadcastIntent}
+  * PendingIntentRecord{42f2e8c0 com.android.calendar startActivity}
+  * PendingIntentRecord{4330fb78 com.google.android.gms broadcastIntent}
+  * PendingIntentRecord{42acf778 android broadcastIntent}
+  * PendingIntentRecord{42ce25e8 com.google.android.gms startService}
+  * PendingIntentRecord{4296ce58 com.google.android.gms broadcastIntent}
+  * PendingIntentRecord{42987308 com.google.android.gms broadcastIntent}
+  * PendingIntentRecord{42b928d8 com.huawei.appmarket startService}
+  * PendingIntentRecord{42c79820 com.google.android.gms startService}
+  * PendingIntentRecord{436c5728 com.google.android.gms startService}
+  * PendingIntentRecord{42a12500 com.qihoo360.mobilesafe startActivity}
+  * PendingIntentRecord{428e7a90 com.huawei.android.hwouc broadcastIntent}
+  * PendingIntentRecord{43111ba0 com.google.android.gms broadcastIntent}
+  * PendingIntentRecord{42a98900 com.google.android.gms broadcastIntent}
+  * PendingIntentRecord{42bd2158 com.google.android.gms broadcastIntent}
+  * PendingIntentRecord{42872fd8 com.google.android.gms startService}
+  * PendingIntentRecord{42a4c6b8 com.qihoo.permmgr broadcastIntent}
+  * PendingIntentRecord{428c9760 com.huawei.android.ds broadcastIntent}
+  * PendingIntentRecord{423e2f78 android broadcastIntent}
+  * PendingIntentRecord{423d9010 com.cootek.smartdialer_oem_module broadcastIntent}
+  * PendingIntentRecord{42878670 com.qihoo.appstore startActivity}
+  * PendingIntentRecord{42899de8 com.google.android.gms broadcastIntent}
+  * PendingIntentRecord{42ba0190 com.huawei.phoneservice startActivity}
+  * PendingIntentRecord{428a9090 com.android.calendar broadcastIntent}
+  * PendingIntentRecord{420f2388 android startActivity}
+  * PendingIntentRecord{4283e068 com.google.android.gms broadcastIntent}
+  * PendingIntentRecord{427df740 com.huawei.android.hwouc broadcastIntent}
+  * PendingIntentRecord{428ca7e0 com.google.android.gms broadcastIntent}
+  * PendingIntentRecord{4390ffb0 android broadcastIntent}
+  * PendingIntentRecord{42a94a60 com.google.android.gms broadcastIntent}
+  * PendingIntentRecord{429c3800 com.google.android.gms broadcastIntent}
+  * PendingIntentRecord{428dba40 com.huawei.systemmanager startActivity}
+  * PendingIntentRecord{41f73518 com.android.vending startService}
+  * PendingIntentRecord{42203ef8 android broadcastIntent}
+  * PendingIntentRecord{4244b638 android broadcastIntent}
+  * PendingIntentRecord{428a3f80 com.android.vending broadcastIntent}
+  * PendingIntentRecord{428b64a8 com.qihoo.appstore startService}
+  * PendingIntentRecord{422d5d88 android broadcastIntent}
+  * PendingIntentRecord{436e6b98 com.google.android.gms startService}
+  * PendingIntentRecord{420eb598 android broadcastIntent}
+  * PendingIntentRecord{4295d118 com.google.android.gms broadcastIntent}
+  * PendingIntentRecord{42a0a118 com.qihoo360.mobilesafe startActivity}
+  * PendingIntentRecord{424976e8 com.huawei.lcagent startService}
+  * PendingIntentRecord{428d1428 com.huawei.gamebox startService}
+  * PendingIntentRecord{428ad590 com.qihoo.appstore startActivity}
+  * PendingIntentRecord{4274ce58 com.otaku.CrusadersQuest.huawei broadcastIntent}
+  * PendingIntentRecord{42b18f78 com.google.android.gms broadcastIntent}
+  * PendingIntentRecord{42a45f60 com.google.android.gms broadcastIntent}
+  * PendingIntentRecord{42906160 com.google.android.gms broadcastIntent}
+  * PendingIntentRecord{428c2368 com.qihoo.appstore broadcastIntent}
+  * PendingIntentRecord{4208a578 com.google.android.gms startService}
+  * PendingIntentRecord{4243f4f0 com.otaku.CrusadersQuest.huawei broadcastIntent}
+  * PendingIntentRecord{423a8b00 com.huawei.systemmanager broadcastIntent}
+  * PendingIntentRecord{42c587a0 com.google.android.gms startService}
+  * PendingIntentRecord{422048d0 android broadcastIntent}
+  * PendingIntentRecord{429e6bc8 com.huawei.android.totemweather broadcastIntent}
+  * PendingIntentRecord{42c81268 android startActivity}
+  * PendingIntentRecord{42babee8 com.google.android.gms broadcastIntent}
+  * PendingIntentRecord{4296d4c8 com.google.android.gms startService}
+  * PendingIntentRecord{42471b60 com.vlife.huawei.wallpaper startService}
+  * PendingIntentRecord{42330af8 android startActivity}
+  * PendingIntentRecord{42bec090 com.qihoo360.mobilesafe startActivity}
+  * PendingIntentRecord{42997618 com.google.android.gms broadcastIntent}
+  * PendingIntentRecord{42428fa8 com.huawei.lcagent startService}
+  * PendingIntentRecord{41cb9268 com.huawei.hwid broadcastIntent}
+  * PendingIntentRecord{427fd1d8 android broadcastIntent}
+  * PendingIntentRecord{423e2850 android startActivity}
+  * PendingIntentRecord{42964be8 com.otaku.CrusadersQuest.huawei broadcastIntent}
+  * PendingIntentRecord{4296ac68 com.google.android.gms broadcastIntent}
+  * PendingIntentRecord{42454840 com.android.contacts startService}
+  * PendingIntentRecord{42bd4e08 com.google.android.gms startService}
+  * PendingIntentRecord{429d3078 com.huawei.lcagent startService}
+  * PendingIntentRecord{42387930 com.qihoo.appstore startService}
+  * PendingIntentRecord{42961198 com.google.android.gms broadcastIntent}
+  * PendingIntentRecord{428b58e0 com.tencent.txeim broadcastIntent}
+  * PendingIntentRecord{423bfcd8 com.qihoo.appstore broadcastIntent}
+  * PendingIntentRecord{4391b768 com.android.vending broadcastIntent}
+  * PendingIntentRecord{429922e8 com.google.android.gms broadcastIntent}
+  * PendingIntentRecord{42d2fff8 com.android.systemui startActivity}
+  * PendingIntentRecord{42761d80 com.otaku.CrusadersQuest.huawei broadcastIntent}
+  * PendingIntentRecord{4276d010 com.android.systemui startActivity}
+  * PendingIntentRecord{4298d870 com.google.android.gms broadcastIntent}
+  * PendingIntentRecord{41d0bce8 com.google.android.gms startService}
+  * PendingIntentRecord{4223d548 com.huawei.appmarket startActivity}
+  * PendingIntentRecord{428b8870 com.qihoo.appstore startActivity}
+  * PendingIntentRecord{438a2a88 android broadcastIntent}
+  * PendingIntentRecord{42a1d900 com.huawei.android.ds broadcastIntent}
+  * PendingIntentRecord{42c66aa8 com.google.android.gms broadcastIntent}
+  * PendingIntentRecord{42bd3228 com.vlife.huawei.wallpaper startService}
+  * PendingIntentRecord{42462fe8 android broadcastIntent}
+  * PendingIntentRecord{42877870 com.google.android.gms broadcastIntent}
+  * PendingIntentRecord{428ef7e0 com.huawei.lcagent startService}
+  * PendingIntentRecord{428a5dc8 com.google.android.gms startService}
+  * PendingIntentRecord{428baa98 com.android.phone broadcastIntent}
+  * PendingIntentRecord{42950020 com.google.android.gms broadcastIntent}
+  * PendingIntentRecord{4298c6c8 com.google.android.gms broadcastIntent}
+  * PendingIntentRecord{428aae70 com.qihoo.appstore startService}
+  * PendingIntentRecord{4287f5a0 com.google.android.gms broadcastIntent}
+  * PendingIntentRecord{427b5828 com.changic.runehero broadcastIntent}
+  * PendingIntentRecord{427767e8 com.huawei.systemmanager broadcastIntent}
+  * PendingIntentRecord{421f2210 android broadcastIntent}
+  * PendingIntentRecord{4295e0c0 com.google.android.gms broadcastIntent}
+  * PendingIntentRecord{4297f830 com.google.android.gms broadcastIntent}
+  * PendingIntentRecord{42a2d8d8 com.huawei.systemmanager startService}
+  * PendingIntentRecord{439296f8 com.android.vending broadcastIntent}
+  * PendingIntentRecord{4225da00 android broadcastIntent}
+  * PendingIntentRecord{427f2850 com.google.android.gms broadcastIntent}
+  * PendingIntentRecord{4297d7f8 com.huawei.systemmanager broadcastIntent}
+  * PendingIntentRecord{4294a4f8 com.huawei.systemmanager broadcastIntent}
+
+ACTIVITY MANAGER BROADCAST STATE (dumpsys activity broadcasts)
+  Historical broadcasts [foreground]:
+  #0: BroadcastRecord{43488ba0 u-1 android.intent.action.TIME_TICK}
+    act=android.intent.action.TIME_TICK flg=0x50000014 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #1: BroadcastRecord{43823d38 u-1 android.intent.action.TIME_TICK}
+    act=android.intent.action.TIME_TICK flg=0x50000014 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #2: BroadcastRecord{42c5bf00 u-1 android.intent.action.TIME_TICK}
+    act=android.intent.action.TIME_TICK flg=0x50000014 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #3: BroadcastRecord{424425d0 u-1 android.intent.action.TIME_TICK}
+    act=android.intent.action.TIME_TICK flg=0x50000014 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #4: BroadcastRecord{4388bab8 u-1 android.intent.action.TIME_TICK}
+    act=android.intent.action.TIME_TICK flg=0x50000014 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #5: BroadcastRecord{42e34998 u-1 android.intent.action.TIME_TICK}
+    act=android.intent.action.TIME_TICK flg=0x50000014 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #6: BroadcastRecord{42f189b8 u-1 android.intent.action.CONFIGURATION_CHANGED}
+    act=android.intent.action.CONFIGURATION_CHANGED flg=0x70000010
+  #7: BroadcastRecord{430339f0 u-1 android.intent.action.CLOSE_SYSTEM_DIALOGS}
+    act=android.intent.action.CLOSE_SYSTEM_DIALOGS flg=0x50000010 (has extras)
+    extras: Bundle[{reason=homekey}]
+  #8: BroadcastRecord{438d0080 u0 com.huawei.notificationmanager.notification.refuse}
+    act=com.huawei.notificationmanager.notification.refuse flg=0x10000010 bnds=[466,693][720,761] (has extras)
+    extras: Bundle[{pkgName=com.android.vending, uid=10249}]
+  #9: BroadcastRecord{4395cbe8 u0 com.huawei.notificationmanager.notification.refuse}
+    act=com.huawei.notificationmanager.notification.refuse flg=0x10000010 bnds=[466,693][720,761] (has extras)
+    extras: Bundle[{pkgName=com.android.vending, uid=10249}]
+  #10: BroadcastRecord{42f1e950 u-1 android.intent.action.CLOSE_SYSTEM_DIALOGS}
+    act=android.intent.action.CLOSE_SYSTEM_DIALOGS flg=0x50000010 (has extras)
+    extras: Bundle[{reason=recentapps}]
+  #11: BroadcastRecord{43969a10 u-1 android.intent.action.CLOSE_SYSTEM_DIALOGS}
+    act=android.intent.action.CLOSE_SYSTEM_DIALOGS flg=0x50000010 (has extras)
+    extras: Bundle[{reason=recentapps}]
+  #12: BroadcastRecord{41d4fac8 u-1 android.intent.action.CLOSE_SYSTEM_DIALOGS}
+    act=android.intent.action.CLOSE_SYSTEM_DIALOGS flg=0x50000010 (has extras)
+    extras: Bundle[{reason=recentapps}]
+  #13: BroadcastRecord{43198678 u-1 android.intent.action.CLOSE_SYSTEM_DIALOGS}
+    act=android.intent.action.CLOSE_SYSTEM_DIALOGS flg=0x50000010 (has extras)
+    extras: Bundle[{reason=recentapps}]
+  #14: BroadcastRecord{42c449c0 u-1 android.intent.action.CLOSE_SYSTEM_DIALOGS}
+    act=android.intent.action.CLOSE_SYSTEM_DIALOGS flg=0x50000010 (has extras)
+    extras: Bundle[{reason=recentapps}]
+  #15: BroadcastRecord{4290aa40 u-1 android.intent.action.CLOSE_SYSTEM_DIALOGS}
+    act=android.intent.action.CLOSE_SYSTEM_DIALOGS flg=0x50000010 (has extras)
+    extras: Bundle[{reason=recentapps}]
+  #16: BroadcastRecord{429ae938 u-1 android.intent.action.CLOSE_SYSTEM_DIALOGS}
+    act=android.intent.action.CLOSE_SYSTEM_DIALOGS flg=0x50000010 (has extras)
+    extras: Bundle[{reason=recentapps}]
+  #17: BroadcastRecord{42bb6ca0 u-1 android.intent.action.TIME_TICK}
+    act=android.intent.action.TIME_TICK flg=0x50000014 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #18: BroadcastRecord{4384a900 u-1 android.intent.action.TIME_TICK}
+    act=android.intent.action.TIME_TICK flg=0x50000014 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #19: BroadcastRecord{438829a0 u-1 android.intent.action.TIME_TICK}
+    act=android.intent.action.TIME_TICK flg=0x50000014 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #20: BroadcastRecord{43b89f18 u-1 android.intent.action.TIME_TICK}
+    act=android.intent.action.TIME_TICK flg=0x50000014 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #21: BroadcastRecord{42b4d3b8 u-1 android.intent.action.TIME_TICK}
+    act=android.intent.action.TIME_TICK flg=0x50000014 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #22: BroadcastRecord{42b30ca0 u-1 android.intent.action.TIME_TICK}
+    act=android.intent.action.TIME_TICK flg=0x50000014 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #23: BroadcastRecord{42becb28 u-1 android.intent.action.TIME_TICK}
+    act=android.intent.action.TIME_TICK flg=0x50000014 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #24: BroadcastRecord{42d336f0 u-1 android.intent.action.TIME_TICK}
+    act=android.intent.action.TIME_TICK flg=0x50000014 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #25: BroadcastRecord{42949b18 u-1 android.intent.action.TIME_TICK}
+    act=android.intent.action.TIME_TICK flg=0x50000014 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #26: BroadcastRecord{42ce6718 u-1 android.intent.action.TIME_TICK}
+    act=android.intent.action.TIME_TICK flg=0x50000014 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #27: BroadcastRecord{43648948 u-1 android.intent.action.TIME_TICK}
+    act=android.intent.action.TIME_TICK flg=0x50000014 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #28: BroadcastRecord{42b8bd38 u-1 android.intent.action.TIME_TICK}
+    act=android.intent.action.TIME_TICK flg=0x50000014 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #29: BroadcastRecord{436c2d18 u-1 android.intent.action.TIME_TICK}
+    act=android.intent.action.TIME_TICK flg=0x50000014 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #30: BroadcastRecord{43b6bf88 u-1 android.intent.action.TIME_TICK}
+    act=android.intent.action.TIME_TICK flg=0x50000014 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #31: BroadcastRecord{4316ed20 u-1 android.intent.action.TIME_TICK}
+    act=android.intent.action.TIME_TICK flg=0x50000014 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #32: BroadcastRecord{43272748 u-1 android.intent.action.TIME_TICK}
+    act=android.intent.action.TIME_TICK flg=0x50000014 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #33: BroadcastRecord{429ff420 u-1 android.intent.action.TIME_TICK}
+    act=android.intent.action.TIME_TICK flg=0x50000014 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #34: BroadcastRecord{42dd5498 u-1 android.intent.action.TIME_TICK}
+    act=android.intent.action.TIME_TICK flg=0x50000014 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #35: BroadcastRecord{4391bf48 u-1 android.intent.action.CLOSE_SYSTEM_DIALOGS}
+    act=android.intent.action.CLOSE_SYSTEM_DIALOGS flg=0x50000010 (has extras)
+    extras: Bundle[{reason=homekey}]
+  #36: BroadcastRecord{4384ddc0 u-1 android.intent.action.SCREEN_ON}
+    act=android.intent.action.SCREEN_ON flg=0x50000010
+  #37: BroadcastRecord{4279b220 u-1 android.intent.action.TIME_TICK}
+    act=android.intent.action.TIME_TICK flg=0x50000014 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #38: BroadcastRecord{42bf0ce0 u-1 android.intent.action.TIME_TICK}
+    act=android.intent.action.TIME_TICK flg=0x50000014 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #39: BroadcastRecord{42a70540 u-1 android.intent.action.TIME_TICK}
+    act=android.intent.action.TIME_TICK flg=0x50000014 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #40: BroadcastRecord{42bdccc0 u-1 android.intent.action.TIME_TICK}
+    act=android.intent.action.TIME_TICK flg=0x50000014 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #41: BroadcastRecord{42cb0a80 u-1 android.intent.action.TIME_TICK}
+    act=android.intent.action.TIME_TICK flg=0x50000014 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #42: BroadcastRecord{42dc5d08 u-1 android.intent.action.TIME_TICK}
+    act=android.intent.action.TIME_TICK flg=0x50000014 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #43: BroadcastRecord{42df0980 u-1 android.intent.action.TIME_TICK}
+    act=android.intent.action.TIME_TICK flg=0x50000014 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #44: BroadcastRecord{42e37cf8 u-1 android.intent.action.TIME_TICK}
+    act=android.intent.action.TIME_TICK flg=0x50000014 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #45: BroadcastRecord{434aeb38 u-1 android.intent.action.TIME_TICK}
+    act=android.intent.action.TIME_TICK flg=0x50000014 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #46: BroadcastRecord{435918c8 u-1 android.intent.action.TIME_TICK}
+    act=android.intent.action.TIME_TICK flg=0x50000014 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #47: BroadcastRecord{436d7748 u-1 android.intent.action.TIME_TICK}
+    act=android.intent.action.TIME_TICK flg=0x50000014 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #48: BroadcastRecord{4392c340 u-1 android.intent.action.TIME_TICK}
+    act=android.intent.action.TIME_TICK flg=0x50000014 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #49: BroadcastRecord{43b6cfc8 u-1 android.intent.action.TIME_TICK}
+    act=android.intent.action.TIME_TICK flg=0x50000014 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  ...
+
+  Historical broadcasts [background]:
+  #0: BroadcastRecord{42b289d0 u-1 android.intent.action.BATTERY_CHANGED}
+    act=android.intent.action.BATTERY_CHANGED flg=0x60000010 (has extras)
+    extras: Bundle[{technology=Li-poly, icon-small=17302941, health=2, status=2, plugged=2, present=true, level=56, scale=100, temperature=310, voltage=3848, invalid_charger=0, amb_temperature=0}]
+  #1: BroadcastRecord{42bf49b8 u0 com.tencent.android.tpush.service.channel.cacheMsgBeatIntent}
+    act=com.tencent.android.tpush.service.channel.cacheMsgBeatIntent flg=0x14 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #2: BroadcastRecord{42fda890 u-1 android.intent.action.BATTERY_CHANGED}
+    act=android.intent.action.BATTERY_CHANGED flg=0x60000010 (has extras)
+    extras: Bundle[{technology=Li-poly, icon-small=17302941, health=2, status=2, plugged=2, present=true, level=56, scale=100, temperature=310, voltage=3842, invalid_charger=0, amb_temperature=0}]
+  #3: BroadcastRecord{4306b828 u-1 android.intent.action.BATTERY_CHANGED}
+    act=android.intent.action.BATTERY_CHANGED flg=0x60000010 (has extras)
+    extras: Bundle[{technology=Li-poly, icon-small=17302941, health=2, status=2, plugged=2, present=true, level=56, scale=100, temperature=300, voltage=3850, invalid_charger=0, amb_temperature=0}]
+  #4: BroadcastRecord{43070ca0 u0 BROADCAST_ACTION_OPEN_APP_DATA}
+    act=BROADCAST_ACTION_OPEN_APP_DATA flg=0x10 pkg=com.qihoo.appstore (has extras)
+    extras: Bundle[mParcelledData.dataSize=324]
+  #5: BroadcastRecord{43694de0 u0 com.tencent.android.tpush.service.channel.heartbeatIntent}
+    act=com.tencent.android.tpush.service.channel.heartbeatIntent flg=0x14 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #6: BroadcastRecord{4384c488 u-1 com.android.server.action.NETWORK_STATS_UPDATED}
+    act=com.android.server.action.NETWORK_STATS_UPDATED flg=0x40000010
+  #7: BroadcastRecord{43947628 u-1 android.intent.action.BATTERY_CHANGED}
+    act=android.intent.action.BATTERY_CHANGED flg=0x60000010 (has extras)
+    extras: Bundle[{technology=Li-poly, icon-small=17302941, health=2, status=2, plugged=2, present=true, level=56, scale=100, temperature=300, voltage=3833, invalid_charger=0, amb_temperature=0}]
+  #8: BroadcastRecord{4316ad68 u-1 android.intent.action.BATTERY_CHANGED}
+    act=android.intent.action.BATTERY_CHANGED flg=0x60000010 (has extras)
+    extras: Bundle[{technology=Li-poly, icon-small=17302941, health=2, status=2, plugged=2, present=true, level=56, scale=100, temperature=300, voltage=3841, invalid_charger=0, amb_temperature=0}]
+  #9: BroadcastRecord{43816d10 u-1 android.intent.action.BATTERY_CHANGED}
+    act=android.intent.action.BATTERY_CHANGED flg=0x60000010 (has extras)
+    extras: Bundle[{technology=Li-poly, icon-small=17302941, health=2, status=2, plugged=2, present=true, level=56, scale=100, temperature=300, voltage=3851, invalid_charger=0, amb_temperature=0}]
+  #10: BroadcastRecord{4387d4b0 u0 BROADCAST_ACTION_OPEN_APP_DATA}
+    act=BROADCAST_ACTION_OPEN_APP_DATA flg=0x10 pkg=com.qihoo.appstore (has extras)
+    extras: Bundle[mParcelledData.dataSize=324]
+  #11: BroadcastRecord{43a00cd0 u-1 android.intent.action.BATTERY_CHANGED}
+    act=android.intent.action.BATTERY_CHANGED flg=0x60000010 (has extras)
+    extras: Bundle[{technology=Li-poly, icon-small=17302941, health=2, status=2, plugged=2, present=true, level=56, scale=100, temperature=300, voltage=3850, invalid_charger=0, amb_temperature=0}]
+  #12: BroadcastRecord{4392eed8 u-1 android.intent.action.BATTERY_CHANGED}
+    act=android.intent.action.BATTERY_CHANGED flg=0x60000010 (has extras)
+    extras: Bundle[{technology=Li-poly, icon-small=17302941, health=2, status=2, plugged=2, present=true, level=57, scale=100, temperature=300, voltage=3852, invalid_charger=0, amb_temperature=0}]
+  #13: BroadcastRecord{42cc01d0 u0 mocalite.intent.action.USER_DEVICE_APP_STATE_CHANGED}
+    act=mocalite.intent.action.USER_DEVICE_APP_STATE_CHANGED flg=0x10 pkg=com.huawei.powergenie (has extras)
+    extras: Bundle[mParcelledData.dataSize=112]
+  #14: BroadcastRecord{43142f58 u-1 android.intent.action.BATTERY_CHANGED}
+    act=android.intent.action.BATTERY_CHANGED flg=0x60000010 (has extras)
+    extras: Bundle[{technology=Li-poly, icon-small=17302941, health=2, status=2, plugged=2, present=true, level=57, scale=100, temperature=300, voltage=3849, invalid_charger=0, amb_temperature=0}]
+  #15: BroadcastRecord{43ae3f10 u-1 android.intent.action.BATTERY_CHANGED}
+    act=android.intent.action.BATTERY_CHANGED flg=0x60000010 (has extras)
+    extras: Bundle[{technology=Li-poly, icon-small=17302941, health=2, status=2, plugged=2, present=true, level=57, scale=100, temperature=300, voltage=3852, invalid_charger=0, amb_temperature=0}]
+  #16: BroadcastRecord{42907980 u0 BROADCAST_ACTION_OPEN_APP_DATA}
+    act=BROADCAST_ACTION_OPEN_APP_DATA flg=0x10 pkg=com.qihoo.appstore (has extras)
+    extras: Bundle[mParcelledData.dataSize=324]
+  #17: BroadcastRecord{436d88f0 u-1 android.intent.action.BATTERY_CHANGED}
+    act=android.intent.action.BATTERY_CHANGED flg=0x60000010 (has extras)
+    extras: Bundle[{technology=Li-poly, icon-small=17302941, health=2, status=2, plugged=2, present=true, level=57, scale=100, temperature=300, voltage=3853, invalid_charger=0, amb_temperature=0}]
+  #18: BroadcastRecord{4392fea8 u0 android.content.syncmanager.SYNC_ALARM}
+    act=android.content.syncmanager.SYNC_ALARM flg=0x14 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #19: BroadcastRecord{43936798 u-1 android.intent.action.BATTERY_CHANGED}
+    act=android.intent.action.BATTERY_CHANGED flg=0x60000010 (has extras)
+    extras: Bundle[{technology=Li-poly, icon-small=17302941, health=2, status=2, plugged=2, present=true, level=57, scale=100, temperature=300, voltage=3854, invalid_charger=0, amb_temperature=0}]
+  #20: BroadcastRecord{43ae2708 u-1 android.intent.action.BATTERY_CHANGED}
+    act=android.intent.action.BATTERY_CHANGED flg=0x60000010 (has extras)
+    extras: Bundle[{technology=Li-poly, icon-small=17302941, health=2, status=2, plugged=2, present=true, level=57, scale=100, temperature=300, voltage=3849, invalid_charger=0, amb_temperature=0}]
+  #21: BroadcastRecord{42f1f0a0 u0 BROADCAST_ACTION_OPEN_APP_DATA}
+    act=BROADCAST_ACTION_OPEN_APP_DATA flg=0x10 pkg=com.qihoo.appstore (has extras)
+    extras: Bundle[mParcelledData.dataSize=324]
+  #22: BroadcastRecord{42b06408 u0 android.content.syncmanager.SYNC_ALARM}
+    act=android.content.syncmanager.SYNC_ALARM flg=0x14 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #23: BroadcastRecord{43b8a008 u-1 com.android.server.action.NETWORK_STATS_UPDATED}
+    act=com.android.server.action.NETWORK_STATS_UPDATED flg=0x40000010
+  #24: BroadcastRecord{42313628 u-1 android.intent.action.BATTERY_CHANGED}
+    act=android.intent.action.BATTERY_CHANGED flg=0x60000010 (has extras)
+    extras: Bundle[{technology=Li-poly, icon-small=17302941, health=2, status=2, plugged=2, present=true, level=57, scale=100, temperature=290, voltage=3837, invalid_charger=0, amb_temperature=0}]
+  #25: BroadcastRecord{4382a588 u-1 android.intent.action.BATTERY_CHANGED}
+    act=android.intent.action.BATTERY_CHANGED flg=0x60000010 (has extras)
+    extras: Bundle[{technology=Li-poly, icon-small=17302941, health=2, status=2, plugged=2, present=true, level=57, scale=100, temperature=290, voltage=3844, invalid_charger=0, amb_temperature=0}]
+  #26: BroadcastRecord{4384b100 u-1 android.intent.action.BATTERY_CHANGED}
+    act=android.intent.action.BATTERY_CHANGED flg=0x60000010 (has extras)
+    extras: Bundle[{technology=Li-poly, icon-small=17302941, health=2, status=2, plugged=2, present=true, level=57, scale=100, temperature=290, voltage=3848, invalid_charger=0, amb_temperature=0}]
+  #27: BroadcastRecord{4384c868 u0 BROADCAST_ACTION_OPEN_APP_DATA}
+    act=BROADCAST_ACTION_OPEN_APP_DATA flg=0x10 pkg=com.qihoo.appstore (has extras)
+    extras: Bundle[mParcelledData.dataSize=324]
+  #28: BroadcastRecord{43b97788 u-1 android.intent.action.BATTERY_CHANGED}
+    act=android.intent.action.BATTERY_CHANGED flg=0x60000010 (has extras)
+    extras: Bundle[{technology=Li-poly, icon-small=17302941, health=2, status=2, plugged=2, present=true, level=57, scale=100, temperature=290, voltage=3891, invalid_charger=0, amb_temperature=0}]
+  #29: BroadcastRecord{42774500 u0 com.tencent.android.tpush.action.PUSH_MESSAGE}
+    act=com.tencent.android.tpush.action.PUSH_MESSAGE flg=0x10 pkg=com.otaku.CrusadersQuest.huawei (has extras)
+    extras: Bundle[mParcelledData.dataSize=2720]
+  #30: BroadcastRecord{41d080e0 u0 com.tencent.android.tpush.action.MSG_ACK}
+    act=com.tencent.android.tpush.action.MSG_ACK flg=0x10 (has extras)
+    extras: Bundle[mParcelledData.dataSize=136]
+  #31: BroadcastRecord{42903210 u0 com.tencent.android.tpush.action.ack.sdk2srv}
+    act=com.tencent.android.tpush.action.ack.sdk2srv flg=0x10 pkg=com.otaku.CrusadersQuest.huawei (has extras)
+    extras: Bundle[mParcelledData.dataSize=2720]
+  #32: BroadcastRecord{42b8b7e8 u0 com.tencent.android.tpush.action.PUSH_MESSAGE}
+    act=com.tencent.android.tpush.action.PUSH_MESSAGE flg=0x10 pkg=com.otaku.CrusadersQuest.huawei (has extras)
+    extras: Bundle[mParcelledData.dataSize=2412]
+  #33: BroadcastRecord{439960f8 u0 com.tencent.android.tpush.action.MSG_ACK}
+    act=com.tencent.android.tpush.action.MSG_ACK flg=0x10 (has extras)
+    extras: Bundle[mParcelledData.dataSize=136]
+  #34: BroadcastRecord{42ba8a50 u0 com.tencent.android.tpush.action.ack.sdk2srv}
+    act=com.tencent.android.tpush.action.ack.sdk2srv flg=0x10 pkg=com.otaku.CrusadersQuest.huawei (has extras)
+    extras: Bundle[mParcelledData.dataSize=2412]
+  #35: BroadcastRecord{42be9a38 u0 com.tencent.android.tpush.action.FEEDBACK}
+    act=com.tencent.android.tpush.action.FEEDBACK flg=0x10 pkg=com.otaku.CrusadersQuest.huawei (has extras)
+    extras: Bundle[mParcelledData.dataSize=348]
+  #36: BroadcastRecord{42e40498 u0 com.tencent.android.tpush.action.REGISTER.RESULT}
+    act=com.tencent.android.tpush.action.REGISTER.RESULT flg=0x10 pkg=com.otaku.CrusadersQuest.huawei (has extras)
+    extras: Bundle[mParcelledData.dataSize=204]
+  #37: BroadcastRecord{4353b860 u0 com.tencent.android.tpush.action.INTERNAL_PUSH_MESSAGE}
+    act=com.tencent.android.tpush.action.INTERNAL_PUSH_MESSAGE flg=0x10 pkg=com.otaku.CrusadersQuest.huawei (has extras)
+    extras: Bundle[mParcelledData.dataSize=2720]
+  #38: BroadcastRecord{42bfcdd0 u0 com.tencent.android.tpush.action.INTERNAL_PUSH_MESSAGE}
+    act=com.tencent.android.tpush.action.INTERNAL_PUSH_MESSAGE flg=0x10 pkg=com.otaku.CrusadersQuest.huawei (has extras)
+    extras: Bundle[mParcelledData.dataSize=2412]
+  #39: BroadcastRecord{42ae1dd0 u0 com.google.android.gms.gcm.ACTION_SCHEDULE}
+    act=com.google.android.gms.gcm.ACTION_SCHEDULE flg=0x10 pkg=com.google.android.gms (has extras)
+    extras: Bundle[mParcelledData.dataSize=1048]
+  #40: BroadcastRecord{4296ada8 u0 com.google.android.gms.icing.action.CONTACT_CHANGED}
+    act=com.google.android.gms.icing.action.CONTACT_CHANGED flg=0x10 pkg=com.google.android.gms (has extras)
+    extras: Bundle[mParcelledData.dataSize=120]
+  #41: BroadcastRecord{4295a650 u0 android.intent.action.PACKAGE_CHANGED}
+    act=android.intent.action.PACKAGE_CHANGED dat=package:com.huawei.gamebox flg=0x4000010 (has extras)
+    extras: Bundle[{android.intent.extra.changed_component_name=com.huawei.android.pushagent.PushBootReceiver, android.intent.extra.DONT_KILL_APP=true, android.intent.extra.UID=10235, android.intent.extra.changed_component_name_list=[Ljava.lang.String;@42477998, android.intent.extra.user_handle=0}]
+  #42: BroadcastRecord{429a8ff8 u0 android.intent.action.PACKAGE_CHANGED}
+    act=android.intent.action.PACKAGE_CHANGED dat=package:com.huawei.gamebox flg=0x4000010 (has extras)
+    extras: Bundle[{android.intent.extra.changed_component_name=com.huawei.android.pushagent.PushBootReceiver, android.intent.extra.DONT_KILL_APP=true, android.intent.extra.UID=10235, android.intent.extra.changed_component_name_list=[Ljava.lang.String;@42477998, android.intent.extra.user_handle=0}]
+  #43: BroadcastRecord{42f2e380 u0 com.tencent.android.tpush.action.REGISTER}
+    act=com.tencent.android.tpush.action.REGISTER flg=0x10 pkg=com.otaku.CrusadersQuest.huawei (has extras)
+    extras: Bundle[mParcelledData.dataSize=884]
+  #44: BroadcastRecord{430d55b8 u0 com.tencent.android.tpush.action.SERVICE_START}
+    act=com.tencent.android.tpush.action.SERVICE_START flg=0x10 (has extras)
+    extras: Bundle[mParcelledData.dataSize=116]
+  #45: BroadcastRecord{4353ae70 u0 com.tencent.android.tpush.action.SDK}
+    act=com.tencent.android.tpush.action.SDK flg=0x10
+  #46: BroadcastRecord{43933860 u-1 android.os.UpdateLock.UPDATE_LOCK_CHANGED}
+    act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras)
+    extras: Bundle[{nowisconvenient=false, timestamp=1489481411186}]
+  #47: BroadcastRecord{42b46608 u-1 android.os.UpdateLock.UPDATE_LOCK_CHANGED}
+    act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras)
+    extras: Bundle[{nowisconvenient=true, timestamp=1489481410407}]
+  #48: BroadcastRecord{42a4dae0 u-1 android.os.UpdateLock.UPDATE_LOCK_CHANGED}
+    act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras)
+    extras: Bundle[{nowisconvenient=false, timestamp=1489481410324}]
+  #49: BroadcastRecord{428615b0 u-1 android.os.UpdateLock.UPDATE_LOCK_CHANGED}
+    act=android.os.UpdateLock.UPDATE_LOCK_CHANGED flg=0x4000010 (has extras)
+    extras: Bundle[{nowisconvenient=true, timestamp=1489481410228}]
+  ...
+
+  Sticky broadcasts for user -1:
+  * Sticky action android.intent.action.SERVICE_STATE
+  * Sticky action android.net.wifi.WIFI_STATE_CHANGED
+  * Sticky action android.net.wifi.p2p.CONNECTION_STATE_CHANGE
+  * Sticky action android.net.conn.TETHER_STATE_CHANGED
+  * Sticky action android.media.ACTION_SCO_AUDIO_STATE_UPDATED
+  * Sticky action android.net.wifi.p2p.THIS_DEVICE_CHANGED
+  * Sticky action android.intent.action.BATTERY_CHANGED
+  * Sticky action android.intent.action.ACTION_DSDS_SUB2_OPERATOR_CHANGED
+  * Sticky action android.net.conn.CONNECTIVITY_CHANGE
+  * Sticky action android.intent.action.ANY_DATA_STATE
+  * Sticky action android.provider.Telephony.SPN_STRINGS_UPDATED
+  * Sticky action android.net.nsd.STATE_CHANGED
+  * Sticky action android.hardware.usb.action.USB_STATE
+  * Sticky action android.net.wifi.RSSI_CHANGED
+  * Sticky action android.net.wifi.STATE_CHANGE
+  * Sticky action android.intent.action.SIM_STATE_CHANGED
+  * Sticky action android.intent.action.ACTION_DSDS_SUB1_OPERATOR_CHANGED
+  * Sticky action android.net.wifi.supplicant.STATE_CHANGE
+  * Sticky action android.net.wifi.p2p.PERSISTENT_GROUPS_CHANGED
+  * Sticky action android.net.conn.INET_CONDITION_ACTION
+  * Sticky action android.net.conn.CONNECTIVITY_ACTION_IMMEDIATE_WEB_PORTAL
+  * Sticky action android.net.conn.CONNECTIVITY_CHANGE_IMMEDIATE
+  * Sticky action android.media.SCO_AUDIO_STATE_CHANGED
+  * Sticky action android.os.UpdateLock.UPDATE_LOCK_CHANGED
+  * Sticky action android.media.MASTER_MUTE_CHANGED_ACTION
+  * Sticky action wifi_scan_available
+  * Sticky action android.net.wifi.p2p.STATE_CHANGED
+  * Sticky action android.intent.action.HDMI_PLUGGED
+  * Sticky action android.media.RINGER_MODE_CHANGED
+
+  Sticky broadcasts for user 0:
+  * Sticky action android.intent.action.ACTION_RADIO_STATE_CHANGE
+  * Sticky action com.android.huawei.Second_Sim_Handling_Started
+  * Sticky action com.android.huawei.First_Sim_Handling_Started
+
+ACTIVITY MANAGER CONTENT PROVIDERS (dumpsys activity providers)
+  Published single-user content providers (by class):
+  * ContentProviderRecord{423ae510 u0 com.android.keyguard/com.android.huawei.magazineunlock.database.MagazineContentProvider}
+    proc=ProcessRecord{42452e50 2937:com.android.keyguard/1000}
+    singleton=true
+    authority=com.android.huawei.magazineunlock
+  * ContentProviderRecord{4284ebc8 u0 com.android.phone/.IccProvider}
+    proc=ProcessRecord{42848aa0 3147:com.android.phone/1001}
+    singleton=true
+    authority=icc
+  * ContentProviderRecord{427c5848 u0 com.huawei.powergenie/.pgmgmt.PGStatsProvider}
+    proc=ProcessRecord{42849ce8 3169:com.huawei.powergenie/1000}
+    singleton=true
+    authority=com.huawei.powergenie.stats
+  * ContentProviderRecord{427c57b0 u0 com.huawei.powergenie/.pgmgmt.PGProvider}
+    proc=ProcessRecord{42849ce8 3169:com.huawei.powergenie/1000}
+    singleton=true
+    authority=com.huawei.powergenie
+  * ContentProviderRecord{4284ea60 u0 com.android.phone/.MSimIccProvider}
+    proc=ProcessRecord{42848aa0 3147:com.android.phone/1001}
+    singleton=true
+    authority=iccmsim
+  * ContentProviderRecord{41cdb8e8 u0 com.android.providers.settings/.SettingsProvider}
+    proc=ProcessRecord{422a9878 2730:system/1000}
+    singleton=true
+    authority=settings
+    31 connections, 0 external handles
+      -> 2937:com.android.keyguard/1000 s1/1 u0/0 +8d1h55m37s237ms
+      -> 2954:com.android.systemui/u0a72 s1/1 u0/0 +8d1h55m37s195ms
+      -> 3089:com.baidu.map.location/u0a15 s1/1 u0/0 +8d1h55m36s251ms
+      -> 3080:com.nuance.swype.emui/u0a34 s1/1 u0/0 +8d1h55m36s101ms
+      -> 3147:com.android.phone/1001 s1/1 u0/0 +8d1h55m36s82ms
+      -> 3197:com.huawei.android.launcher/u0a42 s1/1 u0/0 +8d1h55m35s474ms
+      -> 3468:com.huawei.systemmanager:service/1000 s1/1 u0/0 +8d1h55m33s564ms
+      -> 3169:com.huawei.powergenie/1000 s1/1 u0/0 +8d1h55m33s449ms
+      -> 3540:com.huawei.systemmanager/1000 s1/1 u0/0 +8d1h55m33s204ms
+      -> 4006:com.huawei.lcagent/1000 s1/1 u0/0 +8d1h55m27s790ms
+      -> 3140:com.huawei.android.powermonitor/1000 s1/1 u0/0 +8d1h55m19s538ms
+      -> 3181:com.huawei.ca/u0a36 s1/1 u0/0 +8d1h55m19s514ms
+      -> 5425:com.huawei.android.ds/1001 s1/1 u0/0 +8d1h55m9s146ms
+      -> 5309:com.huawei.bd/1000 s1/1 u0/0 +8d1h51m15s724ms
+      -> 8674:com.huawei.gamebox/u0a235 s1/1 u0/0 +5h33m12s372ms
+      -> 8823:android.process.media/u0a4 s1/1 u0/0 +5h33m10s826ms
+      -> 25483:com.qihoo.daemon/u0a232 s1/1 u0/0 +2h13m9s913ms
+      -> 25521:com.qihoo.appstore/u0a232 s1/1 u0/0 +2h3m10s201ms
+      -> 25662:android.process.acore/u0a0 s1/1 u0/0 +1h46m15s193ms
+      -> 25770:com.qihoo.appstore:PluginP01/u0a232 s1/1 u0/0 +24m48s694ms
+      -> 26655:com.android.contacts/u0a0 s1/1 u0/0 +24m8s94ms
+      -> 26736:com.qihoo360.mobilesafe:GuardService/u0a230 s1/1 u0/0 +24m6s352ms
+      -> 29485:com.huawei.android.hwouc:hwbdservice/u0a47 s1/1 u0/0 +16m13s118ms
+      -> 31328:com.google.android.gms.feedback/u0a9 s1/1 u0/0 +6m26s956ms
+      -> 32165:com.otaku.CrusadersQuest.huawei/u0a234 s1/1 u0/0 +5m57s369ms
+      -> 32640:com.huawei.motionservice/u0a45 s1/1 u0/0 +5m52s290ms
+      -> 32663:com.android.vending/u0a249 s1/1 u0/0 +5m51s897ms
+      -> 325:com.google.android.gms.persistent/u0a9 s1/1 u0/0 +5m47s691ms
+      -> 29338:com.huawei.hwid/u0a41 s1/1 u0/0 +5m44s663ms
+      -> 1125:com.otaku.CrusadersQuest.huawei:xg_service_v2/u0a234 s1/1 u0/0 +5m37s623ms
+      -> 2986:com.huawei.appmarket/u0a10 s1/1 u0/0 +5m12s659ms
+  * ContentProviderRecord{427c5938 u0 com.huawei.powergenie/.aps.ApsProvider}
+    proc=ProcessRecord{42849ce8 3169:com.huawei.powergenie/1000}
+    singleton=true
+    authority=com.huawei.powergenie.aps.apsProvider
+  * ContentProviderRecord{4284e930 u0 com.android.phone/.HWPhoneProvider}
+    proc=ProcessRecord{42848aa0 3147:com.android.phone/1001}
+    singleton=true
+    authority=hwphone
+  * ContentProviderRecord{42359e10 u0 com.android.providers.settings/.TimingTaskContentProvider}
+    proc=ProcessRecord{422a9878 2730:system/1000}
+    singleton=true
+    authority=com.android.providers.settings.timingtaskprovider
+
+  Published user 0 content providers (by class):
+  * ContentProviderRecord{42830c88 u0 com.qihoo360.mobilesafe/com.qihoo360.loader2.mgr.PluginPersistProvider}
+    proc=ProcessRecord{41d0eca0 26736:com.qihoo360.mobilesafe:GuardService/u0a230}
+    authority=com.qihoo360.mobilesafe.Plugin.NP.PSP
+  * ContentProviderRecord{42829f90 u0 com.cootek.smartdialer_oem_module/com.cootek.smartdialer.model.provider.BlockSMSProvider_oem_module}
+    proc=ProcessRecord{427cee90 3280:com.cootek.smartdialer_oem_module/u0a73}
+    authority=com.cootek.smartdialer.model.provider.BlockSMSProvider_oem_module
+  * ContentProviderRecord{429408c0 u0 com.google.android.gms/com.google.android.location.reporting.service.ReportingContentProvider}
+    proc=ProcessRecord{4306bf50 325:com.google.android.gms.persistent/u0a9}
+    authority=com.google.android.location.reporting
+  * ContentProviderRecord{436bc0c0 u0 com.huawei.hwvplayer/com.android.huawei.pay.install.OtaFileProvider}
+    proc=ProcessRecord{43172838 29322:com.huawei.hwvplayer/u0a13}
+    authority=com.huawei.hwvplayer.hwpay.sdk.provider
+  * ContentProviderRecord{42b45860 u0 com.huawei.appmarket/.support.thirdprovider.ImageProvider}
+    proc=ProcessRecord{41cee758 2986:com.huawei.appmarket/u0a10}
+    authority=com.huawei.appmarket.imageservice.CONTENT_URI
+  * ContentProviderRecord{4370eb28 u0 com.huawei.hwvplayer/.ui.globalsearch.provider.SearchProvider}
+    proc=ProcessRecord{43172838 29322:com.huawei.hwvplayer/u0a13}
+    authority=com.huawei.hwvplayer.globalsearch
+  * ContentProviderRecord{429043f0 u0 com.google.android.gms/com.google.android.location.internal.LocationContentProvider}
+    proc=ProcessRecord{4306bf50 325:com.google.android.gms.persistent/u0a9}
+    authority=com.google.android.location.internal
+  * ContentProviderRecord{42386d88 u0 com.android.systemui/.recent.HwRecentsLockProdiver}
+    proc=ProcessRecord{4239f510 2954:com.android.systemui/u0a72}
+    authority=com.android.systemui.recent.HwRecentsLockProdiver
+  * ContentProviderRecord{427b8940 u0 com.qihoo360.mobilesafe/com.qihoo.antivirus.shield.server.ServerProvider}
+    proc=ProcessRecord{41d0eca0 26736:com.qihoo360.mobilesafe:GuardService/u0a230}
+    authority=com.qihoo.antivirus.shield.server
+  * ContentProviderRecord{428121e8 u0 com.cootek.smartdialer_oem_module/com.cootek.smartdialer.model.provider.LocalFileOfflineContentProvider_oem_module}
+    proc=ProcessRecord{427cee90 3280:com.cootek.smartdialer_oem_module/u0a73}
+    authority=local.file.provider_offline_oem_module
+  * ContentProviderRecord{436bc028 u0 com.huawei.hwvplayer/com.huawei.hwid.update.OtaFileProvider}
+    proc=ProcessRecord{43172838 29322:com.huawei.hwvplayer/u0a13}
+    authority=com.huawei.hwvplayer.hwid.sdk.otafileprovider
+  * ContentProviderRecord{42746340 u0 com.qihoo.appstore/com.morgoo.droidplugin.stub.ContentProviderStub$StubP01}
+    proc=ProcessRecord{427ed320 25770:com.qihoo.appstore:PluginP01/u0a232}
+    authority=com.morgoo.droidplugin_stub_P01
+  * ContentProviderRecord{42f350a0 u0 com.huawei.android.totemweather/.provider.WeatherProvider}
+    proc=ProcessRecord{41f7a138 29533:com.huawei.android.totemweather/u0a59}
+    authority=com.huawei.android.weather
+  * ContentProviderRecord{4299a8d0 u0 com.huawei.hwid/.fingerprint.provider.HwIDProvider}
+    proc=ProcessRecord{4353b2c8 29338:com.huawei.hwid/u0a41}
+    authority=com.huawei.hwid.api.provider
+  * ContentProviderRecord{4282c430 u0 com.qihoo360.mobilesafe/.provider.SafeGuardProvider}
+    proc=ProcessRecord{41d0eca0 26736:com.qihoo360.mobilesafe:GuardService/u0a230}
+    authority=com.qihoo360.mobilesafeguard
+  * ContentProviderRecord{4289a5f0 u0 com.huawei.systemmanager/com.huawei.harassmentinterception.db.DBProvider}
+    proc=ProcessRecord{42868cb0 3468:com.huawei.systemmanager:service/1000}
+    authority=com.huawei.systemmanager.HarassmentInterceptionDBProvider
+    1 connections, 0 external handles
+      -> 5425:com.huawei.android.ds/1001 s1/1 u0/0 +8d1h55m8s409ms
+  * ContentProviderRecord{42903448 u0 com.huawei.hwid/com.huawei.vip.provider.HwIDVipProvider}
+    proc=ProcessRecord{4353b2c8 29338:com.huawei.hwid/u0a41}
+    authority=com.huawei.vip.provider.HwIDVipProvider
+  * ContentProviderRecord{42af8428 u0 com.android.contacts/android.support.v4.content.FileProvider}
+    proc=ProcessRecord{41ce7980 26655:com.android.contacts/u0a0}
+    authority=com.android.contacts.files
+  * ContentProviderRecord{4229ddc0 u0 com.google.android.gms/.icing.proxy.InternalIcingCorporaProvider}
+    proc=ProcessRecord{4275c608 31456:com.google.android.gms/u0a9}
+    authority=com.google.android.gms.icing.proxy
+  * ContentProviderRecord{42788870 u0 com.huawei.systemmanager/.optimize.db.OptimizeProvider}
+    proc=ProcessRecord{42868cb0 3468:com.huawei.systemmanager:service/1000}
+    launchingApp=ProcessRecord{42868cb0 3468:com.huawei.systemmanager:service/1000}
+    authority=com.huawei.android.batteryspriteprovider
+    2 connections, 0 external handles
+      -> 3169:com.huawei.powergenie/1000 s0/0 u1/1 +8d1h55m34s376ms
+      -> 3540:com.huawei.systemmanager/1000 s0/0 u1/1 +8d1h55m31s654ms
+  * ContentProviderRecord{4284e5c0 u0 com.android.providers.telephony/.TelephonyProvider}
+    proc=ProcessRecord{42848aa0 3147:com.android.phone/1001}
+    authority=telephony
+  * ContentProviderRecord{429c2018 u0 com.android.providers.downloads/.DownloadProvider}
+    proc=ProcessRecord{429323d0 8823:android.process.media/u0a4}
+    launchingApp=ProcessRecord{429323d0 8823:android.process.media/u0a4}
+    authority=downloads
+  * ContentProviderRecord{429273a0 u0 com.google.android.gsf/.settings.GoogleSettingsProvider}
+    proc=ProcessRecord{42dfbe40 31278:com.google.process.gapps/u0a9}
+    authority=com.google.settings
+  * ContentProviderRecord{42827a10 u0 com.cootek.smartdialer_oem_module/com.cootek.smartdialer.yellowpage.callerid2.CallerIdSlotProvider_oem_module}
+    proc=ProcessRecord{427cee90 3280:com.cootek.smartdialer_oem_module/u0a73}
+    authority=com.cootek.smartdialer.yellowpage.callerid2.CallerIdSlotProvider_oem_module
+  * ContentProviderRecord{42954438 u0 com.otaku.CrusadersQuest.huawei/android.support.v4.content.FileProvider}
+    proc=ProcessRecord{43966e78 32165:com.otaku.CrusadersQuest.huawei/u0a234}
+    authority=com.otaku.CrusadersQuest.huawei.installnewtype.provider
+  * ContentProviderRecord{423672a0 u0 com.baidu.map.location/.DebugFlagContentProvider}
+    proc=ProcessRecord{42459608 3089:com.baidu.map.location/u0a15}
+    authority=com.baidu.map.location.provider.DebugFlag
+  * ContentProviderRecord{4299a968 u0 com.huawei.hwid/com.huawei.qrcode.fileprovider.ScanQrcodeFileProvider}
+    proc=ProcessRecord{4353b2c8 29338:com.huawei.hwid/u0a41}
+    authority=com.huawei.hwid.down.scanqrcodefileprovider
+  * ContentProviderRecord{4289a688 u0 com.huawei.systemmanager/com.huawei.optimizer.engine.demo.trash.RarelyUsedAppProvider}
+    proc=ProcessRecord{42868cb0 3468:com.huawei.systemmanager:service/1000}
+    authority=com.huawei.systemmanager.RarelyUsedAppProvider
+  * ContentProviderRecord{41eff4c0 u0 com.google.android.gms/.matchstick.data.AppDataProvider}
+    proc=ProcessRecord{4275c608 31456:com.google.android.gms/u0a9}
+    authority=com.google.android.gms.matchstick.appdataprovider
+  * ContentProviderRecord{42980730 u0 com.huawei.bd/.db.BDProvider}
+    proc=ProcessRecord{429d3560 5309:com.huawei.bd/1000}
+    authority=com.huawei.bd.provider.BDProvider
+  * ContentProviderRecord{428ed490 u0 com.huawei.hidisk/.strongbox.logic.fingerprint.FingerPrintProvider}
+    proc=ProcessRecord{427511b8 15452:com.huawei.hidisk/u0a38}
+    authority=com.huawei.hidisk.fingerprint
+  * ContentProviderRecord{429cb840 u0 com.huawei.android.ds/com.huawei.android.hicloud.common.provider.HicloudLoginProvider}
+    proc=ProcessRecord{42860338 5425:com.huawei.android.ds/1001}
+    authority=com.huawei.android.hicloud.loginProvider
+  * ContentProviderRecord{42ad4b78 u0 com.google.android.gms/.auth.account.be.legacy.AccountContentProvider}
+    proc=ProcessRecord{42dfbe40 31278:com.google.process.gapps/u0a9}
+    authority=com.google.android.gms.auth.accounts
+  * ContentProviderRecord{41ed17e0 u0 com.google.android.gms/.auth.api.credentials.be.persistence.TemporaryValueProvider}
+    proc=ProcessRecord{4275c608 31456:com.google.android.gms/u0a9}
+    authority=com.google.android.gms.auth.api.credentials.be.persistence.TemporaryValueProvider
+  * ContentProviderRecord{42927438 u0 com.google.android.gms/.auth.account.be.accountstate.CredentialStateContentProvider}
+    proc=ProcessRecord{42dfbe40 31278:com.google.process.gapps/u0a9}
+    authority=com.google.android.gms.auth.confirm
+  * ContentProviderRecord{42827518 u0 com.cootek.smartdialer_oem_module/com.cootek.smartdialer.model.provider.BlackListProvider_oem_module}
+    proc=ProcessRecord{427cee90 3280:com.cootek.smartdialer_oem_module/u0a73}
+    authority=com.cootek.smartdialer.model.provider.BlackListProvider_oem_module
+  * ContentProviderRecord{42872918 u0 com.android.providers.downloads/.DownloadStorageProvider}
+    proc=ProcessRecord{429323d0 8823:android.process.media/u0a4}
+    authority=com.android.providers.downloads.documents
+  * ContentProviderRecord{42278200 u0 com.google.android.gms/com.google.android.libraries.social.autobackup.AutoBackupProvider}
+    proc=ProcessRecord{4275c608 31456:com.google.android.gms/u0a9}
+    authority=com.google.android.gms.photos.iu.EsGoogleIuProvider
+  * ContentProviderRecord{436ce498 u0 com.huawei.gamebox/com.huawei.hms.update.provider.UpdateProvider}
+    proc=ProcessRecord{42f2cc50 8674:com.huawei.gamebox/u0a235}
+    authority=com.huawei.gamebox.hms.update.provider
+  * ContentProviderRecord{428119e8 u0 com.cootek.smartdialer_oem_module/com.cootek.smartdialer.model.provider.LocalFileContentProvider_oem_module}
+    proc=ProcessRecord{427cee90 3280:com.cootek.smartdialer_oem_module/u0a73}
+    authority=local.file.provider_oem_module
+  * ContentProviderRecord{43871130 u0 com.android.email/.provider.GlobalSearchProvider}
+    proc=ProcessRecord{42eb7f88 29387:com.android.email/u0a5}
+    authority=com.android.email.globalsearchprovider
+  * ContentProviderRecord{42b49648 u0 com.huawei.appmarket/com.huawei.hms.update.provider.UpdateProvider}
+    proc=ProcessRecord{41cee758 2986:com.huawei.appmarket/u0a10}
+    authority=com.huawei.appmarket.hms.update.provider
+  * ContentProviderRecord{436c2e58 u0 com.huawei.gamebox/com.android.huawei.pay.install.OtaFileProvider}
+    proc=ProcessRecord{42f2cc50 8674:com.huawei.gamebox/u0a235}
+    authority=com.huawei.gamebox.hwpay.sdk.provider
+  * ContentProviderRecord{42ece268 u0 com.qihoo.appstore/.launcherdownload.LauncherClientProvider}
+    proc=ProcessRecord{4298a630 25521:com.qihoo.appstore/u0a232}
+    authority=com.qihoo.appstore.LauncherDownloadProvider
+  * ContentProviderRecord{428296b0 u0 com.qihoo360.mobilesafe/.paysafe.db.PaySafeProvider}
+    proc=ProcessRecord{41d0eca0 26736:com.qihoo360.mobilesafe:GuardService/u0a230}
+    authority=com.qihoo360.mobilesafe.paysafe
+  * ContentProviderRecord{4226d538 u0 com.google.android.gms/.common.download.provider.DownloadsProvider}
+    proc=ProcessRecord{4275c608 31456:com.google.android.gms/u0a9}
+    authority=com.google.android.gms.download
+  * ContentProviderRecord{4353a900 u0 com.qihoo.appstore/.keepalive.KeepAliveProvider}
+    proc=ProcessRecord{429850a8 25483:com.qihoo.daemon/u0a232}
+    authority=com.qihoo.appstore.activateprovider
+  * ContentProviderRecord{438711c8 u0 com.android.email/com.huawei.email.provider.RecipientAddressProvider}
+    proc=ProcessRecord{42eb7f88 29387:com.android.email/u0a5}
+    authority=com.android.email.address_provider
+  * ContentProviderRecord{42b47d40 u0 com.huawei.appmarket/.support.storage.DbProvider}
+    proc=ProcessRecord{41cee758 2986:com.huawei.appmarket/u0a10}
+    authority=com.huawei.appmarket.appinfos
+  * ContentProviderRecord{427ff820 u0 com.cootek.smartdialer_oem_module/com.cootek.smartdialer.model.provider.YPCalllogProvider_oem_module}
+    proc=ProcessRecord{427cee90 3280:com.cootek.smartdialer_oem_module/u0a73}
+    authority=com.cootek.smartdialer.model.provider.YPCalllogProvider_oem_module
+  * ContentProviderRecord{4284e440 u0 com.huawei.systemmanager/com.huawei.permissionmanager.db.PermissionDataProvider}
+    proc=ProcessRecord{42868cb0 3468:com.huawei.systemmanager:service/1000}
+    authority=com.huawei.permissionmanager.provider.PermissionDataProvider
+    1 connections, 0 external handles
+      -> 3540:com.huawei.systemmanager/1000 s0/0 u1/1 +1d2h34m34s52ms
+  * ContentProviderRecord{427f4dd8 u0 com.android.vending/com.google.android.finsky.providers.RecentSuggestionsProvider}
+    proc=ProcessRecord{42a87620 32663:com.android.vending/u0a249}
+    authority=com.google.android.finsky.RecentSuggestionsProvider
+  * ContentProviderRecord{428273d8 u0 com.cootek.smartdialer_oem_module/com.cootek.smartdialer.yellowpage.callerid2.CallerIdProvider_oem_module}
+    proc=ProcessRecord{427cee90 3280:com.cootek.smartdialer_oem_module/u0a73}
+    authority=com.cootek.smartdialer.yellowpage.callerid2.CallerIdProvider_oem_module
+  * ContentProviderRecord{43870f68 u0 com.android.email/com.android.mail.providers.EmlAttachmentProvider}
+    proc=ProcessRecord{42eb7f88 29387:com.android.email/u0a5}
+    authority=com.android.email.provider.eml.attachment
+  * ContentProviderRecord{42826ac0 u0 com.huawei.systemmanager/.backup.BackupModuleProvider}
+    proc=ProcessRecord{42868cb0 3468:com.huawei.systemmanager:service/1000}
+    authority=com.huawei.systemmanager.BackupModuleProvider
+    1 connections, 0 external handles
+      -> 5425:com.huawei.android.ds/1001 s1/1 u0/0 +8d1h55m8s428ms
+  * ContentProviderRecord{42825148 u0 com.qihoo360.mobilesafe/com.qihoo.antivirus.shield.server.ShieldExportProvider}
+    proc=ProcessRecord{41d0eca0 26736:com.qihoo360.mobilesafe:GuardService/u0a230}
+    authority=com.qihoo.antivirus.shield.server.export
+  * ContentProviderRecord{4284e898 u0 com.android.providers.telephony/.SmsProvider}
+    proc=ProcessRecord{42848aa0 3147:com.android.phone/1001}
+    authority=sms
+    1 connections, 0 external handles
+      -> 26736:com.qihoo360.mobilesafe:GuardService/u0a230 s0/0 u1/1 +24m6s475ms
+  * ContentProviderRecord{4299a708 u0 com.huawei.hwid/com.huawei.sns.backup.BackupContentProvider}
+    proc=ProcessRecord{4353b2c8 29338:com.huawei.hwid/u0a41}
+    authority=com.huawei.android.sns.backup
+  * ContentProviderRecord{43871000 u0 com.android.email/com.android.mail.browse.EmailConversationProvider}
+    proc=ProcessRecord{42eb7f88 29387:com.android.email/u0a5}
+    authority=com.android.email2.conversation.provider
+  * ContentProviderRecord{42ad4c10 u0 com.google.android.gms/.common.config.PhenotypeProvider}
+    proc=ProcessRecord{42dfbe40 31278:com.google.process.gapps/u0a9}
+    authority=com.google.android.gms.common.phenotype
+  * ContentProviderRecord{42af3268 u0 com.android.contacts/com.huawei.numberlocation.NLContentProvider}
+    proc=ProcessRecord{41ce7980 26655:com.android.contacts/u0a0}
+    authority=com.huawei.numberlocation
+  * ContentProviderRecord{42a07c60 u0 com.huawei.android.ds/com.huawei.android.hicloud.common.provider.SyncStateProvider}
+    proc=ProcessRecord{42860338 5425:com.huawei.android.ds/1001}
+    authority=com.huawei.android.hicloud.syncstate
+  * ContentProviderRecord{42855b18 u0 com.huawei.systemmanager/com.huawei.netassistant.db.NetAssistantProvider}
+    proc=ProcessRecord{42868cb0 3468:com.huawei.systemmanager:service/1000}
+    authority=com.huawei.systemmanager.NetAssistantProvider
+  * ContentProviderRecord{427ab508 u0 com.qihoo360.mobilesafe/.svcmanager.ServiceProvider}
+    proc=ProcessRecord{41d0eca0 26736:com.qihoo360.mobilesafe:GuardService/u0a230}
+    authority=com.qihoo360.mobilesafe.svcmanager
+  * ContentProviderRecord{42819318 u0 com.qihoo360.mobilesafe/.backup.provider.LocalSmsProvider}
+    proc=ProcessRecord{41d0eca0 26736:com.qihoo360.mobilesafe:GuardService/u0a230}
+    authority=com.qihoo360.localsms
+  * ContentProviderRecord{41ec6d40 u0 com.google.android.gms/.ads.adinfo.AdvertisingInfoContentProvider}
+    proc=ProcessRecord{4275c608 31456:com.google.android.gms/u0a9}
+    authority=com.google.android.gms.ads.adinfo
+  * ContentProviderRecord{42a01458 u0 com.huawei.android.ds/com.huawei.android.hicloud.common.provider.HicloudFeatursProvider}
+    proc=ProcessRecord{42860338 5425:com.huawei.android.ds/1001}
+    authority=com.huawei.android.hicloud.provider
+  * ContentProviderRecord{42aee3c0 u0 com.android.contacts/.hap.provider.ContactsAppProvider}
+    proc=ProcessRecord{41ce7980 26655:com.android.contacts/u0a0}
+    authority=com.android.contacts.app
+  * ContentProviderRecord{422658d0 u0 com.google.android.gms/.plus.provider.PlusProvider}
+    proc=ProcessRecord{4275c608 31456:com.google.android.gms/u0a9}
+    authority=com.google.android.gms.plus;com.google.android.gms.plus.action
+  * ContentProviderRecord{4284eb30 u0 com.android.providers.telephony/.MmsSmsProvider}
+    proc=ProcessRecord{42848aa0 3147:com.android.phone/1001}
+    authority=mms-sms
+    1 connections, 0 external handles
+      -> 26655:com.android.contacts/u0a0 s1/1 u0/1 +24m5s949ms
+  * ContentProviderRecord{41e7de80 u0 com.google.android.gms/.games.provider.NotificationStubContentProvider}
+    proc=ProcessRecord{4275c608 31456:com.google.android.gms/u0a9}
+    authority=com.google.android.gms.games
+  * ContentProviderRecord{422646c8 u0 com.google.android.gms/.chimera.container.ModuleProvider}
+    proc=ProcessRecord{4275c608 31456:com.google.android.gms/u0a9}
+    authority=com.google.android.chimera;com.google.android.gms.chimera
+  * ContentProviderRecord{43ba70f0 u0 com.android.providers.contacts/.CallLogProvider}
+    proc=ProcessRecord{42b921b8 25662:android.process.acore/u0a0}
+    authority=call_log
+    1 connections, 0 external handles
+      -> 26736:com.qihoo360.mobilesafe:GuardService/u0a230 s0/0 u1/1 +24m6s667ms
+  * ContentProviderRecord{42cf2420 u0 com.huawei.phoneservice/com.huawei.hwid.update.OtaFileProvider}
+    proc=ProcessRecord{42a730b0 29294:com.huawei.phoneservice/u0a12}
+    authority=com.huawei.phoneservice.hwid.sdk.otafileprovider
+  * ContentProviderRecord{42240790 u0 com.google.android.gms/.matchstick.data.DatabaseProvider}
+    proc=ProcessRecord{4275c608 31456:com.google.android.gms/u0a9}
+    authority=com.google.android.gms.matchstick.dataprovider
+  * ContentProviderRecord{422308f0 u0 com.google.android.gms/.wallet.provider.WalletFileProvider}
+    proc=ProcessRecord{4275c608 31456:com.google.android.gms/u0a9}
+    authority=com.google.android.gms.wallet.fileprovider
+  * ContentProviderRecord{42804530 u0 com.qihoo360.mobilesafe/.protection_v3.AntiTheftProvider}
+    proc=ProcessRecord{41d0eca0 26736:com.qihoo360.mobilesafe:GuardService/u0a230}
+    authority=com.qihoo360.mobilesafe.AntitheftProvider
+  * ContentProviderRecord{43ba6e90 u0 com.android.providers.contacts/.VoicemailContentProvider}
+    proc=ProcessRecord{42b921b8 25662:android.process.acore/u0a0}
+    authority=com.android.voicemail
+  * ContentProviderRecord{42855b98 u0 com.huawei.systemmanager/.power.provider.SmartProvider}
+    proc=ProcessRecord{42868cb0 3468:com.huawei.systemmanager:service/1000}
+    authority=com.huawei.android.smartpowerprovider
+  * ContentProviderRecord{42ad4a48 u0 com.google.android.gsf/.subscribedfeeds.SubscribedFeedsProvider}
+    proc=ProcessRecord{42dfbe40 31278:com.google.process.gapps/u0a9}
+    authority=subscribedfeeds
+  * ContentProviderRecord{43871260 u0 com.android.email/.provider.EmailProvider}
+    proc=ProcessRecord{42eb7f88 29387:com.android.email/u0a5}
+    authority=com.android.email.provider;com.android.email.notifier
+  * ContentProviderRecord{428f2b98 u0 com.huawei.hidisk/.cloud.data.DBankProvider}
+    proc=ProcessRecord{427511b8 15452:com.huawei.hidisk/u0a38}
+    authority=com.huawei.hidisk.provider.DBank
+  * ContentProviderRecord{421da2a8 u0 com.google.android.gms/android.support.v4.content.FileProvider}
+    proc=ProcessRecord{4275c608 31456:com.google.android.gms/u0a9}
+    authority=com.google.android.gms.fitness.fileprovider
+  * ContentProviderRecord{421897e8 u0 com.google.android.gms/.reminders.provider.RemindersProvider}
+    proc=ProcessRecord{4275c608 31456:com.google.android.gms/u0a9}
+    authority=com.google.android.gms.reminders
+  * ContentProviderRecord{427951a8 u0 com.qihoo360.mobilesafe/.block.sdk.BlockQiKuProvider}
+    proc=ProcessRecord{41d0eca0 26736:com.qihoo360.mobilesafe:GuardService/u0a230}
+    authority=com.qihoo360.block.qiku.provider
+  * ContentProviderRecord{427f2800 u0 com.qihoo360.mobilesafe/.loader.p.MainProvider}
+    proc=ProcessRecord{41d0eca0 26736:com.qihoo360.mobilesafe:GuardService/u0a230}
+    authority=com.qihoo360.mobilesafe.loader.p.main
+  * ContentProviderRecord{43644ae8 u0 com.qihoo.appstore/com.qihoo.storager.MultiprocessSharedPreferences}
+    proc=ProcessRecord{429850a8 25483:com.qihoo.daemon/u0a232}
+    authority=com.qihoo.appstore.MultiprocessSharedPreferences
+  * ContentProviderRecord{427d5c80 u0 com.qihoo360.mobilesafe/.lockscreen.data.LockScreenContentProvider}
+    proc=ProcessRecord{41d0eca0 26736:com.qihoo360.mobilesafe:GuardService/u0a230}
+    authority=com.qihoo360.mobilesafe.lockscreen
+  * ContentProviderRecord{43ba6f28 u0 com.android.providers.contacts/.debug.DumpFileProvider}
+    proc=ProcessRecord{42b921b8 25662:android.process.acore/u0a0}
+    authority=com.android.contacts.dumpfile
+  * ContentProviderRecord{4286b248 u0 com.android.providers.media/.MediaProvider}
+    proc=ProcessRecord{429323d0 8823:android.process.media/u0a4}
+    authority=media
+  * ContentProviderRecord{42ad4ae0 u0 com.google.android.gms/.auth.account.be.accountstate.AccountStateContentProvider}
+    proc=ProcessRecord{42dfbe40 31278:com.google.process.gapps/u0a9}
+    authority=com.google.android.gms.auth.accountstate
+  * ContentProviderRecord{438712f8 u0 com.android.email/.provider.AttachmentProvider}
+    proc=ProcessRecord{42eb7f88 29387:com.android.email/u0a5}
+    authority=com.android.email.attachmentprovider
+  * ContentProviderRecord{4370ec08 u0 com.huawei.hwvplayer/.data.db.DbProvider}
+    proc=ProcessRecord{43172838 29322:com.huawei.hwvplayer/u0a13}
+    authority=com.huawei.hwvplayer.vedioinfos
+  * ContentProviderRecord{42855c30 u0 com.huawei.systemmanager/com.huawei.notificationmanager.db.DBProvider}
+    proc=ProcessRecord{42868cb0 3468:com.huawei.systemmanager:service/1000}
+    authority=com.huawei.systemmanager.NotificationDBProvider
+    1 connections, 0 external handles
+      -> 2730:system/1000 s0/0 u1/1 +8d1h55m27s938ms
+  * ContentProviderRecord{427c54d8 u0 com.huawei.android.hwaps/.ApsProvider}
+    proc=ProcessRecord{42849ce8 3169:com.huawei.powergenie/1000}
+    authority=com.huawei.android.hwaps.ApsProvider
+  * ContentProviderRecord{420c2448 u0 com.google.android.gms/.chromesync.persistence.ContentProvider}
+    proc=ProcessRecord{4275c608 31456:com.google.android.gms/u0a9}
+    authority=com.google.android.gms.chromesync.persistence.provider
+  * ContentProviderRecord{436c2dc0 u0 com.huawei.gamebox/com.huawei.appmarket.support.storage.DbProvider}
+    proc=ProcessRecord{42f2cc50 8674:com.huawei.gamebox/u0a235}
+    authority=com.huawei.gamebox.appinfos
+  * ContentProviderRecord{428195f0 u0 com.cootek.smartdialer_oem_module/com.cootek.smartdialer.model.provider.DialerProvider_oem_module}
+    proc=ProcessRecord{427cee90 3280:com.cootek.smartdialer_oem_module/u0a73}
+    authority=com.cootek.smartdialer.model.provider.DialerProvider_oem_module
+  * ContentProviderRecord{42933118 u0 com.google.android.gms/.instantapps.routing.InstantAppsContentProvider}
+    proc=ProcessRecord{4306bf50 325:com.google.android.gms.persistent/u0a9}
+    authority=com.google.android.gms.instantapps.provider.api
+  * ContentProviderRecord{42789d00 u0 com.qihoo360.mobilesafe/.contacts.ContactsProvider}
+    proc=ProcessRecord{41d0eca0 26736:com.qihoo360.mobilesafe:GuardService/u0a230}
+    authority=com.qihoo360.plugin.contacts
+  * ContentProviderRecord{4209adb8 u0 com.google.android.gms/.icing.proxy.AppsContentProvider}
+    proc=ProcessRecord{4275c608 31456:com.google.android.gms/u0a9}
+    authority=com.google.android.gms.icing.proxy.apps
+  * ContentProviderRecord{42b469f8 u0 com.huawei.appmarket/com.huawei.hwid.update.OtaFileProvider}
+    proc=ProcessRecord{41cee758 2986:com.huawei.appmarket/u0a10}
+    authority=com.huawei.appmarket.hwid.sdk.otafileprovider
+  * ContentProviderRecord{43644b80 u0 com.qihoo.appstore/com.qihoo360.mobilesafe.pcdaemon.service.DaemonContentProvider}
+    proc=ProcessRecord{429850a8 25483:com.qihoo.daemon/u0a232}
+    authority=com.qihoo360.daemon
+  * ContentProviderRecord{437215f0 u0 com.qihoo.appstore/.keepalive.account.SyncProvider}
+    proc=ProcessRecord{429850a8 25483:com.qihoo.daemon/u0a232}
+    authority=com.qihoo.appstore.account.syncprovider
+  * ContentProviderRecord{42ece2b0 u0 com.qihoo.appstore/.appupdate.ignore.IgnoreUpdateAppProvider}
+    proc=ProcessRecord{4298a630 25521:com.qihoo.appstore/u0a232}
+    authority=360appstoreignoreappinfo
+  * ContentProviderRecord{42ae8570 u0 com.android.contacts/com.android.mms.SuggestionsProvider}
+    proc=ProcessRecord{41ce7980 26655:com.android.contacts/u0a0}
+    authority=com.android.mms.SuggestionsProvider
+  * ContentProviderRecord{42b461b0 u0 com.huawei.appmarket/.support.thirdprovider.ThirdProvider}
+    proc=ProcessRecord{41cee758 2986:com.huawei.appmarket/u0a10}
+    authority=com.huawei.appmarket.thirdProviderService.CONTENT_URI
+  * ContentProviderRecord{41e70030 u0 com.google.android.gms/.drive.metadata.sync.syncadapter.StubContentProvider}
+    proc=ProcessRecord{4275c608 31456:com.google.android.gms/u0a9}
+    authority=com.google.android.gms.drive.sync
+  * ContentProviderRecord{4284ec60 u0 com.android.stk/.StkContentProvider}
+    proc=ProcessRecord{42848aa0 3147:com.android.phone/1001}
+    authority=com.android.stk.stkcontentprovider
+  * ContentProviderRecord{42d07e70 u0 com.huawei.phoneservice/com.huawei.phoneserviceuni.romupdate.storage.db.RomProvider}
+    proc=ProcessRecord{42a730b0 29294:com.huawei.phoneservice/u0a12}
+    authority=service_rom
+  * ContentProviderRecord{427c6fc0 u0 com.qihoo360.mobilesafe/.block.sdk.BlockCoolPadProvider}
+    proc=ProcessRecord{41d0eca0 26736:com.qihoo360.mobilesafe:GuardService/u0a230}
+    authority=com.qihoo360.block.coolpad.provider
+  * ContentProviderRecord{42927118 u0 com.android.providers.userdictionary/.UserDictionaryProvider}
+    proc=ProcessRecord{42b921b8 25662:android.process.acore/u0a0}
+    authority=user_dictionary
+  * ContentProviderRecord{42ae18a8 u0 com.android.contacts/com.android.mms.TempFileProvider}
+    proc=ProcessRecord{41ce7980 26655:com.android.contacts/u0a0}
+    authority=mms_temp_file
+  * ContentProviderRecord{42b43d08 u0 com.huawei.appmarket/com.android.huawei.pay.install.OtaFileProvider}
+    proc=ProcessRecord{41cee758 2986:com.huawei.appmarket/u0a10}
+    authority=com.huawei.appmarket.hwpay.sdk.provider
+  * ContentProviderRecord{42df06e0 u0 com.google.android.gsf/.gservices.GservicesProvider}
+    proc=ProcessRecord{42dfbe40 31278:com.google.process.gapps/u0a9}
+    launchingApp=ProcessRecord{42dfbe40 31278:com.google.process.gapps/u0a9}
+    authority=com.google.android.gsf.gservices
+  * ContentProviderRecord{4299a7a0 u0 com.huawei.hwid/com.huawei.sns.storage.db.SNSContentProvider}
+    proc=ProcessRecord{4353b2c8 29338:com.huawei.hwid/u0a41}
+    authority=com.huawei.android.sns.provider
+  * ContentProviderRecord{428ab4c8 u0 com.google.android.gms/.fitness.sync.FitnessContentProvider}
+    proc=ProcessRecord{4306bf50 325:com.google.android.gms.persistent/u0a9}
+    authority=com.google.android.gms.fitness
+  * ContentProviderRecord{4207bf58 u0 com.google.android.gms/.icing.proxy.SmsContentProvider}
+    proc=ProcessRecord{4275c608 31456:com.google.android.gms/u0a9}
+    authority=com.google.android.gms.icing.proxy.sms
+  * ContentProviderRecord{43871098 u0 com.android.email/com.android.mail.providers.EmailAccountCacheProvider}
+    proc=ProcessRecord{42eb7f88 29387:com.android.email/u0a5}
+    authority=com.android.email2.accountcache
+  * ContentProviderRecord{428f0d20 u0 com.huawei.hidisk/.filemanager.db.FileProvider}
+    proc=ProcessRecord{427511b8 15452:com.huawei.hidisk/u0a38}
+    authority=com.huawei.hidisk.filemanager.fileprovider2
+  * ContentProviderRecord{41e22e90 u0 com.google.android.gms/.icing.indexapi.IndexApiContentProvider}
+    proc=ProcessRecord{4275c608 31456:com.google.android.gms/u0a9}
+    authority=com.google.android.gms.icing.indexapi
+  * ContentProviderRecord{4284e390 u0 com.huawei.systemmanager/.optimize.smcs.SMCSProvider}
+    proc=ProcessRecord{42868cb0 3468:com.huawei.systemmanager:service/1000}
+    authority=smcs
+  * ContentProviderRecord{4289a558 u0 com.huawei.systemmanager/.cloud.db.CloudDBProvider}
+    proc=ProcessRecord{42868cb0 3468:com.huawei.systemmanager:service/1000}
+    authority=com.huawei.systemmanager.cloud.cloudprovider
+    1 connections, 0 external handles
+      -> 3540:com.huawei.systemmanager/1000 s1/1 u0/0 +1d2h35m52s411ms
+  * ContentProviderRecord{427b8400 u0 com.huawei.ca/.provider.CaContentProvider}
+    proc=ProcessRecord{428693b8 3181:com.huawei.ca/u0a36}
+    authority=com.huawei.ca
+  * ContentProviderRecord{428129e8 u0 com.cootek.smartdialer_oem_module/com.cootek.smartdialer.model.provider.SimContactProvider_oem_module}
+    proc=ProcessRecord{427cee90 3280:com.cootek.smartdialer_oem_module/u0a73}
+    authority=com.cootek.smartdialer.model.provider.SimContactProvider_oem_module
+  * ContentProviderRecord{42772630 u0 com.qihoo360.mobilesafe/.provider.ActiveProvider}
+    proc=ProcessRecord{41d0eca0 26736:com.qihoo360.mobilesafe:GuardService/u0a230}
+    authority=com.qihoo360.mobilesafe.activateprovider
+  * ContentProviderRecord{427ba3c0 u0 com.huawei.android.launcher/.LauncherProvider}
+    proc=ProcessRecord{428039c0 3197:com.huawei.android.launcher/u0a42}
+    authority=com.huawei.android.launcher.settings
+  * ContentProviderRecord{42069bc8 u0 com.google.android.gms/.icing.proxy.SuggestQueryContentProvider}
+    proc=ProcessRecord{4275c608 31456:com.google.android.gms/u0a9}
+    authority=com.google.android.gms.icing.proxy.suggest_query
+  * ContentProviderRecord{42019538 u0 com.google.android.gms/.common.stats.net.contentprovider.NetworkUsageContentProvider}
+    proc=ProcessRecord{4275c608 31456:com.google.android.gms/u0a9}
+    authority=com.google.android.gms.common.stats.net.contentprovider
+  * ContentProviderRecord{43ba6fc0 u0 com.android.providers.contacts/.CloudProvider}
+    proc=ProcessRecord{42b921b8 25662:android.process.acore/u0a0}
+    authority=com.android.contacts.cloud
+  * ContentProviderRecord{43ba7058 u0 com.android.providers.applications/.ApplicationsProvider}
+    proc=ProcessRecord{42b921b8 25662:android.process.acore/u0a0}
+    authority=applications
+  * ContentProviderRecord{428739f8 u0 com.huawei.systemmanager/.backup.CommonPrefBackupProvider}
+    proc=ProcessRecord{42396340 3540:com.huawei.systemmanager/1000}
+    authority=com.huawei.systemmanager.CommonPrefBackupProvider
+  * ContentProviderRecord{41de5428 u0 com.google.android.gms/.auth.api.credentials.sync.CredentialContentProvider}
+    proc=ProcessRecord{4275c608 31456:com.google.android.gms/u0a9}
+    authority=com.google.android.gms.auth.api.credentials
+  * ContentProviderRecord{4284eeb0 u0 com.android.providers.telephony/.MmsProvider}
+    proc=ProcessRecord{42848aa0 3147:com.android.phone/1001}
+    authority=mms
+  * ContentProviderRecord{427f4058 u0 com.cootek.smartdialer_oem_module/com.cootek.smartdialer.model.provider.BlockHistoryProvider_oem_module}
+    proc=ProcessRecord{427cee90 3280:com.cootek.smartdialer_oem_module/u0a73}
+    authority=com.cootek.smartdialer.model.provider.BlockHistoryProvider_oem_module
+  * ContentProviderRecord{42766508 u0 com.qihoo360.mobilesafe/com.qihoo360.apm.apmdatamanager.ApmDataProvider}
+    proc=ProcessRecord{41d0eca0 26736:com.qihoo360.mobilesafe:GuardService/u0a230}
+    authority=com.qihoo360.apm.apmdatamanager.ApmDataProvider
+  * ContentProviderRecord{4284e9c8 u0 com.android.providers.telephony/.FavoritesProvider}
+    proc=ProcessRecord{42848aa0 3147:com.android.phone/1001}
+    authority=fav-mms
+  * ContentProviderRecord{41fcb178 u0 com.google.android.gms/.people.service.PeopleContentProvider}
+    proc=ProcessRecord{4275c608 31456:com.google.android.gms/u0a9}
+    authority=com.google.android.gms.people
+  * ContentProviderRecord{427b8498 u0 com.huawei.ca/.service.APIProvider}
+    proc=ProcessRecord{428693b8 3181:com.huawei.ca/u0a36}
+    authority=com.huawei.caapi
+  * ContentProviderRecord{42b425a8 u0 com.huawei.appmarket/.service.search.microsearch.MicroSearchProvider}
+    proc=ProcessRecord{41cee758 2986:com.huawei.appmarket/u0a10}
+    authority=com.huawei.appmarket.micro.searchmanager.CONTENT_URI
+  * ContentProviderRecord{41dcb0f8 u0 com.google.android.gms/.chromesync.sync.SyncContentProvider}
+    proc=ProcessRecord{4275c608 31456:com.google.android.gms/u0a9}
+    authority=com.google.android.gms.chromesync
+  * ContentProviderRecord{42764040 u0 com.qihoo360.mobilesafe/.applock.data.AppLockContentProvider}
+    proc=ProcessRecord{41d0eca0 26736:com.qihoo360.mobilesafe:GuardService/u0a230}
+    authority=com.qihoo360.mobilesafe.applock
+  * ContentProviderRecord{43644c18 u0 com.qihoo.appstore/com.qihoo.sdk.report.common.MultiprocessSharedPreferences}
+    proc=ProcessRecord{429850a8 25483:com.qihoo.daemon/u0a232}
+    authority=3416a75f4cea9109507cacd8e2f2aefc
+  * ContentProviderRecord{41f79f60 u0 com.google.android.gms/.appstate.provider.AppStateContentProvider}
+    proc=ProcessRecord{4275c608 31456:com.google.android.gms/u0a9}
+    authority=com.google.android.gms.appstate
+  * ContentProviderRecord{4289e318 u0 com.huawei.systemmanager/.applock.datacenter.AppLockProvider}
+    proc=ProcessRecord{42868cb0 3468:com.huawei.systemmanager:service/1000}
+    authority=com.huawei.systemmanager.applockprovider
+  * ContentProviderRecord{41dd0200 u0 com.huawei.motionservice/.common.HwMotionProvider}
+    proc=ProcessRecord{43877e20 32640:com.huawei.motionservice/u0a45}
+    authority=com.huawei.providers.motions
+  * ContentProviderRecord{42b314b0 u0 com.google.android.gsf/.talk.TalkProvider}
+    proc=ProcessRecord{42dfbe40 31278:com.google.process.gapps/u0a9}
+    authority=com.google.android.providers.talk
+  * ContentProviderRecord{4299a838 u0 com.huawei.hwid/com.huawei.sns.sdk.sdkimpl.SNSSDKContentProvider}
+    proc=ProcessRecord{4353b2c8 29338:com.huawei.hwid/u0a41}
+    authority=com.huawei.android.sns.sdk
+  * ContentProviderRecord{42863d48 u0 com.android.providers.media/.MediaDocumentsProvider}
+    proc=ProcessRecord{429323d0 8823:android.process.media/u0a4}
+    authority=com.android.providers.media.documents
+  * ContentProviderRecord{427600b0 u0 com.qihoo360.mobilesafe/.accountsync.SyncProvider}
+    proc=ProcessRecord{41d0eca0 26736:com.qihoo360.mobilesafe:GuardService/u0a230}
+    authority=com.qihoo360.mobilesafe.accountsync.syncprovider
+  * ContentProviderRecord{42b8bcd8 u0 com.android.providers.contacts/.ContactsProvider2}
+    proc=ProcessRecord{42b921b8 25662:android.process.acore/u0a0}
+    launchingApp=ProcessRecord{42b921b8 25662:android.process.acore/u0a0}
+    authority=contacts;com.android.contacts
+    1 connections, 0 external handles
+      -> 26736:com.qihoo360.mobilesafe:GuardService/u0a230 s0/0 u1/1 +24m6s277ms
+  * ContentProviderRecord{41dc4e68 u0 com.google.android.gms/.people.debug.PeopleExportProvider}
+    proc=ProcessRecord{4275c608 31456:com.google.android.gms/u0a9}
+    authority=com.google.android.gms.people.export
+  * ContentProviderRecord{42374940 u0 com.huawei.lcagent/.db.LogCountContentProvider}
+    proc=ProcessRecord{4242be80 4006:com.huawei.lcagent/1000}
+    authority=com.huawei.lcagent.db.LogCountContentProvider
+  * ContentProviderRecord{41f3a200 u0 com.google.android.gms/.games.chimera.GamesContentProviderProxy}
+    proc=ProcessRecord{4275c608 31456:com.google.android.gms/u0a9}
+    authority=com.google.android.gms.games.background
+  * ContentProviderRecord{42ece2f8 u0 com.qihoo.appstore/com.qihoo.util.CommonProvider}
+    proc=ProcessRecord{4298a630 25521:com.qihoo.appstore/u0a232}
+    authority=com.qihoo.appstore.COMMONPROVIDER
+
+ACTIVITY MANAGER SERVICES (dumpsys activity services)
+  User 0 active services:
+  * ServiceRecord{427c5368 u0 com.android.bluetooth/.hid.HidService}
+    app=null
+    created=-8d1h55m35s400ms started=false connections=0
+  * ServiceRecord{42749ef8 u0 com.huawei.systemmanager/.sdk.tmsdk.TMSdkSecureService}
+    app=ProcessRecord{42396340 3540:com.huawei.systemmanager/1000}
+    created=-8d1h55m33s160ms started=true connections=0
+  * ServiceRecord{439529b0 u0 com.qihoo.appstore/com.qihoo.ls.SoService}
+    app=ProcessRecord{4298a630 25521:com.qihoo.appstore/u0a232}
+    created=-2h13m9s608ms started=true connections=0
+  * ServiceRecord{429e48c8 u0 com.huawei.android.ds/com.huawei.android.hicloud.hisync.serviceAIDL.HiSyncService}
+    app=ProcessRecord{42860338 5425:com.huawei.android.ds/1001}
+    created=-8d1h55m16s449ms started=true connections=0
+  * ServiceRecord{42a091f8 u0 com.huawei.android.hwaps/.ApsService}
+    app=ProcessRecord{42849ce8 3169:com.huawei.powergenie/1000}
+    created=-8d1h55m19s800ms started=true connections=0
+  * ServiceRecord{42434890 u0 com.huawei.systemmanager/.service.MainService}
+    app=ProcessRecord{42868cb0 3468:com.huawei.systemmanager:service/1000}
+    created=-8d1h55m33s864ms started=true connections=2
+    Connections:
+       -> 3468:com.huawei.systemmanager:service/1000
+       -> 3540:com.huawei.systemmanager/1000
+  * ServiceRecord{433071a8 u0 com.qihoo.appstore/.AppStoreNotificationListenerService}
+    app=ProcessRecord{429850a8 25483:com.qihoo.daemon/u0a232}
+    created=-2h13m11s458ms started=false connections=1
+    Connections:
+      act=android.service.notification.NotificationListenerService -> 2730:system/1000
+  * ServiceRecord{4287bef8 u0 android/com.huawei.android.pushagentproxy.PushService}
+    app=ProcessRecord{42872d98 7079:com.huawei.android.pushagent.PushService/1000}
+    created=-8d1h54m37s363ms started=true connections=0
+  * ServiceRecord{4286f578 u0 com.android.phone/.BluetoothPhoneService}
+    app=ProcessRecord{42848aa0 3147:com.android.phone/1001}
+    created=-8d1h55m33s988ms started=true connections=1
+    Connections:
+       -> 3147:com.android.phone/1001
+  * ServiceRecord{428a9be8 u0 com.huawei.powergenie/.pgmgmt.PGManager}
+    app=ProcessRecord{42849ce8 3169:com.huawei.powergenie/1000}
+    created=-8d1h55m36s50ms started=true connections=0
+  * ServiceRecord{4236dbc0 u0 com.huawei.lcagent/.service.LogCollectService}
+    app=ProcessRecord{4242be80 4006:com.huawei.lcagent/1000}
+    created=-8d1h55m38s74ms started=true connections=4
+    Connections:
+      act=com.huawei.lcagent.service.ILogCollect -> 2730:system/1000
+      act=com.huawei.lcagent.service.ILogCollect -> 29567:com.huawei.phoneservice:loguploadservice/u0a12
+      act=com.huawei.lcagent.service.ILogCollect -> 2730:system/1000
+      act=com.huawei.lcagent.service.ILogCollect -> 29294:com.huawei.phoneservice/u0a12
+  * ServiceRecord{41f9e090 u0 com.huawei.systemmanager/.power.BgPowerManagerService}
+    app=ProcessRecord{42868cb0 3468:com.huawei.systemmanager:service/1000}
+    created=-8d1h55m33s830ms started=true connections=0
+  * ServiceRecord{42449f40 u0 com.android.systemui/.ImageWallpaper}
+    app=ProcessRecord{4239f510 2954:com.android.systemui/u0a72}
+    created=-8d1h55m36s675ms started=false connections=1
+    Connections:
+      act=android.service.wallpaper.WallpaperService -> 2730:system/1000
+  * ServiceRecord{427ddb40 u0 com.android.incallui/.CallHandlerService}
+    app=ProcessRecord{42848aa0 3147:com.android.phone/1001}
+    created=-8d1h55m33s924ms started=false connections=1
+    Connections:
+      act=com.android.services.telephony.common.ICallHandlerService -> 3147:com.android.phone/1001
+  * ServiceRecord{42c4ed78 u0 com.google.android.gms/.auth.setup.devicesignals.LockScreenService}
+    app=ProcessRecord{42dfbe40 31278:com.google.process.gapps/u0a9}
+    created=-5h33m14s721ms started=true connections=0
+  * ServiceRecord{43a2b9b0 u0 com.google.android.gms/.gcm.GcmService}
+    app=ProcessRecord{42dfbe40 31278:com.google.process.gapps/u0a9}
+    created=-5h33m18s754ms started=true connections=0
+  * ServiceRecord{43b725a8 u0 com.google.android.gms/com.google.location.nearby.direct.service.NearbyDirectService}
+    app=ProcessRecord{4306bf50 325:com.google.android.gms.persistent/u0a9}
+    created=-5m47s162ms started=true connections=1
+    Connections:
+       -> 325:com.google.android.gms.persistent/u0a9
+  * ServiceRecord{4243fef0 u0 com.android.keyguard/.KeyguardService}
+    app=ProcessRecord{42452e50 2937:com.android.keyguard/1000}
+    created=-8d1h55m37s444ms started=false connections=1
+    Connections:
+       -> 2730:system/1000
+  * ServiceRecord{43893cf8 u0 com.huawei.gamebox/.plugin.gameservice.GameServiceApi}
+    app=ProcessRecord{42f2cc50 8674:com.huawei.gamebox/u0a235}
+    created=-5m45s132ms started=false connections=1
+    Connections:
+      act=com.huawei.gamebox.GAME_SERVICE pkg=com.huawei.gamebox -> 32165:com.otaku.CrusadersQuest.huawei/u0a234
+  * ServiceRecord{42a50248 u0 org.simalliance.openmobileapi.service/.SmartcardService}
+    app=ProcessRecord{42b5a360 6346:org.simalliance.openmobileapi.service:remote/1050}
+    created=-8d1h55m16s625ms started=true connections=0
+  * ServiceRecord{42787b70 u0 com.huawei.android.ds/com.huawei.android.hicloud.backup.serviceAIDL.BackupLogicService}
+    app=ProcessRecord{42860338 5425:com.huawei.android.ds/1001}
+    created=-8d1h55m16s417ms started=true connections=0
+  * ServiceRecord{4384d130 u0 com.cootek.smartdialer_oem_module/com.cootek.smartdialer.aidl.OemModuleAIDLService}
+    app=ProcessRecord{427cee90 3280:com.cootek.smartdialer_oem_module/u0a73}
+    created=-24m8s219ms started=false connections=1
+    Connections:
+      act=com.cootek.smartdialer.aidl.IOemModule -> 26655:com.android.contacts/u0a0
+  * ServiceRecord{42a1cd48 u0 com.huawei.bd/.BDService}
+    app=ProcessRecord{429d3560 5309:com.huawei.bd/1000}
+    created=-8d1h55m17s428ms started=true connections=0
+  * ServiceRecord{4278ee70 u0 com.android.bluetooth/.pbap.BluetoothPbapService}
+    app=null
+    created=-8d1h55m35s310ms started=false connections=0
+  * ServiceRecord{427e3f80 u0 com.huawei.android.ds/com.huawei.android.cg.CloudGallaryService}
+    app=ProcessRecord{42860338 5425:com.huawei.android.ds/1001}
+    created=-8d1h55m16s137ms started=true connections=1
+    Connections:
+      act=com.huawei.android.cg.CloudGallaryService -> 5425:com.huawei.android.ds/1001
+  * ServiceRecord{42bbcb48 u0 com.qihoo.appstore/com.morgoo.droidplugin.stub.ServiceStub$StubP01$P00}
+    app=ProcessRecord{427ed320 25770:com.qihoo.appstore:PluginP01/u0a232}
+    created=-24m50s410ms started=true connections=0
+  * ServiceRecord{42a17308 u0 com.cootek.smartdialer_oem_module/com.cootek.smartdialer.presentation.PresentationBindService}
+    app=ProcessRecord{427cee90 3280:com.cootek.smartdialer_oem_module/u0a73}
+    created=-8d1h55m9s218ms started=true connections=0
+  * ServiceRecord{424542c0 u0 com.android.bluetooth/.a2dp.A2dpService}
+    app=null
+    created=-8d1h55m23s727ms started=false connections=1
+    Connections:
+      act=android.bluetooth.IBluetoothA2dp -> 2730:system/1000
+  * ServiceRecord{42819750 u0 com.baidu.map.location/com.baidu.location.f}
+    app=ProcessRecord{42459608 3089:com.baidu.map.location/u0a15}
+    created=-8d1h55m36s229ms started=false connections=1
+    Connections:
+       -> 3089:com.baidu.map.location/u0a15
+  * ServiceRecord{43945330 u0 com.qihoo360.mobilesafe/.support.qpush.QihooPushService}
+    app=ProcessRecord{41d0eca0 26736:com.qihoo360.mobilesafe:GuardService/u0a230}
+    created=-24m2s222ms started=true connections=0
+  * ServiceRecord{4239f090 u0 com.android.systemui/.SystemUIService}
+    app=ProcessRecord{4239f510 2954:com.android.systemui/u0a72}
+    created=-8d1h55m37s359ms started=true connections=0
+  * ServiceRecord{42379ce0 u0 android/.hardware.location.GeofenceHardwareService}
+    app=ProcessRecord{422a9878 2730:system/1000}
+    created=-8d1h55m36s558ms started=false connections=1
+    Connections:
+       -> 2730:system/1000
+  * ServiceRecord{42398268 u0 com.huawei.android.powermonitor/.PowerMonitorService}
+    app=ProcessRecord{42831e90 3140:com.huawei.android.powermonitor/1000}
+    created=-8d1h55m22s8ms started=true connections=0
+  * ServiceRecord{4236dd40 u0 com.baidu.map.location/.BaiduNetworkLocationService}
+    app=ProcessRecord{42459608 3089:com.baidu.map.location/u0a15}
+    created=-8d1h55m36s602ms started=false connections=2
+    Connections:
+      act=com.android.location.service.v3.NetworkLocationProvider pkg=com.baidu.map.location -> 2730:system/1000
+      act=com.android.location.service.GeocodeProvider pkg=com.baidu.map.location -> 2730:system/1000
+  * ServiceRecord{43951d40 u0 com.qihoo360.mobilesafe/.service.helper.GuardHelperService}
+    app=ProcessRecord{41d0eca0 26736:com.qihoo360.mobilesafe:GuardService/u0a230}
+    created=-24m6s841ms started=true connections=0
+  * ServiceRecord{427fce60 u0 com.huawei.systemmanager/.preventmode.PreventModeService}
+    app=ProcessRecord{42868cb0 3468:com.huawei.systemmanager:service/1000}
+    created=-8d1h55m33s856ms started=true connections=0
+  * ServiceRecord{4283d078 u0 com.qihoo.appstore/com.morgoo.droidplugin.PluginManagerService}
+    app=ProcessRecord{429850a8 25483:com.qihoo.daemon/u0a232}
+    created=-2h13m10s41ms started=true connections=3
+    Connections:
+      pkg=com.qihoo.appstore -> 25483:com.qihoo.daemon/u0a232
+      pkg=com.qihoo.appstore -> 25770:com.qihoo.appstore:PluginP01/u0a232
+      pkg=com.qihoo.appstore -> 25521:com.qihoo.appstore/u0a232
+  * ServiceRecord{43930c10 u0 com.google.android.gms/com.google.android.location.reporting.service.ReportingAndroidService}
+    app=ProcessRecord{4306bf50 325:com.google.android.gms.persistent/u0a9}
+    created=-5m46s575ms started=false connections=1
+    Connections:
+      act=com.google.android.gms.location.reporting.service.START pkg=com.google.android.gms -> 325:com.google.android.gms.persistent/u0a9
+  * ServiceRecord{42e420b0 u0 com.google.android.gms/.nearby.messages.service.NearbyMessagesService}
+    app=ProcessRecord{4306bf50 325:com.google.android.gms.persistent/u0a9}
+    created=-5h33m0s549ms started=true connections=0
+  * ServiceRecord{4245ae48 u0 com.huawei.systemmanager/com.huawei.permission.HoldService}
+    app=ProcessRecord{42868cb0 3468:com.huawei.systemmanager:service/1000}
+    created=-8d1h55m33s847ms started=true connections=0
+  * ServiceRecord{4297c370 u0 com.huawei.systemmanager/com.huawei.optimizer.engine.demo.trash.AppCleanUpService}
+    app=ProcessRecord{42868cb0 3468:com.huawei.systemmanager:service/1000}
+    created=-8d1h55m18s30ms started=true connections=0
+  * ServiceRecord{42b5bf30 u0 com.google.android.gms/com.google.android.location.internal.server.GoogleLocationService}
+    app=ProcessRecord{4306bf50 325:com.google.android.gms.persistent/u0a9}
+    created=-5h33m13s594ms started=true connections=0
+  * ServiceRecord{42f21de8 u0 com.google.android.gms/com.google.android.contextmanager.service.ContextManagerService}
+    app=ProcessRecord{4306bf50 325:com.google.android.gms.persistent/u0a9}
+    created=-5h33m14s435ms started=true connections=1
+    Connections:
+      act=com.google.android.contextmanager.service.ContextManagerService.START pkg=com.google.android.gms -> 325:com.google.android.gms.persistent/u0a9
+  * ServiceRecord{430ace50 u0 com.google.android.gms/com.google.android.location.internal.GoogleLocationManagerService}
+    app=ProcessRecord{4306bf50 325:com.google.android.gms.persistent/u0a9}
+    created=-5h33m14s467ms started=true connections=1
+    Connections:
+      act=com.google.android.location.internal.GoogleLocationManagerService.START pkg=com.google.android.gms -> 325:com.google.android.gms.persistent/u0a9
+  * ServiceRecord{428da3f0 u0 com.huawei.systemmanager/com.huawei.netmanager.service.NetControllService}
+    app=ProcessRecord{42868cb0 3468:com.huawei.systemmanager:service/1000}
+    created=-8d1h55m33s822ms started=true connections=0
+  * ServiceRecord{42868a58 u0 com.cootek.smartdialer_oem_module/com.cootek.smartdialer.TService}
+    app=ProcessRecord{427cee90 3280:com.cootek.smartdialer_oem_module/u0a73}
+    created=-8d1h55m35s633ms started=true connections=0
+  * ServiceRecord{42b403b8 u0 com.android.providers.media/.MtpService}
+    app=ProcessRecord{429323d0 8823:android.process.media/u0a4}
+    created=-24m49s967ms started=true connections=1
+    Connections:
+       -> 8823:android.process.media/u0a4
+  * ServiceRecord{42cfa5e8 u0 com.google.android.gms/.deviceconnection.service.DeviceConnectionServiceBroker}
+    app=ProcessRecord{4306bf50 325:com.google.android.gms.persistent/u0a9}
+    created=-5h33m14s432ms started=true connections=0
+  * ServiceRecord{42803d48 u0 com.android.bluetooth/.hfp.HeadsetService}
+    app=null
+    created=-8d1h55m33s943ms started=false connections=4
+    Connections:
+      act=android.bluetooth.IBluetoothHeadset -> 3147:com.android.phone/1001
+      act=android.bluetooth.IBluetoothHeadset -> 2730:system/1000
+      act=android.bluetooth.IBluetoothHeadset -> 3147:com.android.phone/1001
+      act=android.bluetooth.IBluetoothHeadset -> 3147:com.android.phone/1001
+  * ServiceRecord{4243cbb8 u0 com.nuance.swype.emui/com.nuance.swype.input.HuaweiIME}
+    app=ProcessRecord{4242b3d8 3080:com.nuance.swype.emui/u0a34}
+    created=-8d1h55m36s633ms started=false connections=1
+    Connections:
+      act=android.view.InputMethod -> 2730:system/1000
+  * ServiceRecord{428ee6e8 u0 com.huawei.systemmanager/.optimize.smcs.SMCSService}
+    app=ProcessRecord{42868cb0 3468:com.huawei.systemmanager:service/1000}
+    created=-8d1h55m33s671ms started=true connections=0
+  * ServiceRecord{4279b7a8 u0 com.android.smspush/.WapPushManager}
+    app=ProcessRecord{427b68c0 3386:com.android.smspush/u0a76}
+    created=-8d1h55m34s954ms started=false connections=4
+    Connections:
+      act=com.android.internal.telephony.IWapPushManager -> 3147:com.android.phone/1001
+      act=com.android.internal.telephony.IWapPushManager -> 3147:com.android.phone/1001
+      act=com.android.internal.telephony.IWapPushManager -> 3147:com.android.phone/1001
+      act=com.android.internal.telephony.IWapPushManager -> 3147:com.android.phone/1001
+  * ServiceRecord{428e0af0 u0 com.android.phone.recorder/.RecorderServer}
+    app=ProcessRecord{42848aa0 3147:com.android.phone/1001}
+    created=-8d1h55m33s621ms started=false connections=1
+    Connections:
+      act=com.android.phone.action.voiceRecoderService -> 3147:com.android.phone/1001
+  * ServiceRecord{42ca3530 u0 com.huawei.hidisk/com.huawei.appmarket.service.deamon.download.DownloadService}
+    app=ProcessRecord{427511b8 15452:com.huawei.hidisk/u0a38}
+    created=-23h38m20s467ms started=true connections=0
+  * ServiceRecord{421acc68 u0 android/com.android.internal.backup.LocalTransportService}
+    app=ProcessRecord{422a9878 2730:system/1000}
+    created=-8d1h55m37s494ms started=false connections=1
+    Connections:
+      act=android.backup.TRANSPORT_HOST -> 2730:system/1000
+  * ServiceRecord{427a7738 u0 com.huawei.systemmanager/.applock.datacenter.AppLockService}
+    app=ProcessRecord{42868cb0 3468:com.huawei.systemmanager:service/1000}
+    created=-8d1h55m33s818ms started=true connections=0
+  * ServiceRecord{43868728 u0 com.nuance.swype.emui/com.nuance.connect.service.ConnectClient}
+    app=ProcessRecord{4242b3d8 3080:com.nuance.swype.emui/u0a34}
+    created=-2h33m55s457ms started=true connections=0
+  * ServiceRecord{42bc03c8 u0 com.huawei.systemmanager/.widget.OnekeyCleanService}
+    app=ProcessRecord{42868cb0 3468:com.huawei.systemmanager:service/1000}
+    created=-6d2h18m28s30ms started=true connections=0
+  * ServiceRecord{423bd910 u0 com.android.location.fused/.FusedLocationService}
+    app=ProcessRecord{422a9878 2730:system/1000}
+    created=-8d1h55m36s589ms started=false connections=1
+    Connections:
+      act=com.android.location.service.FusedLocationProvider pkg=com.android.location.fused -> 2730:system/1000
+  * ServiceRecord{42909700 u0 com.google.android.gms/.common.stats.GmsCoreStatsService}
+    app=ProcessRecord{4306bf50 325:com.google.android.gms.persistent/u0a9}
+    created=-5h33m13s152ms started=true connections=0
+  * ServiceRecord{43569450 u0 com.otaku.CrusadersQuest.huawei/com.tencent.android.tpush.service.XGPushService}
+    app=ProcessRecord{43891c88 1125:com.otaku.CrusadersQuest.huawei:xg_service_v2/u0a234}
+    created=-5m37s645ms started=true connections=0
+  * ServiceRecord{429fe6c0 u0 com.huawei.ca/.service.CAService}
+    app=ProcessRecord{428693b8 3181:com.huawei.ca/u0a36}
+    created=-8d1h55m19s787ms started=true connections=0
+  * ServiceRecord{42791ea0 u0 com.android.bluetooth/.map.BluetoothMapService}
+    app=null
+    created=-8d1h55m35s361ms started=false connections=0
+  * ServiceRecord{427fec20 u0 com.huawei.systemmanager/com.huawei.harassmentinterception.service.HarassmentInterceptionService}
+    app=ProcessRecord{42868cb0 3468:com.huawei.systemmanager:service/1000}
+    created=-8d1h55m33s833ms started=true connections=0
+  * ServiceRecord{4244ed08 u0 com.android.phone/.TelephonyDebugService}
+    app=ProcessRecord{42848aa0 3147:com.android.phone/1001}
+    created=-8d1h55m34s74ms started=true connections=0
+  * ServiceRecord{43306e90 u0 com.qihoo.appstore/com.qihoo.core.CoreService}
+    app=ProcessRecord{429850a8 25483:com.qihoo.daemon/u0a232}
+    created=-2h13m9s876ms started=true connections=0
+  * ServiceRecord{439550f8 u0 com.qihoo360.mobilesafe/.support.download.DownloadService}
+    app=null
+    created=-23m56s740ms started=true connections=0
+  * ServiceRecord{43945428 u0 com.qihoo360.mobilesafe/.service.GuardCoreService}
+    app=ProcessRecord{41d0eca0 26736:com.qihoo360.mobilesafe:GuardService/u0a230}
+    created=-24m6s811ms started=true connections=1
+    Connections:
+       -> 26736:com.qihoo360.mobilesafe:GuardService/u0a230
+  * ServiceRecord{42447bf8 u0 com.android.bluetooth/.pan.PanService}
+    app=null
+    created=-8d1h55m38s35ms started=false connections=1
+    Connections:
+      act=android.bluetooth.IBluetoothPan -> 2730:system/1000
+  * ServiceRecord{429a9878 u0 com.huawei.systemmanager/.SecureService}
+    app=ProcessRecord{42868cb0 3468:com.huawei.systemmanager:service/1000}
+    created=-8d1h55m32s707ms started=true connections=0
+  * ServiceRecord{42a09100 u0 com.cootek.smartdialer_oem_module/com.cootek.presentation.service.PresentationService}
+    app=ProcessRecord{427cee90 3280:com.cootek.smartdialer_oem_module/u0a73}
+    created=-8d1h55m9s205ms started=true connections=1
+    Connections:
+       -> 3280:com.cootek.smartdialer_oem_module/u0a73
+       -> 3280:com.cootek.smartdialer_oem_module/u0a73
+
+  Restarting services:
+  * Restarting ServiceRecord{439550f8 u0 com.qihoo360.mobilesafe/.support.download.DownloadService}
+    intent={cmp=com.qihoo360.mobilesafe/.support.download.DownloadService}
+    packageName=com.qihoo360.mobilesafe
+    processName=com.qihoo360.mobilesafe:download
+    baseDir=/data/app/com.qihoo360.mobilesafe-1.apk
+    dataDir=/data/data/com.qihoo360.mobilesafe
+    app=null
+    createTime=-23m56s765ms startingBgTimeout=-23m24s750ms
+    lastActivity=-17m5s252ms restartTime=-17m5s252ms createdFromFg=false
+    startRequested=true delayedStop=false stopIfKilled=false callStart=true lastStartId=18
+    restartCount=1 restartDelay=-1d9h45m22s91ms nextRestartTime=+9s495ms crashCount=0
+
+ACTIVITY MANAGER ACTIVITIES (dumpsys activity activities)
+  Stack #0:
+    Task id #1
+      TaskRecord{427d1d48 #1 A=com.huawei.android.launcher U=0 sz=1}
+      Intent { act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10200000 cmp=com.huawei.android.launcher/.Launcher }
+        Hist #0: ActivityRecord{427cf7b0 u0 com.huawei.android.launcher/.Launcher t1}
+          Intent { act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10000000 cmp=com.huawei.android.launcher/.Launcher }
+          ProcessRecord{428039c0 3197:com.huawei.android.launcher/u0a42}
+
+    Running activities (most recent first):
+      TaskRecord{427d1d48 #1 A=com.huawei.android.launcher U=0 sz=1}
+        Run #0: ActivityRecord{427cf7b0 u0 com.huawei.android.launcher/.Launcher t1}
+
+  Stack #1:
+    Task id #77
+      TaskRecord{42b91958 #77 A=com.otaku.CrusadersQuest.huawei U=0 sz=1}
+      Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.otaku.CrusadersQuest.huawei/com.toastgame.hsp.otakuchannel.LaunchActivity }
+        Hist #0: ActivityRecord{43281e48 u0 com.otaku.CrusadersQuest.huawei/com.lc.locomactivity.LocomActivity t77}
+          Intent { cmp=com.otaku.CrusadersQuest.huawei/com.lc.locomactivity.LocomActivity }
+          ProcessRecord{43966e78 32165:com.otaku.CrusadersQuest.huawei/u0a234}
+
+    Running activities (most recent first):
+      TaskRecord{42b91958 #77 A=com.otaku.CrusadersQuest.huawei U=0 sz=1}
+        Run #0: ActivityRecord{43281e48 u0 com.otaku.CrusadersQuest.huawei/com.lc.locomactivity.LocomActivity t77}
+
+    mResumedActivity: ActivityRecord{43281e48 u0 com.otaku.CrusadersQuest.huawei/com.lc.locomactivity.LocomActivity t77}
+
+  mFocusedActivity: ActivityRecord{43281e48 u0 com.otaku.CrusadersQuest.huawei/com.lc.locomactivity.LocomActivity t77}
+  mDismissKeyguardOnNextActivity=false
+  mFocusedStack=ActivityStack{42e46c88 stackId=24, 1 tasks} mStackState=STACK_STATE_HOME_IN_BACK
+  mSleepTimeout=false
+  mCurTaskId=77
+  mUserStackInFront={}
+
+  Recent tasks:
+  * Recent #0: TaskRecord{42b91958 #77 A=com.otaku.CrusadersQuest.huawei U=0 sz=1}
+  * Recent #1: TaskRecord{427d1d48 #1 A=com.huawei.android.launcher U=0 sz=1}
+  * Recent #2: TaskRecord{42a23388 #76 A=com.android.systemui U=0 sz=0}
+  * Recent #3: TaskRecord{437133d0 #75 A=com.google.android.gms U=0 sz=0}
+  * Recent #4: TaskRecord{42a977b8 #53 A=com.qihoo360.mobilesafe U=0 sz=0}
+  * Recent #5: TaskRecord{427e74c0 #45 A=com.qihoo.appstore U=0 sz=0}
+  * Recent #6: TaskRecord{4282cbd8 #5 A=appstore.desk.notification U=0 sz=0}
+
+ACTIVITY MANAGER RUNNING PROCESSES (dumpsys activity processes)
+  Process LRU list (sorted by oom_adj, 47 total, non-act at 2, non-svc at 2):
+    PERS #46: sys   F/ /P  trm: 0 2730:system/1000 (fixed)
+    PERS #45: pers  F/ /P  trm: 0 2937:com.android.keyguard/1000 (fixed)
+    PERS #44: pers  F/ /P  trm: 0 2954:com.android.systemui/u0a72 (fixed)
+    PERS #43: pers  F/ /P  trm: 0 3140:com.huawei.android.powermonitor/1000 (fixed)
+    PERS #42: pers  F/ /P  trm: 0 3147:com.android.phone/1001 (fixed)
+    PERS #41: pers  F/ /P  trm: 0 3169:com.huawei.powergenie/1000 (fixed)
+    PERS #40: pers  F/ /P  trm: 0 3181:com.huawei.ca/u0a36 (fixed)
+    Proc #12: fore  F/ /IF trm: 0 3468:com.huawei.systemmanager:service/1000 (provider)
+        com.huawei.systemmanager/com.huawei.notificationmanager.db.DBProvider<=Proc{2730:system/1000}
+    Proc # 0: fore  F/A/T  trm: 0 32165:com.otaku.CrusadersQuest.huawei/u0a234 (top-activity)
+    Proc #39: vis   B/ /IB trm: 0 3089:com.baidu.map.location/u0a15 (service)
+        com.baidu.map.location/.BaiduNetworkLocationService<=Proc{2730:system/1000}
+    Proc #38: vis   F/ /IF trm: 0 3386:com.android.smspush/u0a76 (service)
+        com.android.smspush/.WapPushManager<=Proc{3147:com.android.phone/1001}
+    Proc #29: vis   F/ /IF trm: 0 4006:com.huawei.lcagent/1000 (service)
+        com.huawei.lcagent/.service.LogCollectService<=Proc{2730:system/1000}
+    Proc #18: vis   F/ /T  trm: 0 8674:com.huawei.gamebox/u0a235 (service)
+        com.huawei.gamebox/.plugin.gameservice.GameServiceApi<=Proc{32165:com.otaku.CrusadersQuest.huawei/u0a234}
+    Proc # 4: vis   F/S/IF trm: 0 25483:com.qihoo.daemon/u0a232 (service)
+        com.qihoo.appstore/.AppStoreNotificationListenerService<=Proc{2730:system/1000}
+    Proc #36: prcp  F/ /S  trm: 0 7079:com.huawei.android.pushagent.PushService/1000 (cch-started-services)
+    Proc #33: prcp  F/ /IF trm: 0 3080:com.nuance.swype.emui/u0a34 (service)
+        com.nuance.swype.emui/com.nuance.swype.input.HuaweiIME<=Proc{2730:system/1000}
+    Proc #26: prcp  F/S/IF trm: 0 26736:com.qihoo360.mobilesafe:GuardService/u0a230 (fg-service)
+    Proc #19: prcp  F/ /S  trm: 0 8823:android.process.media/u0a4 (started-services)
+    Proc #13: prcp  F/ /IF trm: 0 25662:android.process.acore/u0a0 (provider)
+        com.android.providers.contacts/.ContactsProvider2<=Proc{26736:com.qihoo360.mobilesafe:GuardService/u0a230}
+    Proc #22: svc   B/ /S  trm: 0 25521:com.qihoo.appstore/u0a232 (started-services)
+    Proc # 3: svc   B/ /S  trm: 0 31278:com.google.process.gapps/u0a9 (started-services)
+    Proc # 2: svc   B/ /S  trm: 0 325:com.google.android.gms.persistent/u0a9 (started-services)
+    Proc # 1: home  B/ /HO trm: 0 3197:com.huawei.android.launcher/u0a42 (home)
+    Proc #34: svcb  B/ /S  trm: 0 25770:com.qihoo.appstore:PluginP01/u0a232 (started-services)
+    Proc #16: svcb  B/ /S  trm: 0 3280:com.cootek.smartdialer_oem_module/u0a73 (started-services)
+    Proc #15: svcb  B/ /S  trm: 0 5425:com.huawei.android.ds/1001 (started-services)
+    Proc #14: svcb  B/ /CE trm: 0 26655:com.android.contacts/u0a0 (cch-empty)
+    Proc # 6: svcb  B/ /S  trm: 0 1125:com.otaku.CrusadersQuest.huawei:xg_service_v2/u0a234 (started-services)
+    Proc # 7: cch   B/ /CE trm: 0 31456:com.google.android.gms/u0a9 (cch-empty)
+    Proc # 5: cch   B/ /CE trm: 0 2986:com.huawei.appmarket/u0a10 (cch-empty)
+    Proc # 9: cch+2 B/ /S  trm: 0 5309:com.huawei.bd/1000 (cch-started-services)
+    Proc # 8: cch+2 B/ /CE trm: 0 32663:com.android.vending/u0a249 (cch-empty)
+    Proc #11: cch+4 B/ /CE trm: 0 32640:com.huawei.motionservice/u0a45 (cch-empty)
+    Proc #10: cch+4 B/ /S  trm: 0 3540:com.huawei.systemmanager/1000 (cch-started-services)
+    Proc #37: cch+6 B/ /S  trm: 0 6346:org.simalliance.openmobileapi.service:remote/1050 (cch-started-services)
+    Proc #35: cch+6 B/ /S  trm: 0 15452:com.huawei.hidisk/u0a38 (cch-started-services)
+    Proc #32: cch+6 B/ /CE trm: 0 29473:com.huawei.android.hwouc:hwbd/u0a47 (cch-empty)
+    Proc #31: cch+6 B/ /CE trm: 0 29495:com.huawei.android.pushagent/u0a51 (cch-empty)
+    Proc #30: cch+6 B/ /CE trm: 0 25048:com.vlife.huawei.wallpaper:main/u0a74 (cch-empty)
+    Proc #28: cch+6 B/ /CE trm: 0 29567:com.huawei.phoneservice:loguploadservice/u0a12 (cch-empty)
+    Proc #27: cch+6 B/ /CE trm: 0 29294:com.huawei.phoneservice/u0a12 (cch-empty)
+    Proc #25: cch+6 B/ /CE trm: 0 29322:com.huawei.hwvplayer/u0a13 (cch-empty)
+    Proc #24: cch+6 B/ /CE trm: 0 29387:com.android.email/u0a5 (cch-empty)
+    Proc #23: cch+6 B/ /CE trm: 0 29485:com.huawei.android.hwouc:hwbdservice/u0a47 (cch-empty)
+    Proc #21: cch+6 B/ /CE trm: 0 31328:com.google.android.gms.feedback/u0a9 (cch-empty)
+    Proc #20: cch+6 B/ /CE trm: 0 29533:com.huawei.android.totemweather/u0a59 (cch-empty)
+    Proc #17: cch+6 B/ /CE trm: 0 29338:com.huawei.hwid/u0a41 (cch-empty)
+
+  mStartedUsers:
+    User #0: mState=RUNNING
+  mStartedUserArray: [0]
+  mUserLru: [0]
+  mHomeProcess: ProcessRecord{428039c0 3197:com.huawei.android.launcher/u0a42}
+  mPreviousProcess: ProcessRecord{43966e78 32165:com.otaku.CrusadersQuest.huawei/u0a234}
+  mConfiguration: {1.0 ?mcc?mnc zh_CN ldltr sw360dp w640dp h335dp 320dpi nrml long land finger -keyb/v/h -nav/h suim:1 s.61}

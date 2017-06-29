@@ -28,9 +28,9 @@ class MainWindow:
     def __init__(self):
         self.frame = Tk()
         self.frame.title('活动查看日志')
-        self.frame.geometry('1000x600')
+        self.frame.geometry('1100x1100')
         self.frame.resizable(width=True, height=True)  # 宽不可变, 高可变,默认为True
-        self.frame.minsize(200, 200)
+        self.frame.minsize(100, 150)
         self.cf = self.read_config_jump('jumplist.conf')
 
 
@@ -42,10 +42,11 @@ class MainWindow:
         self.condition = StringVar()
         self.pic = StringVar()
         self.actpic = StringVar()
-        self.reward =StringVar()
+        self.reward = StringVar()
         self.actdes = StringVar()
         self.actID =StringVar()
         self.item = StringVar()
+        self.itemid = StringVar()
 
         self.label = Label(self.frame, text='数据库')
         self.box = ttk.Combobox(self.frame, textvariable=self.server, state='readonly')
@@ -60,7 +61,9 @@ class MainWindow:
         self.label10 = Label(self.frame, text='活动关键字')
         self.Lb2 = Listbox(self.frame, width=100, height=4, bg='#BFEFFF')
         self.entry10 = Entry(self.frame, textvariable=self.actdes, width=100, bg='#C1FFC1')
-        self.button2 = Button(self.frame, text='查询', command=self.select_actid)
+        self.button2 = Button(self.frame, text='查询')
+        # self.button2.bind('<Return>', self.select_actid)
+        # self.button2.focus_get()
         self.Lb2.grid(row=2, column=2)
         self.entry10.grid(row=1, column=2)
         self.button2.grid(row=1, column=3)
@@ -124,11 +127,30 @@ class MainWindow:
         self.button3.grid(row=10, column=3)
         self.label11.grid(row=10, column=1)
         # self.Lb3.bind('<<ListboxSelect>>', self.click_button)
+        self.Lb3.bind('<<ListboxSelect>>', self.click_button_item)
+
+        self.label12 = Label(self.frame, text='宝箱ID')
+        self.entry12 = Entry(self.frame, textvariable=self.itemid, width=100, bg='#C1FFC1')
+        self.button4 = Button(self.frame, text='查询', command=self.select_box)
+        self.label12.grid(row=12, column=1)
+        self.entry12.grid(row=12, column=2)
+        self.button4.grid(row=12, column=3)
+
+        self.Lb4 = Listbox(self.frame, width=100, height=10, bg='#BFEFFF')
+        self.Lb4.grid(row=13, column=2)
+# 选中活动列表中活动触发事件
 
     def click_button(self, event):
         if len(self.Lb2.curselection()) != 0:
             self.actID.set(self.Lb2.get(self.Lb2.curselection())[1])
             self.select()
+
+# 选中宝箱列表中宝箱ID触发事件
+
+    def click_button_item(self, event):
+        if len(self.Lb3.curselection()) != 0:
+            self.itemid.set(self.Lb3.get(self.Lb3.curselection())[1])
+            # self.select()
 
     def run(self):
         self.frame.mainloop()
@@ -171,7 +193,7 @@ class MainWindow:
             print('连接数据库失败')
             sys.exit()
 
-# 查询数据
+# 查询活动数据
     def select(self, args=None):
         activityID = None
         if self.Lb1.size() != 0:
@@ -249,16 +271,16 @@ class MainWindow:
                 cursor.close()
 
 # 模糊搜索活动
-    def select_actid(self, args=None):
+    def select_actid(self, event):
         actdes = None
         if self.Lb2.size() != 0:
             self.Lb2.delete(0, self.Lb2.size())
         if self.entry10.get():
-            actdes = self.entry10.get()
+            actdes = self.entry10.get().strip()
         else:
             print('请输入活动关键字')
             return
-        sql_act = 'select Comment, ActivityId from t_s_activity_task where Comment LIKE "%{abc}%"'.format(abc=actdes)
+        sql_act = 'select Heading, ID from t_s_activity_performance where Heading LIKE "%{abc}%"'.format(abc=actdes)
 
         cursor = None
         try:
@@ -309,6 +331,91 @@ class MainWindow:
         except Exception as e:
             print(e)
             print('链接服务器失败')
+        finally:
+            if cursor:
+                cursor.close()
+
+    def select_box(self, args=None):
+        itemid = None
+        if self.Lb4.size() != 0:
+            self.Lb4.delete(0, self.Lb4.size())
+        if self.entry12.get():
+            itemid = self.entry12.get()
+        else:
+            print('请输入宝箱ID')
+            return
+        sql_box = 'SELECT DropGroup,ItemName,ItemCount,ItemWeight FROM t_s_reward_missionitem WHERE DropID in (SELECT TargetID FROM t_s_item where id = %s)' % itemid
+
+        cursor = None
+        try:
+            self.connect_db()
+            cursor = self.coon.cursor()
+            cursor.execute(sql_box)
+            box_item = cursor.fetchall()
+            # 过滤掉权重为0的物品
+            box_item_list = []
+            for item in box_item:
+                if item[-1] != 0:
+                    box_item_list.append(list(item))
+            print(box_item_list)
+            # 根据dropgroup分组
+            dropgroup_list = []
+            for item in box_item_list:
+                if item[0] not in dropgroup_list:
+                    dropgroup_list.append(item[0])
+            print(dropgroup_list)
+            dropgroup_list_item = [list() for i in range(len(dropgroup_list))]
+            print(dropgroup_list_item)
+            i = 0
+            for dropgroup in dropgroup_list:
+                for item in box_item_list:
+                    print(item)
+                    if dropgroup == item[0]:
+                        dropgroup_list_item[i].append(item)
+                i += 1
+            print(dropgroup_list_item)
+            print('============')
+
+
+            # 分组计算权重
+            item_weight_add_list = []
+            for group in dropgroup_list_item:
+            # 获取权重总值
+                item_weight_add = 0
+                for item in group:
+                    item_weight_add += int(item[-1])
+                item_weight_add_list.append(item_weight_add)
+            print(item_weight_add_list)
+
+            # 列表中加上权重百分比
+            item_weight = []
+            for weight in item_weight_add_list:
+                for item in box_item_list:
+                    item_baifen = str(round(int(item[-1])*100/weight, 2)) + '%'
+                    item_weight.append(item + [item_baifen])
+            print(item_weight)
+            # for i in range(len(item_weight)):
+            #     self.Lb4.insert(i, item_weight[i][3] + '    ' + item_weight[i][-1])
+            # if len(rewards) != 0:
+            #     name_list = []
+            #     for reward in rewards_list:
+            #         for reward_1 in reward.split('|'):
+            #             cursor.execute('select name from t_s_item where ID=%s' % reward_1.split(',')[0])
+            #             name_1 = cursor.fetchall()[0][0]
+            #             reward = reward.replace(reward_1.split(',')[0], name_1)
+            #         name_list.append(reward)
+            #     name_list_2 = []
+            #     for i in range(len(name_list)):
+            #         if list(list(comment[i]))[1] == '':
+            #             name_list_2.append(list(list(comment[i]))[0] + '   ' + '没有配置state' + '   ' + name_list[i])
+            #         else:
+            #             name_list_2.append(list(list(comment[i]))[0] + '   ' + list(list(comment[i]))[1] + '   ' + name_list[i])
+            #     for i in range(len(name_list_2)):
+            #         self.Lb1.insert(i, name_list_2[i])
+            # else:
+            #     pass
+        except Exception as e:
+            print(e)
         finally:
             if cursor:
                 cursor.close()

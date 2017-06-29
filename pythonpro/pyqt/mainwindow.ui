@@ -1,0 +1,753 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1400</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QSplitter" name="splitter_11">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>10</y>
+      <width>241</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+    <widget class="QLabel" name="label_9">
+     <property name="text">
+      <string>       数据库</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="comboBox_3"/>
+   </widget>
+   <widget class="QWidget" name="">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>50</y>
+      <width>1216</width>
+      <height>516</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_4">
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <item>
+          <widget class="QLineEdit" name="skillLineEdit_3">
+           <property name="toolTip">
+            <string>输入技能关键字</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QListWidget" name="skillListWidget_3">
+           <property name="minimumSize">
+            <size>
+             <width>200</width>
+             <height>100</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>200</width>
+             <height>100</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QTableWidget" name="skillTableWidget">
+         <property name="minimumSize">
+          <size>
+           <width>1000</width>
+           <height>100</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>100</height>
+          </size>
+         </property>
+         <row>
+          <property name="text">
+           <string>1</string>
+          </property>
+         </row>
+         <column>
+          <property name="text">
+           <string>SkillID</string>
+          </property>
+          <property name="toolTip">
+           <string>ID</string>
+          </property>
+          <property name="whatsThis">
+           <string/>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Name</string>
+          </property>
+          <property name="toolTip">
+           <string>技能名称</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Display</string>
+          </property>
+          <property name="toolTip">
+           <string>技能表现表ID t_s_skill_performa</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>LevelLimit</string>
+          </property>
+          <property name="toolTip">
+           <string>激活技能或解锁战斗道具的角色等级</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>NextSkill</string>
+          </property>
+          <property name="toolTip">
+           <string>下一等级ID</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>CostSkillPoint</string>
+          </property>
+          <property name="toolTip">
+           <string>升级下一级技能所需消耗技能点</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>CostGold</string>
+          </property>
+          <property name="toolTip">
+           <string>升级下一级技能所需消耗银币</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>FightingForce</string>
+          </property>
+          <property name="toolTip">
+           <string>战斗力</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Type</string>
+          </property>
+          <property name="toolTip">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;主动技能 0，永久被动技能：&lt;/p&gt;&lt;p&gt;常驻生效,属性值直接添加在角色面板或进入战斗场景后自动施加buff --目前无效&lt;/p&gt;&lt;p&gt; 1，被动技能：选定后，进入战斗场景后自动施加buff &lt;/p&gt;&lt;p&gt;2，主动技能：选定后，需使用才可生效 &lt;/p&gt;&lt;p&gt;3，必杀技：始终与武器捆绑 &lt;/p&gt;&lt;p&gt;4，公共技能 &lt;/p&gt;&lt;p&gt;5，道具技能 &lt;/p&gt;&lt;p&gt;6，宠物技能&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>MutualExclusion</string>
+          </property>
+          <property name="toolTip">
+           <string>技能自身所属的分类
+1,替换武器
+2,跳过回合
+3,必杀技
+4,旧
+5,特殊
+0,常规</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Compatible</string>
+          </property>
+          <property name="toolTip">
+           <string>兼容
+本技能兼容的分类
+
+使用了MutualExclusion类型以后，还能使用的技能类型</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Cooldown</string>
+          </property>
+          <property name="toolTip">
+           <string>兼容
+本技能兼容的分类
+
+使用了MutualExclusion类型以后，还能使用的技能类型</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>TimesPerTurn</string>
+          </property>
+          <property name="toolTip">
+           <string>每回合使用次数限定</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>CostActPoint</string>
+          </property>
+          <property name="toolTip">
+           <string>使用技能需要消耗消耗行动力数量</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>CostAnger</string>
+          </property>
+          <property name="toolTip">
+           <string>消耗怒气</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Buff</string>
+          </property>
+          <property name="toolTip">
+           <string>状态
+可能填写多个|分隔
+buffer表</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Delay</string>
+          </property>
+          <property name="toolTip">
+           <string>延迟值</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>IsEndTurn</string>
+          </property>
+          <property name="toolTip">
+           <string>是否结束回合</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>User</string>
+          </property>
+          <property name="toolTip">
+           <string>使用者
+0，玩家；1，NPC。</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>UseType</string>
+          </property>
+          <property name="toolTip">
+           <string>技能Tag分类用于AI调用
+可配置多项，竖线分割
+（主动技能
+0，永久被动技能：常驻生效，属性值直接添加在角色面板或进入战斗场景后自动施加buff --目前无效
+1，被动技能：选定后，进入战斗场景后自动施加buff
+2，主动技能：选定后，需使用才可生效
+3，必杀技：始终与武器捆绑
+4，公共技能
+5，道具技能
+6，宠物技能-非治疗
+7，未知
+8，未知
+9：宠物技能-治疗类</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>SubType</string>
+          </property>
+          <property name="toolTip">
+           <string>技能子类型
+0，无特殊子类型
+1，普通技能-武器技能
+2，普通技能-武器必杀技
+3，普通技能-通用技能
+4，普通技能-被动技能
+5，道具技能
+6，宠物技能
+7，无法首发的道具技能</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>IsAttackSkill</string>
+          </property>
+          <property name="toolTip">
+           <string>是否是攻击技能
+0，非攻击技能
+1，攻击技能
+----无效字段</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Damage</string>
+          </property>
+          <property name="toolTip">
+           <string>杀伤权重</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Dig</string>
+          </property>
+          <property name="toolTip">
+           <string>挖坑权重</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>ButtonOrder</string>
+          </property>
+          <property name="toolTip">
+           <string>技能在按钮上的次序</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Level</string>
+          </property>
+          <property name="toolTip">
+           <string>技能等级</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>BasicSkill</string>
+          </property>
+          <property name="toolTip">
+           <string>技能等级为1时的ID</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>CostDonate</string>
+          </property>
+          <property name="toolTip">
+           <string>学习此技能消耗的贡献</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>FightUseCount</string>
+          </property>
+          <property name="toolTip">
+           <string>战斗中可使用次数
+填-1为无限次使用</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>CanHold</string>
+          </property>
+          <property name="toolTip">
+           <string>角色技能专用，是否允许战前携带</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Sort</string>
+          </property>
+          <property name="toolTip">
+           <string>道具技能专用。在客户端选择技能时的排序。</string>
+          </property>
+         </column>
+         <item row="0" column="0">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="toolTip">
+           <string extracomment="123456"/>
+          </property>
+         </item>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <item>
+          <widget class="QLabel" name="label_7">
+           <property name="minimumSize">
+            <size>
+             <width>200</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>20</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>                      BUFF列表</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QListWidget" name="buffListWidget_3">
+           <property name="minimumSize">
+            <size>
+             <width>200</width>
+             <height>200</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>200</width>
+             <height>200</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QTableWidget" name="buffTableWidget">
+         <property name="minimumSize">
+          <size>
+           <width>1000</width>
+           <height>200</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>200</height>
+          </size>
+         </property>
+         <column>
+          <property name="text">
+           <string>ID</string>
+          </property>
+          <property name="toolTip">
+           <string>ID</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Name</string>
+          </property>
+          <property name="toolTip">
+           <string>Buff效果名称</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Display</string>
+          </property>
+          <property name="toolTip">
+           <string>Buff表现表ID
+读取表t_s_buffer_performance</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Level</string>
+          </property>
+          <property name="toolTip">
+           <string>状态等级</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Dispersed</string>
+          </property>
+          <property name="toolTip">
+           <string>可被驱散
+不可被驱散效果清除:0
+可被驱散效果清除:1</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Target</string>
+          </property>
+          <property name="toolTip">
+           <string>状态施加的对象：
+1，自身
+5，场景内所有角色
+6，场景内所有敌方角色
+7，场景内所有友方角色
+8，近战范围内一个仇恨目标（用户则为随机目标）
+9，近战范围内全部仇恨目标
+10，炮弹命中的目标</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Effect</string>
+          </property>
+          <property name="toolTip">
+           <string>状态效果</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Superposition</string>
+          </property>
+          <property name="toolTip">
+           <string>可叠加最大层数
+不论来源，同一个角色的叠加最大层数
+叠加功能</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Immidiate</string>
+          </property>
+          <property name="toolTip">
+           <string>立即生效</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>EffectiveEvent</string>
+          </property>
+          <property name="toolTip">
+           <string>产生效果的事件（buff生效节点0.7.5版本更新）
+1：受到伤害之前
+2：正在受到伤害
+4：任意角色的行动回合开始
+5：自己行动开始前
+6：自己的行动回合开始 
+7：自己受到伤害之前
+8：自己的行动回合结束
+9：击杀其他角色
+12：自己开炮之后
+18：受到致死伤害时
+制造伤害之前
+19:每一轮发射开炮前
+20:每一发炮弹产生炮弹前
+21:破冰移除效果专用事件
+22:炮弹精准命中
+23:每一轮发射开炮后（一轮内所有炮弹发射出来，三叉是是射三发）
+24:普通轮次（类似19，仅限于普攻)开始前
+25:必杀轮次（类似19，仅限于普攻)开始前
+26:新增一个有益的buff(Harm为1)
+27:移除一个有益的buff(Harm为1)
+28：开始开炮前
+29:炮弹爆炸产生弹坑前
+30:治疗生效前
+31:被炮弹命中生效前
+32:在被炮弹命中造成伤害时(回合)
+34:使用道具前
+35:命中敌人破冰前
+36：普通开炮前（28不含必杀）</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>LebgthType</string>
+          </property>
+          <property name="toolTip">
+           <string>持续长度类型（buff消失节点）
+同EffectiveEvent</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Length</string>
+          </property>
+          <property name="toolTip">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;持续长度&lt;/p&gt;&lt;p&gt;每当状态的获得者达到持续长度节点，&lt;/p&gt;&lt;p&gt;长度-1，至0则失去状况&lt;/p&gt;&lt;p&gt;持续长度&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Harm</string>
+          </property>
+          <property name="toolTip">
+           <string>技能类型，用于驱散、数量、无敌等判定
+1，有益
+0，有害
+2，中立</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Remove</string>
+          </property>
+          <property name="toolTip">
+           <string>特别的移除buff条件
+同EffectiveEvent
+-1为生效后立即移除</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Probability</string>
+          </property>
+          <property name="toolTip">
+           <string>添加buff的几率
+10000表示100%</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>EffectProbability</string>
+          </property>
+          <property name="toolTip">
+           <string>Buff效果生效的几率</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>HiddenCD</string>
+          </property>
+          <property name="toolTip">
+           <string>Buff效果内置冷却</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Tag</string>
+          </property>
+          <property name="toolTip">
+           <string>buff标签，用于驱散和免疫类型辅助判定，多个用|分隔</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>EffectCondition</string>
+          </property>
+          <property name="toolTip">
+           <string>对施加对象进一步判定条件
+1,buffID：拥有指定buffID的单位</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>ChangeProbabilityFlag</string>
+          </property>
+          <property name="toolTip">
+           <string>Buff效果添加是否受命中和抵抗的影响
+0都不生效
+1都生效
+2只有命中生效
+3只有抵抗生效</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>ChangeEffectProbabilityFlag</string>
+          </property>
+          <property name="toolTip">
+           <string>Buff效果生效是否受命中和抵抗的影响
+0都不生效
+1都生效
+2只有命中生效
+3只有抵抗生效</string>
+          </property>
+         </column>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_3">
+         <item>
+          <widget class="QLabel" name="label_8">
+           <property name="text">
+            <string>                         Boom</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QListWidget" name="boomListWidget">
+           <property name="minimumSize">
+            <size>
+             <width>200</width>
+             <height>100</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>200</width>
+             <height>100</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QTableWidget" name="boomTableWidget">
+         <property name="minimumSize">
+          <size>
+           <width>1000</width>
+           <height>100</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>100</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+   <zorder>splitter_4</zorder>
+   <zorder>skillTableWidget</zorder>
+   <zorder>splitter_11</zorder>
+   <zorder>buffTableWidget</zorder>
+   <zorder>boomTableWidget</zorder>
+   <zorder>splitter_11</zorder>
+   <zorder>skillLineEdit_3</zorder>
+   <zorder>skillListWidget_3</zorder>
+   <zorder>skillLineEdit_3</zorder>
+   <zorder>skillListWidget_3</zorder>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1400</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

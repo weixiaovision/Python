@@ -1,0 +1,874 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>skillselect</class>
+ <widget class="QDialog" name="skillselect">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1300</width>
+    <height>540</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>技能查询器</string>
+  </property>
+  <widget class="QSplitter" name="splitter_7">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>351</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <widget class="QLabel" name="label_3">
+    <property name="text">
+     <string>       数据库</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox"/>
+  </widget>
+  <widget class="QTableWidget" name="skillTableWidget">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>80</y>
+     <width>991</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <column>
+    <property name="text">
+     <string>SkillID</string>
+    </property>
+    <property name="toolTip">
+     <string>ID</string>
+    </property>
+    <property name="whatsThis">
+     <string/>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Name</string>
+    </property>
+    <property name="toolTip">
+     <string>技能名称</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Display</string>
+    </property>
+    <property name="toolTip">
+     <string>技能表现表ID t_s_skill_performa</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>LevelLimit</string>
+    </property>
+    <property name="toolTip">
+     <string>激活技能或解锁战斗道具的角色等级</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>NextSkill</string>
+    </property>
+    <property name="toolTip">
+     <string>下一等级ID</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>CostSkillPoint</string>
+    </property>
+    <property name="toolTip">
+     <string>升级下一级技能所需消耗技能点</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>CostGold</string>
+    </property>
+    <property name="toolTip">
+     <string>升级下一级技能所需消耗银币</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>FightingForce</string>
+    </property>
+    <property name="toolTip">
+     <string>战斗力</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Type</string>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;主动技能 0，永久被动技能：&lt;/p&gt;&lt;p&gt;常驻生效,属性值直接添加在角色面板或进入战斗场景后自动施加buff --目前无效&lt;/p&gt;&lt;p&gt; 1，被动技能：选定后，进入战斗场景后自动施加buff &lt;/p&gt;&lt;p&gt;2，主动技能：选定后，需使用才可生效 &lt;/p&gt;&lt;p&gt;3，必杀技：始终与武器捆绑 &lt;/p&gt;&lt;p&gt;4，公共技能 &lt;/p&gt;&lt;p&gt;5，道具技能 &lt;/p&gt;&lt;p&gt;6，宠物技能&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>MutualExclusion</string>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;技能自身所属的分类&lt;/p&gt;&lt;p&gt;1,替换武器&lt;/p&gt;&lt;p&gt;2,跳过回合&lt;/p&gt;&lt;p&gt;3,必杀技&lt;/p&gt;&lt;p&gt;4,旧&lt;/p&gt;&lt;p&gt;5,特殊&lt;/p&gt;&lt;p&gt;0,常规&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Compatible</string>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;兼容&lt;/p&gt;&lt;p&gt;本技能兼容的分类&lt;/p&gt;&lt;p&gt;使用了MutualExclusion类型以后，还能使用的技能类型&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Cooldown</string>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'微软雅黑'; font-size:11px; color:#000000;&quot;&gt;使用的冷却时间 施放技能间隔，&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'微软雅黑'; font-size:11px; color:#000000;&quot;&gt;施放技能的回合后开始每到自身回合&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'微软雅黑'; font-size:11px; color:#000000;&quot;&gt;结束-1&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>TimesPerTurn</string>
+    </property>
+    <property name="toolTip">
+     <string>每回合使用次数限定</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>CostActPoint</string>
+    </property>
+    <property name="toolTip">
+     <string>使用技能需要消耗消耗行动力数量</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>CostAnger</string>
+    </property>
+    <property name="toolTip">
+     <string>消耗怒气</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Buff</string>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;状态&lt;/p&gt;&lt;p&gt;可能填写多个|分隔&lt;/p&gt;&lt;p&gt;buffer表&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Delay</string>
+    </property>
+    <property name="toolTip">
+     <string>延迟值</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>IsEndTurn</string>
+    </property>
+    <property name="toolTip">
+     <string>是否结束回合</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>User</string>
+    </property>
+    <property name="toolTip">
+     <string>使用者
+0，玩家；1，NPC。</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>UseType</string>
+    </property>
+    <property name="toolTip">
+     <string>技能Tag分类用于AI调用
+可配置多项，竖线分割
+（主动技能
+0，永久被动技能：常驻生效，属性值直接添加在角色面板或进入战斗场景后自动施加buff --目前无效
+1，被动技能：选定后，进入战斗场景后自动施加buff
+2，主动技能：选定后，需使用才可生效
+3，必杀技：始终与武器捆绑
+4，公共技能
+5，道具技能
+6，宠物技能-非治疗
+7，未知
+8，未知
+9：宠物技能-治疗类</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>SubType</string>
+    </property>
+    <property name="toolTip">
+     <string>技能子类型
+0，无特殊子类型
+1，普通技能-武器技能
+2，普通技能-武器必杀技
+3，普通技能-通用技能
+4，普通技能-被动技能
+5，道具技能
+6，宠物技能
+7，无法首发的道具技能</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>IsAttackSkill</string>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;是否是攻击技能&lt;/p&gt;&lt;p&gt;0，非攻击技能&lt;/p&gt;&lt;p&gt;1，攻击技能&lt;/p&gt;&lt;p&gt;----无效字段&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Damage</string>
+    </property>
+    <property name="toolTip">
+     <string>杀伤权重</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Dig</string>
+    </property>
+    <property name="toolTip">
+     <string>挖坑权重</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>ButtonOrder</string>
+    </property>
+    <property name="toolTip">
+     <string>技能在按钮上的次序</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Level</string>
+    </property>
+    <property name="toolTip">
+     <string>技能等级</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>BasicSkill</string>
+    </property>
+    <property name="toolTip">
+     <string>技能等级为1时的ID</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>CostDonate</string>
+    </property>
+    <property name="toolTip">
+     <string>学习此技能消耗的贡献</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>FightUseCount</string>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;战斗中可使用次数&lt;/p&gt;&lt;p&gt;填-1为无限次使用&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>CanHold</string>
+    </property>
+    <property name="toolTip">
+     <string>角色技能专用，是否允许战前携带</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Sort</string>
+    </property>
+    <property name="toolTip">
+     <string>道具技能专用。在客户端选择技能时的排序。</string>
+    </property>
+   </column>
+  </widget>
+  <widget class="QTableWidget" name="bombTableWidget">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>410</y>
+     <width>991</width>
+     <height>121</height>
+    </rect>
+   </property>
+   <column>
+    <property name="text">
+     <string>ID</string>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;ID&lt;/p&gt;&lt;p&gt;102固定ID&lt;/p&gt;&lt;p&gt;0～94999是道具类使用的炮弹&lt;/p&gt;&lt;p&gt;95000~99999是套装置换用&lt;/p&gt;&lt;p&gt;100000是常规武器用的炮弹&lt;/p&gt;&lt;p&gt;500000是副本NPC使用的炮弹&lt;/p&gt;&lt;p&gt;对于常规武器来说，&lt;/p&gt;&lt;p&gt;编号（两位），&lt;/p&gt;&lt;p&gt;变型等级（一位），&lt;/p&gt;&lt;p&gt;主次（一位1，主炮弹，2次炮弹），&lt;/p&gt;&lt;p&gt;编号数（一位）&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Name</string>
+    </property>
+    <property name="toolTip">
+     <string>名称</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>PerformanceID</string>
+    </property>
+    <property name="toolTip">
+     <string>炮弹表现表ID
+
+t_s_bomb_performance表</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>AddOrsubtract</string>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;增强/减弱&lt;/p&gt;&lt;p&gt;1，减弱&lt;/p&gt;&lt;p&gt;2，增强&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>EffectDecay</string>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;区域效果衰减&lt;/p&gt;&lt;p&gt;内层百分比半径_内层百分比效果/&lt;/p&gt;&lt;p&gt;外层百分比半径_外层百分比效果&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Radius</string>
+    </property>
+    <property name="toolTip">
+     <string>爆炸范围</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>TriggerType</string>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;触发爆炸&lt;/p&gt;&lt;p&gt;0，无&lt;/p&gt;&lt;p&gt;1|4，地表&lt;/p&gt;&lt;p&gt;2，友方角色&lt;/p&gt;&lt;p&gt;3，敌方角色&lt;/p&gt;&lt;p&gt;4,不可炸的地表&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Effective</string>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;可生效&lt;/p&gt;&lt;p&gt;1，地表&lt;/p&gt;&lt;p&gt;2，友方角色&lt;/p&gt;&lt;p&gt;3，敌方角色&lt;/p&gt;&lt;p&gt;4，不可破坏地形&lt;/p&gt;&lt;p&gt;5，物件&lt;/p&gt;&lt;p&gt;6，队友&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Effect</string>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;效果&lt;/p&gt;&lt;p&gt;DerivationBomb(绝对伤害值)适用于物件爆炸&lt;/p&gt;&lt;p&gt;KickFlyFixedAngle(力度必填，角度必填，方向-1向左0根据爆炸点判断1向右)&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>HitAnger</string>
+    </property>
+    <property name="toolTip">
+     <string>命中增加怒气</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>MissAnger</string>
+    </property>
+    <property name="toolTip">
+     <string>未命中增加怒气</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>HitHole</string>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;击中角色弹坑&lt;/p&gt;&lt;p&gt;resweaponcrack&lt;/p&gt;&lt;p&gt;弹坑大小同资源大小&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>HitEdge</string>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;击中角色弹坑边缘&lt;/p&gt;&lt;p&gt;resweaponcrack&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>MissHole</string>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;击中地面弹坑&lt;/p&gt;&lt;p&gt;resweaponcrack&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>MissEdge</string>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;击中地面弹坑边缘&lt;/p&gt;&lt;p&gt;resweaponcrack&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>FlySpeed</string>
+    </property>
+    <property name="toolTip">
+     <string>飞行播放速度</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>WindForce</string>
+    </property>
+    <property name="toolTip">
+     <string>风力因素</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>AirResistance</string>
+    </property>
+    <property name="toolTip">
+     <string>空气因素</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Gravity</string>
+    </property>
+    <property name="toolTip">
+     <string>重力因素</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Mass</string>
+    </property>
+    <property name="toolTip">
+     <string>质量</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>ExplodeTime4</string>
+    </property>
+    <property name="toolTip">
+     <string>爆炸4表现时间（ms）</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>ExplodeTime3</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>ExplodeTime1</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>ExplodeTime2</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>EffectiveMode</string>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;生效方式&lt;/p&gt;&lt;p&gt;1，普通&lt;/p&gt;&lt;p&gt;2，炮弹不会爆炸，效果影响炮弹穿过的角色&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>FriendEffect</string>
+    </property>
+    <property name="toolTip">
+     <string>只对已方的炮弹效果</string>
+    </property>
+   </column>
+  </widget>
+  <widget class="QTableWidget" name="buffTableWidget">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>240</y>
+     <width>991</width>
+     <height>121</height>
+    </rect>
+   </property>
+   <column>
+    <property name="text">
+     <string>ID</string>
+    </property>
+    <property name="toolTip">
+     <string>ID</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Name</string>
+    </property>
+    <property name="toolTip">
+     <string>Buff效果名称</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Display</string>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Buff表现表ID&lt;/p&gt;&lt;p&gt;读取表t_s_buffer_performance&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Level</string>
+    </property>
+    <property name="toolTip">
+     <string>状态等级</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Dispersed</string>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;可被驱散&lt;/p&gt;&lt;p&gt;不可被驱散效果清除:0&lt;/p&gt;&lt;p&gt;可被驱散效果清除:1&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Target</string>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;状态施加的对象：&lt;/p&gt;&lt;p&gt;1，自身&lt;/p&gt;&lt;p&gt;5，场景内所有角色&lt;/p&gt;&lt;p&gt;6，场景内所有敌方角色&lt;/p&gt;&lt;p&gt;7，场景内所有友方角色&lt;/p&gt;&lt;p&gt;8，近战范围内一个仇恨目标（用户则为随机目标）&lt;/p&gt;&lt;p&gt;9，近战范围内全部仇恨目标&lt;/p&gt;&lt;p&gt;10，炮弹命中的目标&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Effect</string>
+    </property>
+    <property name="toolTip">
+     <string>状态效果</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Superposition</string>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;可叠加最大层数&lt;/p&gt;&lt;p&gt;不论来源，同一个角色的叠加最大层数&lt;/p&gt;&lt;p&gt;叠加功能&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Immidiate</string>
+    </property>
+    <property name="toolTip">
+     <string>立即生效</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>EffectiveEvent</string>
+    </property>
+    <property name="toolTip">
+     <string>产生效果的事件（buff生效节点0.7.5版本更新）
+1：受到伤害之前
+2：正在受到伤害
+4：任意角色的行动回合开始
+5：自己行动开始前
+6：自己的行动回合开始 
+7：自己受到伤害之前
+8：自己的行动回合结束
+9：击杀其他角色
+12：自己开炮之后
+18：受到致死伤害时
+制造伤害之前
+19:每一轮发射开炮前
+20:每一发炮弹产生炮弹前
+21:破冰移除效果专用事件
+22:炮弹精准命中
+23:每一轮发射开炮后（一轮内所有炮弹发射出来，三叉是是射三发）
+24:普通轮次（类似19，仅限于普攻)开始前
+25:必杀轮次（类似19，仅限于普攻)开始前
+26:新增一个有益的buff(Harm为1)
+27:移除一个有益的buff(Harm为1)
+28：开始开炮前
+29:炮弹爆炸产生弹坑前
+30:治疗生效前
+31:被炮弹命中生效前
+32:在被炮弹命中造成伤害时(回合)
+34:使用道具前
+35:命中敌人破冰前
+36：普通开炮前（28不含必杀）</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>LebgthType</string>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;持续长度类型（buff消失节点）&lt;/p&gt;&lt;p&gt;同EffectiveEvent&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Length</string>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;持续长度&lt;/p&gt;&lt;p&gt;每当状态的获得者达到持续长度节点，&lt;/p&gt;&lt;p&gt;长度-1，至0则失去状况&lt;/p&gt;&lt;p&gt;持续长度&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Harm</string>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;技能类型，用于驱散、数量、无敌等判定&lt;/p&gt;&lt;p&gt;1，有益&lt;/p&gt;&lt;p&gt;0，有害&lt;/p&gt;&lt;p&gt;2，中立&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Remove</string>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;特别的移除buff条件&lt;/p&gt;&lt;p&gt;同EffectiveEvent&lt;/p&gt;&lt;p&gt;-1为生效后立即移除&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Probability</string>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;添加buff的几率&lt;/p&gt;&lt;p&gt;10000表示100%&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>EffectProbability</string>
+    </property>
+    <property name="toolTip">
+     <string>Buff效果生效的几率</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>HiddenCD</string>
+    </property>
+    <property name="toolTip">
+     <string>Buff效果内置冷却</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Tag</string>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;buff标签，用于驱散和免疫类型辅助&lt;/p&gt;&lt;p&gt;判定，多个用|分隔&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>EffectCondition</string>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;对施加对象进一步判定条件&lt;/p&gt;&lt;p&gt;1,buffID：拥有指定buffID的单位&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>ChangeProbabilityFlag</string>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Buff效果添加是否受命中和抵抗的影响&lt;/p&gt;&lt;p&gt;0都不生效&lt;/p&gt;&lt;p&gt;1都生效&lt;/p&gt;&lt;p&gt;2只有命中生效&lt;/p&gt;&lt;p&gt;3只有抵抗生效&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>ChangeEffectProbabilityFlag</string>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Buff效果生效是否受命中和抵抗的影响&lt;/p&gt;&lt;p&gt;0都不生效&lt;/p&gt;&lt;p&gt;1都生效&lt;/p&gt;&lt;p&gt;2只有命中生效&lt;/p&gt;&lt;p&gt;3只有抵抗生效&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </column>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>450</x>
+     <y>50</y>
+     <width>151</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>技能详细信息</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>450</x>
+     <y>210</y>
+     <width>101</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>BUFF详细信息</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_7">
+   <property name="geometry">
+    <rect>
+     <x>450</x>
+     <y>380</y>
+     <width>111</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>BOMB详细信息</string>
+   </property>
+  </widget>
+  <widget class="QSplitter" name="splitter">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>410</y>
+     <width>221</width>
+     <height>121</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+   <widget class="QLabel" name="label_2">
+    <property name="maximumSize">
+     <size>
+      <width>16777215</width>
+      <height>20</height>
+     </size>
+    </property>
+    <property name="text">
+     <string>                  Bomb</string>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="bombListWidget">
+    <property name="maximumSize">
+     <size>
+      <width>16777215</width>
+      <height>100</height>
+     </size>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="">
+   <property name="geometry">
+    <rect>
+     <x>31</x>
+     <y>80</y>
+     <width>221</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>技能关键字</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="skillLineEdit">
+        <property name="toolTip">
+         <string>输入技能关键字</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QListWidget" name="skillListWidget"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="">
+   <property name="geometry">
+    <rect>
+     <x>32</x>
+     <y>240</y>
+     <width>221</width>
+     <height>121</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QLabel" name="label_4">
+        <property name="text">
+         <string>BUFF关键字</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="buffLineEdit">
+        <property name="toolTip">
+         <string>输入BUFF关键字</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QListWidget" name="buffListWidget"/>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

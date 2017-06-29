@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1200</width>
+    <height>900</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>60</y>
+      <width>1141</width>
+      <height>761</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>1</number>
+    </property>
+    <widget class="QWidget" name="tab">
+     <attribute name="title">
+      <string>活动查询</string>
+     </attribute>
+     <widget class="QListWidget" name="nameListWidget">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>90</y>
+        <width>431</width>
+        <height>91</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QWidget" name="">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>490</y>
+        <width>1021</width>
+        <height>161</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QLabel" name="label_5">
+         <property name="text">
+          <string>活动奖励 </string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QTableWidget" name="rewardTableWidget">
+         <attribute name="horizontalHeaderDefaultSectionSize">
+          <number>200</number>
+         </attribute>
+         <column>
+          <property name="text">
+           <string>Comment</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>state</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>ExtraCond</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Reward</string>
+          </property>
+         </column>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>30</y>
+        <width>331</width>
+        <height>33</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QLabel" name="label_2">
+         <property name="text">
+          <string>活动关键字</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="nameLineEdit"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>200</y>
+        <width>431</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <widget class="QLabel" name="label_3">
+         <property name="text">
+          <string>活动时间</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="timeLineEdit"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>280</y>
+        <width>1021</width>
+        <height>181</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="QLabel" name="label_4">
+         <property name="text">
+          <string>活动基本信息</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QTableWidget" name="msgTableWidget">
+         <attribute name="horizontalHeaderDefaultSectionSize">
+          <number>80</number>
+         </attribute>
+         <row>
+          <property name="text">
+           <string>1</string>
+          </property>
+         </row>
+         <column>
+          <property name="text">
+           <string>Heading</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>kind</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>TipsType</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>DetailType</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>MainPicture</string>
+          </property>
+         </column>
+        </widget>
+       </item>
+       <item>
+        <widget class="QTableWidget" name="msg_TableWidget">
+         <attribute name="horizontalHeaderDefaultSectionSize">
+          <number>250</number>
+         </attribute>
+         <row>
+          <property name="text">
+           <string>1</string>
+          </property>
+         </row>
+         <column>
+          <property name="text">
+           <string>TimeShow</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>RuleShow</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>DetailRuleShow</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>JumpAddress</string>
+          </property>
+         </column>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="title">
+      <string>宝箱查询</string>
+     </attribute>
+     <widget class="QListWidget" name="goodsListWidget">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>100</y>
+        <width>411</width>
+        <height>111</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QTableWidget" name="goods_TableWidget">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>260</y>
+        <width>1011</width>
+        <height>161</height>
+       </rect>
+      </property>
+      <attribute name="horizontalHeaderDefaultSectionSize">
+       <number>200</number>
+      </attribute>
+      <column>
+       <property name="text">
+        <string>DropGroup</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>ItemName</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>ItemCount</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>ItemWeight</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>百分比</string>
+       </property>
+      </column>
+     </widget>
+     <widget class="QTableWidget" name="goodsTableWidget">
+      <property name="geometry">
+       <rect>
+        <x>510</x>
+        <y>100</y>
+        <width>521</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <attribute name="horizontalHeaderDefaultSectionSize">
+       <number>300</number>
+      </attribute>
+      <column>
+       <property name="text">
+        <string>奖励道具</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>选择数量</string>
+       </property>
+      </column>
+     </widget>
+     <widget class="QWidget" name="">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>40</y>
+        <width>331</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <item>
+        <widget class="QLabel" name="label_6">
+         <property name="text">
+          <string>物品关键字</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="goodsLineEdit"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="">
+      <property name="geometry">
+       <rect>
+        <x>131</x>
+        <y>471</y>
+        <width>841</width>
+        <height>229</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_10">
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_3">
+         <property name="sizeConstraint">
+          <enum>QLayout::SetFixedSize</enum>
+         </property>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_5">
+           <item>
+            <widget class="QLabel" name="label_8">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="text">
+              <string>玩家昵称</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="nickLineEdit">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QListWidget" name="nickListWidget">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_4">
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_8">
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_6">
+             <item>
+              <widget class="QLabel" name="label_11">
+               <property name="text">
+                <string>物品ID</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="itemidLineEdit"/>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_12">
+               <property name="text">
+                <string>数量</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="countLineEdit">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <widget class="QPushButton" name="sendPushButton">
+             <property name="text">
+              <string>发送</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_9">
+           <item>
+            <widget class="QLabel" name="label_13">
+             <property name="text">
+              <string>其他GM命令</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="otherLineEdit">
+             <property name="toolTip">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;GM desc=&amp;quot;设置公会捐献贡献度(会同时设置个人的和公会的，慎用):addDonate 数量&amp;quot;&amp;gt;addDonate 10&amp;lt;/GM&amp;gt;&lt;/p&gt;&lt;p&gt;		&amp;lt;GM desc=&amp;quot;增加效果:addExpEffect 效果ID&amp;quot;&amp;gt;addExpEffect 104000001&amp;lt;/GM&amp;gt;&lt;/p&gt;&lt;p&gt;		&amp;lt;GM desc=&amp;quot;增加PVP胜利次数:addWinTimes 数量&amp;quot;&amp;gt;addWinTimes 10&amp;lt;/GM&amp;gt;&lt;/p&gt;&lt;p&gt;		&amp;lt;GM desc=&amp;quot;封号:ban 时间(s) 描述&amp;quot;&amp;gt;ban 10 长得太帅&amp;lt;/GM&amp;gt;&lt;/p&gt;&lt;p&gt;		&amp;lt;GM desc=&amp;quot;增加活力:hl 数量&amp;quot;&amp;gt;hl 10&amp;lt;/GM&amp;gt;&lt;/p&gt;&lt;p&gt;		&amp;lt;GM desc=&amp;quot;设置竞技场积分:jjc 积分&amp;quot;&amp;gt;jjc 100&amp;lt;/GM&amp;gt;&lt;/p&gt;&lt;p&gt;		&amp;lt;GM desc=&amp;quot;杀死图中的所有敌人:kill&amp;quot;&amp;gt;kill&amp;lt;/GM&amp;gt;&lt;/p&gt;&lt;p&gt;		&amp;lt;GM desc=&amp;quot;增加宝珠碎片:orb 数量&amp;quot;&amp;gt;orb 10&amp;lt;/GM&amp;gt;&lt;/p&gt;&lt;p&gt;		&amp;lt;GM desc=&amp;quot;获取宝珠:orbGet 类型(1:高级抽宝珠;2:高级五连抽)&amp;quot;&amp;gt;orbGet 2&amp;lt;/GM&amp;gt;&lt;/p&gt;&lt;p&gt;		&amp;lt;GM desc=&amp;quot;设置排位积分:pw 积分&amp;quot;&amp;gt;pw&amp;lt;/GM&amp;gt;&lt;/p&gt;&lt;p&gt;		&amp;lt;GM desc=&amp;quot;重置多人副本每日挑战次数:refb&amp;quot;&amp;gt;refb&amp;lt;/GM&amp;gt;&lt;/p&gt;&lt;p&gt;		&amp;lt;GM desc=&amp;quot;消耗物品(不一定生效):removeitem 物品ID 数量&amp;quot;&amp;gt;removeitem&amp;lt;/GM&amp;gt;&lt;/p&gt;&lt;p&gt;		&amp;lt;GM desc=&amp;quot;重置活跃度:retask&amp;quot;&amp;gt;retask&amp;lt;/GM&amp;gt;&lt;/p&gt;&lt;p&gt;		&amp;lt;GM desc=&amp;quot;设置任务信息(使用方法未知):setTask taskID XX XX XX····&amp;quot;&amp;gt;setTask&amp;lt;/GM&amp;gt;&lt;/p&gt;&lt;p&gt;		&amp;lt;GM desc=&amp;quot;设置新手节点:skip 节点(跳过新手是99999990)&amp;quot;&amp;gt;skip 99999990&amp;lt;/GM&amp;gt;&lt;/p&gt;&lt;p&gt;		&amp;lt;GM desc=&amp;quot;增加周活跃度:week 数量&amp;quot;&amp;gt;week&amp;lt;/GM&amp;gt;&lt;/p&gt;&lt;p&gt;		&amp;lt;GM desc=&amp;quot;查询竞技场积分:winpoint&amp;quot;&amp;gt;winpoint 90&amp;lt;/GM&amp;gt;&lt;/p&gt;&lt;p&gt;		&amp;lt;GM desc=&amp;quot;设置单个任务完成:updateTask 类型 任务ID&amp;quot;&amp;gt;updateTask 1 150050201&amp;lt;/GM&amp;gt;&lt;/p&gt;&lt;p&gt;		&amp;lt;GM desc=&amp;quot;重置当前的公会活动数据，完成状态全部清零:resetGuildTask&amp;quot;&amp;gt;resetGuildTask&amp;lt;/GM&amp;gt;&lt;/p&gt;&lt;p&gt;		&amp;lt;GM desc=&amp;quot;完成全部日常任务:dailyTaskFinsh&amp;quot;&amp;gt;dailyTaskFinsh&amp;lt;/GM&amp;gt;&lt;/p&gt;&lt;p&gt;		&amp;lt;GM desc=&amp;quot;主线和支线任务完成:taskFinsh 任务类型(1主线，2支线)&amp;quot;&amp;gt;taskFinsh 1&amp;lt;/GM&amp;gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="executePushButton">
+             <property name="text">
+              <string>执行</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>10</y>
+      <width>691</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_4">
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>数据库</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="comboBox"/>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_7">
+       <item>
+        <widget class="QLabel" name="label_9">
+         <property name="text">
+          <string>服务器IP</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="ipLineEdit"/>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_10">
+         <property name="text">
+          <string>PORT</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="portLineEdit">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

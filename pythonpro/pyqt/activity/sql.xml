@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ROOT>
+
+    <!--update命令集-->
+    <Update>
+
+        <sql desc="把死亡补给道具全部改成激怒"> UPDATE t_s_map_object SET UnitSupplyID = '153000015' WHERE ID =  119190001 </sql>
+        <sql desc="指定活动相关时间更改">UPDATE t_s_activity SET BeginTime = '2017-05-19 00:04:00',BeginShowTime = '2017-05-19 00:04:00',BeginPrizeTime = '2017-05-19 00:04:00' WHERE ID ='100000001'</sql>
+        <sql desc="更改指定活动为当前时间开启">UPDATE t_s_activity SET BeginTime = NOW(),BeginShowTime = NOW(),BeginPrizeTime = NOW() WHERE ID in ('100000000','')</sql>
+        <sql desc="buff几率更改">UPDATE t_s_buffer SET EffectProbability = '10000',Probability = '10000'</sql>
+        <sql desc="把补给道具改成核弹">UPDATE t_s_mission SET FightSupply = '145100007,1'WHERE MissionType LIKE CONCAT('%','20','%')</sql>
+        <sql desc="更改地图">UPDATE t_s_mission SET MatchLevel = '20,60' WHERE ID = '121050001'</sql>
+        <sql desc="更改地图">UPDATE t_s_mission SET MatchLevel = '0' WHERE MissionType LIKE CONCAT('%','50','%')</sql>
+        <sql desc="撮合时间更改">UPDATE t_s_battle_match SET RobotCondition = '30',LimitLevel = '1,99'</sql>
+        <sql desc="安卓QQ权限开关关闭">UPDATE t_s_privilege_switch SET AndroidQQ = '0'</sql>
+        <sql desc="更改限时商店随机数量">UPDATE t_s_mall_random SET RandomNum = 100</sql>
+        <sql desc="更改指定任务前置任务">UPDATE t_s_task SET PreTaskCondition = '0' WHERE ID in ('150010025','150010039','150050707')</sql>
+        <sql desc="赛季锦标赛增加机器人">UPDATE t_s_battle_match SET RobotID = '163000404,100',RobotAllyID = '163000404,100',RobotWarmID = '163000404,100',RobotAllyWarmID = '163000404,100',RobotCondition = '0' WHERE Type = '110'</sql>
+        <sql desc="玩家多人副本次数">UPDATE t_u_team_mission SET ChallengeTimes = 10 WHERE UserId in(SELECT UserId FROM t_u_account WHERE UserName LIKE '%pipei%')</sql>
+        <sql desc="玩家多人副本通关">UPDATE t_u_team_mission SET IsPass = 1 WHERE UserId in(SELECT UserId FROM t_u_account WHERE UserName LIKE '%pipei%')</sql>
+
+    </Update>
+
+    <!--insert命令集-->
+    <Insert>
+
+    </Insert>
+
+    <!--delete命令集-->
+    <Delete>
+
+    </Delete>
+
+    <!--select命令集-->
+    <Select>
+
+    </Select>
+
+
+</ROOT>

@@ -1,0 +1,830 @@
+#!/usr/bin/python3
+# -*- coding: utf-8 -*-
+
+
+import queue
+import sys
+from PyQt5.QtWidgets import QMainWindow, QApplication, QMessageBox, QTableWidgetItem
+import view
+import configparser
+import codecs
+import pymysql.cursors
+import requests
+import xml.etree.ElementTree as ET
+from time import sleep, strftime
+import re
+from update import download_main
+
+
+# 自动更新
+download_main()
+
+
+class MainWindow(QMainWindow, view.Ui_gmtools):
+    def __init__(self, parent=None):
+        super(MainWindow, self).__init__(parent)
+        self.setupUi(self)
+
+
+class Client():
+    def __init__(self):
+        self.app = QApplication(sys.argv)
+        self.view = MainWindow()
+        self.host = None
+        self.port = None
+        self.db = None
+        self.user = None
+        self.password = None
+        self.db_game = None
+        self.ip = None
+        self.serverport = None
+        self.tables = None
+        self.gmlist = self.insert_combobox_2()
+        self.sqllist = self.insert_sqlcombobox()
+        self.jumplist_cf = self.read_config_jump('jumplist.conf')
+        self.jumplist_list = self.jumplist_cf.options('jumplist')
+
+    def run(self):
+        self.read_config_table()
+        self.insert_combobox()
+        self.insert_table_listwidget()
+        self.set_sqltext()
+        # region 绑定事件
+        self.view.goodsLineEdit.returnPressed.connect(self.insert_goodslistwidget)
+        self.view.goodsLineEdit_2.returnPressed.connect(self.insert_goodslistwidget_2)
+        self.view.nameLineEdit.returnPressed.connect(self.insert_namelistwidget)
+        self.view.nickLineEdit.returnPressed.connect(self.insert_nicklistwidget)
+        self.view.goodsListWidget.itemClicked.connect(self.item_click)
+        self.view.nameListWidget.itemClicked.connect(self.insert_nametablewidget)
+        self.view.sendPushButton.clicked.connect(self.sendgm)
+        self.view.comboBox.currentIndexChanged.connect(self.set_server_port)
+        self.view.executePushButton.clicked.connect(self.sendothergm)
+        self.view.tableLineEdit.returnPressed.connect(self.insert_table_listwidget)
+        self.view.clearPushButton.clicked.connect(self.clearnicklist)
+        self.view.nickListWidget.itemClicked.connect(self.insert_nicklist)
+        self.view.nicklistListWidget.itemDoubleClicked.connect(self.double_remove)
+        self.view.clearPushButton_2.clicked.connect(self.clearnicklist_2)
+        self.view.nicklistListWidget_2.itemDoubleClicked.connect(self.double_remove_2)
+        self.view.goodsListWidget_2.itemClicked.connect(self.insert_itemid)
+        self.view.pushButton.clicked.connect(self.sendmail)
+        self.view.selfPushButton.clicked.connect(self.sendcusgm)
+        self.view.addmailPushButton.clicked.connect(self.addmail)
+        self.view.sqlComboBox.currentIndexChanged.connect(self.set_sqltext)
+        self.view.sqlPushButton.clicked.connect(self.excute_sql)
+        # endregion
+
+        self.view.show()
+        sys.exit(self.app.exec_())
+
+    # region 活动查询
+
+    # 活动关键字搜索
+    def insert_namelistwidget(self):
+        self.view.nameListWidget.clear()
+        namelike = self.view.nameLineEdit.text().strip()
+        if not namelike:
+            self.showdialog('请输入活动关键字')
+            return
+        if self.view.headingRadioButton.isChecked():
+            sql_act = 'select ID, Heading from t_s_activity_performance where Heading LIKE "%{0}%"'.format(namelike)
+            names = self.select(sql_act)
+            list_activityID_nosame = []
+            list_activityID = []
+            # 兼容搜索不到的活动
+            if len(names) == 0:
+                self.view.nameListWidget.addItem('没有此类活动')
+            else:
+                for name in names:
+                    # 去除重复的活动ID
+                    if name[0] not in list_activityID:
+                        list_activityID.append(name[0])
+                        list_activityID_nosame.append(name)
+                for item in list_activityID_nosame:
+                    self.view.nameListWidget.addItem(str(item[0]) + '   ' + item[1])
+        else:
+            try:
+                id1 = int(namelike)
+            except:
+                self.showdialog('请输入数字')
+                return
+            self.view.nameListWidget.addItem(self.view.nameLineEdit.text().strip())
+
+    # 活动详细信息查询
+    def insert_nametablewidget(self):
+        self.view.msgTableWidget.setRowCount(0)
+        self.view.msg_TableWidget.setRowCount(0)
+        self.view.rewardTableWidget.setRowCount(0)
+        self.view.mallTableWidget.setRowCount(0)
+        activityID = self.view.nameListWidget.currentItem().text()
+        # if len(activityID.split()) == 1:
+        #     return
+        activityID = activityID.split()[0]
+        sql_time = 'select BeginTime,EndTime,ActivityType,Param1 from t_s_activity where ID=%s' % activityID
+        sql_mes = 'select Heading,kind,tipstype,detailtype,mainpicture from t_s_activity_performance where ID =%s' % activityID
+        sql_mes_2 = 'select TimeShow,RuleShow,DetailRuleShow,JumpAddress from t_s_activity_performance where ID =%s' % activityID
+        sql_reward = 'select reward from t_s_activity_task where ActivityId=%s' % activityID
+        sql_comment = 'select Comment, State, ExtraCond from t_s_activity_task where ActivityId=%s' % activityID
+        sql_extra = 'select ExtraCond from t_s_activity_task where ActivityId=%s' % activityID
+
+        time = self.select(sql_time)
+        if time:
+            pass
+        else:
+            self.view.timeLineEdit.setText('')
+            return
+        self.view.timeLineEdit.setText(time[0][0] + ' -> ' + time[0][1])
+        mes = self.select(sql_mes)
+        if mes:
+            self.view.msgTableWidget.setRowCount(1)
+            for i in range(len(mes[0])):
+                item = QTableWidgetItem(str(mes[0][i]))
+                self.view.msgTableWidget.setItem(0, i, item)
+
+        mes_2 = self.select(sql_mes_2)
+        if mes_2:
+            # 获取跳转图
+            if mes_2[0][3] in self.jumplist_list:
+                pic = self.jumplist_cf.get('jumplist', mes_2[0][3])
+                # 替换掉跳转ID
+                new_list = list(mes_2[0])
+                new_list.pop(3)
+                new_list += [pic]
+                self.view.msg_TableWidget.setRowCount(1)
+                for i in range(len(new_list)):
+                    item = QTableWidgetItem(str(new_list[i]))
+                    self.view.msg_TableWidget.setItem(0, i, item)
+            else:
+                self.view.msg_TableWidget.setRowCount(1)
+                for i in range(len(mes_2[0])):
+                    item = QTableWidgetItem(str(mes_2[0][i]))
+                    self.view.msg_TableWidget.setItem(0, i, item)
+                self.showdialog('%s在jumplist.conf中没有找到，请在jumplist.conf中手动添加' % mes_2[0][3])
+        if time[0][2] != 31:
+            self.view.rewardTableWidget.setVisible(True)
+            self.view.mallTableWidget.setVisible(False)
+            comment = self.select(sql_comment)
+            if comment:
+                self.view.rewardTableWidget.setRowCount(len(comment))
+                i = 0
+                for item_1 in comment:
+                    for j in range(len(item_1)):
+                        item1 = QTableWidgetItem(item_1[j])
+                        self.view.rewardTableWidget.setItem(i, j, item1)
+                    i += 1
+                rewards = self.select(sql_reward)
+                rewards_list = []
+                for reward in rewards:
+                    rewards_list.append(reward[0])
+                name_list = []
+                if len(rewards) != 0:
+                    for reward in rewards_list:
+                        for reward_1 in reward.split('|'):
+                            if len(reward_1.split(',')) > 1:
+                                name_2 = self.select(
+                                    'select name from t_s_item where ID=%s' % reward_1.split(',')[0])
+                                if len(name_2) > 0:
+                                    name_1 = name_2[0][0]
+                                    reward = reward.replace(reward_1.split(',')[0], name_1)
+                        name_list.append(reward)
+                for j in range(len(name_list)):
+                    self.view.rewardTableWidget.setItem(j, 3, QTableWidgetItem(name_list[j]))
+
+            extra = self.select(sql_extra)
+            if extra:
+                extra_list = []
+                for item3 in extra:
+                    extra_list.append(item3[0])
+                name_list_1 = []
+                if len(extra) != 0:
+                    for reward in extra_list:
+                        for reward_1 in reward.split('|'):
+                            if len(reward_1.split(',')) > 1:
+                                name_2 = self.select(
+                                    'select name from t_s_item where ID=%s' % reward_1.split(',')[0])
+                                if len(name_2) > 0:
+                                    name_1 = name_2[0][0]
+                                    reward = reward.replace(reward_1.split(',')[0], name_1)
+                        name_list_1.append(reward)
+                for j in range(len(name_list_1)):
+                    self.view.rewardTableWidget.setItem(j, 2, QTableWidgetItem(name_list_1[j]))
+        else:
+            self.view.rewardTableWidget.setVisible(False)
+            self.view.mallTableWidget.setVisible(True)
+            malllist = time[0][3].split(',')
+            self.view.mallTableWidget.setRowCount(len(malllist))
+            for i in range(len(malllist)):
+                mallid = malllist[i]
+                sql_mall = 'select ID,ItemList,ItemNum,MoneyType,Price, LabelParam, Refresh,BeginDate,EndDate ' \
+                           'from t_s_mall where ID = %s' % mallid
+                mallresult = self.select(sql_mall)
+                if mallresult:
+                    result = list(mallresult[0])
+                    itemlistid = result[1].split(':')[0]
+                    moneytype = result[3]
+                    sql = 'SELECT a.Description FROM t_s_language a,t_s_item b,t_s_item_performance c WHERE b.ItemDisplayID = c.ID ' \
+                          'AND c.NameDisplay = a.ID AND b.ID = {0}'.format(itemlistid)
+                    itemlistname = self.select(sql)[0][0]
+                    result[1] = result[1].replace(itemlistid, itemlistname)
+                    sql = 'SELECT a.Description FROM t_s_language a,t_s_item b,t_s_item_performance c WHERE b.ItemDisplayID = c.ID ' \
+                          'AND c.NameDisplay = a.ID AND b.ID = {0}'.format(moneytype)
+                    moneytypename = self.select(sql)[0][0]
+                    result[3] = moneytypename
+                    for j in range(len(result)):
+                        item = QTableWidgetItem(str(result[j]))
+                        self.view.mallTableWidget.setItem(i, j, item)
+    # endregion
+
+    # region 宝箱查询
+
+    # 插入物品列表，item模糊搜索
+    def insert_goodslistwidget(self):
+        self.view.goodsListWidget.clear()
+        namelike = self.view.goodsLineEdit.text().strip()
+        if self.view.goodsRadioButton.isChecked():
+            sql = 'SELECT b.ID,a.Description FROM t_s_language a,t_s_item b,t_s_item_performance c WHERE ' \
+                  'b.ItemDisplayID = c.ID AND c.NameDisplay = a.ID AND a.Description LIKE "%{0}%"'.format(namelike)
+        else:
+            try:
+                id1 = int(namelike)
+            except:
+                self.showdialog('请输入数字')
+                return
+            sql = 'SELECT b.ID,a.Description FROM t_s_language a,t_s_item b,t_s_item_performance c WHERE ' \
+                  'b.ItemDisplayID = c.ID AND c.NameDisplay = a.ID AND b.ID={0}'.format(namelike)
+        if namelike:
+            result = self.select(sql)
+            if len(result) > 0:
+                for item in result:
+                    self.view.goodsListWidget.addItem(str(item[0]) + '  ' + item[1])
+            else:
+                self.view.goodsListWidget.addItem('查询结果为空')
+
+    # 开始查询主函数
+    def item_click(self):
+        id = None
+        # 获取模糊搜索结果中选中的条目
+        id_name = self.view.goodsListWidget.currentItem().text()
+        if id_name:
+            if len(id_name.split()) > 1:
+                id = id_name.split()[0]
+        if id:
+            # self.view.itemidLineEdit.setText(id)
+            # 是否为新宝箱
+            istrue = self.insert_goodstablewidget(id)
+            if istrue:
+                self.insert_goods_tablewidget(id)
+
+    # 插入到宝箱表格
+    def insert_goods_tablewidget(self, itemid):
+        sql_box = 'SELECT DropGroup,ItemName,ItemCount,AnnouncementId,ItemWeight FROM t_s_reward_missionitem ' \
+                  'WHERE DropID in (SELECT TargetID FROM t_s_item where id = %s)' % itemid
+        box_item = self.select(sql_box)
+        # 过滤掉权重为0的物品
+        box_item_list = []
+        for item in box_item:
+            if item[-1] != 0:
+                box_item_list.append(list(item))
+        # 根据dropgroup分组
+        dropgroup_list = []
+        for item in box_item_list:
+            if item[0] not in dropgroup_list:
+                dropgroup_list.append(item[0])
+        dropgroup_list_item = [list() for i in range(len(dropgroup_list))]
+        i = 0
+        for dropgroup in dropgroup_list:
+            for item in box_item_list:
+                if dropgroup == item[0]:
+                    dropgroup_list_item[i].append(item)
+            i += 1
+
+        # 分组计算权重
+        item_weight_add_list = []
+        for group in dropgroup_list_item:
+            # 获取权重总值
+            item_weight_add = 0
+            for item in group:
+                item_weight_add += int(item[-1])
+            item_weight_add_list.append(item_weight_add)
+
+        # 列表中加上权重百分比
+        item_weight = []
+        j = 0
+        for weight in item_weight_add_list:
+            for item in dropgroup_list_item[j]:
+                item_baifen = str(round(int(item[-1]) * 100 / weight, 2)) + '%'
+                item_weight.append(item + [item_baifen])
+            j += 1
+
+        ann_list = []
+        for item in box_item_list:
+            ann_list.append(item[-2])
+        if len(ann_list):
+            self.insert_ann(ann_list)
+
+        # 插入表格
+        self.view.goods_TableWidget.setRowCount(len(item_weight))
+        k = 0
+        for item1 in item_weight:
+            for m in range(len(item1)):
+                item = item1[m]
+                item = QTableWidgetItem(str(item))
+                self.view.goods_TableWidget.setItem(k, m, item)
+            k += 1
+
+    # 插入跑马灯table
+    def insert_ann(self, idlist):
+        self.view.annTableWidget.setRowCount(0)
+        self.view.annTableWidget.setRowCount(len(idlist))
+        for i in range(len(idlist)):
+            self.view.annTableWidget.setItem(i, 0, QTableWidgetItem(str(idlist[i])))
+            if idlist[i] != 0:
+                scrcontent_sql = 'SELECT Description FROM t_s_language WHERE id in ' \
+                                 '( SELECT ScrollContent FROM t_s_announcement WHERE ID = {0})'.format(idlist[i])
+                worcontent_sql = 'SELECT Description FROM t_s_language WHERE id in ' \
+                                 '( SELECT WorldContent FROM t_s_announcement WHERE ID = {0})'.format(idlist[i])
+                scrtext = self.select(scrcontent_sql)
+                wortext = self.select(worcontent_sql)
+                self.view.annTableWidget.setItem(i, 1, QTableWidgetItem(scrtext[0][0]))
+                self.view.annTableWidget.setItem(i, 2, QTableWidgetItem(wortext[0][0]))
+
+    # 可能新宝箱奖励数据
+    def insert_goodstablewidget(self, itemid):
+        self.view.goodsTableWidget.setRowCount(0)
+        itemlist_id = []
+        namelist = []
+        items = self.select('select param1, param2 from t_s_item where id = %s' % itemid)
+        item = items[0][0]
+        itemlist = item.split('|')
+        for j in itemlist:
+            itemlist_id.append(j.split(',')[0])
+        if len(itemlist_id) > 1:
+            self.view.goodsTableWidget.setVisible(True)
+            self.view.goods_TableWidget.setVisible(False)
+            self.view.annTableWidget.setVisible(False)
+            itemnames = self.select('select name from t_s_item where id in {0}'.format(tuple(itemlist_id)))
+            for name in itemnames:
+                namelist.append(name[0])
+            newitem = self.new_replace(item, itemlist_id, namelist)
+            newitemlist = newitem.split('|')
+            self.view.goodsTableWidget.setRowCount(len(newitemlist))
+            for i in range(len(newitemlist)):
+                self.view.goodsTableWidget.setItem(i, 0, QTableWidgetItem(newitemlist[i]))
+                self.view.goodsTableWidget.setItem(i, 1, QTableWidgetItem(str(items[0][1])))
+            return False
+        else:
+            self.view.goodsTableWidget.setVisible(False)
+            self.view.goods_TableWidget.setVisible(True)
+            self.view.annTableWidget.setVisible(True)
+            return True
+
+    # endregion
+
+    # region GM命令
+
+    def insert_nicklistwidget(self):
+        self.view.nickListWidget.clear()
+        namelike = self.view.nickLineEdit.text().strip()
+        if namelike:
+            result = self.select(
+                'select UserID,NickName from t_u_player WHERE NickName like "%{0}%"'.format(namelike), False)
+            if result:
+                for item in result:
+                    self.view.nickListWidget.addItem(str(item[0]) + '   ' + str(item[1]))
+            else:
+                self.view.nickListWidget.addItem('查询结果为空')
+
+    # 插入物品列表，item模糊搜索
+    def insert_goodslistwidget_2(self):
+        self.view.goodsListWidget_2.clear()
+        namelike = self.view.goodsLineEdit_2.text().strip()
+        if self.view.nameRadioButton.isChecked():
+            sql = 'SELECT b.ID,a.Description FROM t_s_language a,t_s_item b,t_s_item_performance c WHERE b.ItemDisplayID = c.ID ' \
+                  'AND c.NameDisplay = a.ID AND a.Description LIKE "%{0}%"'.format(namelike)
+        else:
+            try:
+                id1 = int(namelike)
+            except:
+                self.showdialog('请输入数字')
+                return
+            sql = 'SELECT b.ID,a.Description FROM t_s_language a,t_s_item b,t_s_item_performance c WHERE b.ItemDisplayID = c.ID ' \
+                  'AND c.NameDisplay = a.ID AND b.ID = {0}'.format(namelike)
+        if namelike:
+            result = self.select(sql)
+            if len(result) > 0:
+                for item in result:
+                    self.view.goodsListWidget_2.addItem(str(item[0]) + '  ' + item[1])
+            else:
+                self.view.goodsListWidget_2.addItem('查询结果为空')
+
+
+    # 插入到昵称列表,插入选中你昵称USRID
+    def insert_nicklist(self):
+        id_nick = self.view.nickListWidget.currentItem().text()
+        self.view.nicklistListWidget.addItem(id_nick)
+
+    # 插入商品ID
+    def insert_itemid(self):
+        id_name = self.view.goodsListWidget_2.currentItem().text()
+        self.view.nicklistListWidget_2.addItem(id_name)
+
+    # 双击删除选中昵称
+    def double_remove(self):
+        item = self.view.nicklistListWidget.takeItem(self.view.nicklistListWidget.currentRow())
+        del item
+
+    # 清空昵称列表
+    def clearnicklist_2(self):
+        self.view.nicklistListWidget_2.clear()
+
+    # 双击删除选中昵称
+    def double_remove_2(self):
+        item = self.view.nicklistListWidget_2.takeItem(self.view.nicklistListWidget_2.currentRow())
+        del item
+
+    # 清空昵称列表
+    def clearnicklist(self):
+        self.view.nicklistListWidget.clear()
+
+    # 发送GM命令
+    def sendgm(self):
+        result = None
+        nicknamelist = []
+        itemidlist = []
+        nickcount = self.view.nicklistListWidget.count()
+        if nickcount:
+            for i in range(nickcount):
+                text = self.view.nicklistListWidget.item(i).text()
+                nicknamelist.append(text.split()[1])
+        else:
+            return
+        itemcount = self.view.nicklistListWidget_2.count()
+        if itemcount:
+            for i in range(itemcount):
+                text = self.view.nicklistListWidget_2.item(i).text()
+                itemidlist.append(text.split()[0])
+        else:
+            return
+        ip = self.view.ipLineEdit.text()
+        port = self.view.portLineEdit.text()
+        count = self.view.countLineEdit.text()
+        if count:
+            pass
+        else:
+            self.showdialog('数量不能为空')
+            return
+
+        try:
+            for nickname in nicknamelist:
+                for itemid in itemidlist:
+                    response = requests.get('http://{0}:{1}/agent/testCommand?params={2}$item {3} {4}'
+                                            .format(ip, port, nickname, itemid, count))
+                    result = response.text
+                    sleep(0.1)
+        except Exception as e:
+            self.showdialog('gm命令执行失败', str(e))
+            return
+        finally:
+            if result:
+                if result == 'testCommand success':
+                    self.view.statusBar().showMessage(str(strftime('%H:%M:%S')) + '    GM命令执行成功')
+
+    def addmail(self):
+        itemidlist = []
+        itemcount = self.view.nicklistListWidget_2.count()
+        if itemcount:
+            for i in range(itemcount):
+                text = self.view.nicklistListWidget_2.item(i).text()
+                itemidlist.append(text.split()[0])
+        else:
+            return
+        count = self.view.countLineEdit.text()
+        if count:
+            pass
+        else:
+            self.showdialog('数量不能为空')
+            return
+        itemlist = ''
+        for itemid in itemidlist:
+            itemlist += itemid + ',' + count + '|'
+        # 去除最后一个'|'
+        itemlist = itemlist[:-1]
+        self.view.itemlistLineEdit.setText(itemlist)
+
+    def sendothergm(self):
+        result = None
+        nicknamelist = []
+        count = self.view.nicklistListWidget.count()
+        if count:
+            for i in range(count):
+                text = self.view.nicklistListWidget.item(i).text()
+                nicknamelist.append(text.split()[1])
+        else:
+            return
+        ip = self.view.ipLineEdit.text()
+        port = self.view.portLineEdit.text()
+        other = self.view.otherComboBox.currentText().split('--')[0].strip()
+
+        if not other:
+            self.showdialog('命令不能为空')
+            return
+        try:
+            for nickname in nicknamelist:
+                response = requests.get('http://{0}:{1}/agent/testCommand?params={2}${3}'
+                                        .format(ip, port, nickname, other))
+                result = response.text
+                sleep(0.1)
+        except Exception as e:
+            self.showdialog('gm命令执行失败', str(e))
+            return
+        finally:
+            if result:
+                if result == 'testCommand success':
+                    self.view.statusBar().showMessage(str(strftime('%H:%M:%S')) + '    GM命令执行成功')
+
+    def sendcusgm(self):
+        result = None
+        nicknamelist = []
+        count = self.view.nicklistListWidget.count()
+        if count:
+            for i in range(count):
+                text = self.view.nicklistListWidget.item(i).text()
+                nicknamelist.append(text.split()[1])
+        else:
+            return
+        ip = self.view.ipLineEdit.text()
+        port = self.view.portLineEdit.text()
+        index = self.view.comboBox_2.currentIndex()
+        otherlist = self.gmlist[index].split('|')
+        if not otherlist:
+            self.showdialog('命令不能为空')
+            return
+        try:
+            for nickname in nicknamelist:
+                for other in otherlist:
+                    if other.strip():
+                        response = requests.get('http://{0}:{1}/agent/testCommand?params={2}${3}'
+                                                .format(ip, port, nickname, other.strip()))
+                        result = response.text
+                        sleep(0.1)
+        except Exception as e:
+            self.showdialog('gm命令执行失败', str(e))
+            return
+        finally:
+            if result:
+                if result == 'testCommand success':
+                    self.view.statusBar().showMessage(str(strftime('%H:%M:%S')) + '    GM命令执行成功')
+
+    def sendmail(self):
+        result = None
+        useridlist = []
+        title = self.view.titleLineEdit.text()
+        ip = self.view.ipLineEdit.text()
+        port = self.view.portLineEdit.text()
+        comment = self.view.commentLineEdit.text()
+        reward = self.view.itemlistLineEdit.text()
+        limittime = int(self.view.dayLineEdit.text())*86400 + int(self.view.secondLineEdit.text())
+
+        if self.view.radioButton.isChecked():
+            count = self.view.nicklistListWidget.count()
+            if count:
+                for i in range(count):
+                    text = self.view.nicklistListWidget.item(i).text()
+                    useridlist.append(text.split()[0])
+            else:
+                return
+            try:
+                for userid in useridlist:
+                    response = requests.get('http://{0}:{1}/agent/mail?params=1${2}${3}${4}${5}${6}'
+                                            .format(ip, port, userid, title, comment, reward, str(limittime)))
+                    result = response.text
+                    sleep(0.1)
+            except Exception as e:
+                self.showdialog('gm命令执行失败', str(e))
+                return
+            finally:
+                if result:
+                    if result == 'mail success':
+                        self.view.statusBar().showMessage(str(strftime('%H:%M:%S')) + '    GM命令执行成功')
+
+        else:
+            try:
+                response = requests.get('http://{0}:{1}/agent/mail?params=4${2}${3}${4}${5}'
+                                        .format(ip, port, title, comment, reward, str(limittime)))
+                result = response.text
+            except Exception as e:
+                self.showdialog('gm命令执行失败', str(e))
+                return
+            finally:
+                if result:
+                    if result == 'mail success':
+                        self.view.statusBar().showMessage(str(strftime('%H:%M:%S')) + '    GM命令执行成功')
+
+    # endregion
+
+    # region 表查询
+    def insert_table_listwidget(self):
+        self.view.tableListWidget.clear()
+        text = self.view.tableLineEdit.text()
+        tables_list = []
+        if text:
+            for item in self.tables:
+                if text in item:
+                    tables_list.append(item.strip())
+            self.view.tableListWidget.addItems(tables_list)
+        else:
+            for item in self.tables:
+                self.view.tableListWidget.addItem(item.strip())
+    # endregion
+
+    #   region 改表查询
+
+    def set_sqltext(self):
+        index = self.view.sqlComboBox.currentIndex()
+        self.view.sqlTextEdit.setText(self.sqllist[index])
+        if re.search('t_s_', self.sqllist[index]):
+            self.view.tsRadioButton.setChecked(True)
+        else:
+            self.view.tuRadioButton.setChecked(True)
+
+    def excute_sql(self):
+        if self.host in ('10.10.4.180', '56f14464580ca.gz.cdb.myqcloud.com'):
+            self.showdialog('腾讯3和180数据库不允许改表')
+            return
+        rowcount = 0
+        sql = self.view.sqlTextEdit.toPlainText()
+        if self.view.tsRadioButton.isChecked():
+            rowcount = self.update_db(sql)
+        else:
+            rowcount = self.update_db(sql, False)
+        if rowcount > 0:
+            self.view.resultTextEdit.setText('执行成功，总共修改{0}项'.format(rowcount))
+        else:
+            self.view.resultTextEdit.setText('无任何改动')
+
+    # endregion
+
+    # region 读取配置文件
+
+    def read_config_table(self):
+        cf = open('config.conf', 'r', encoding='utf-8')
+        self.tables = cf.readlines()
+        cf.close()
+
+    def read_config_sections(self, config_path, section=None):
+        cf = configparser.ConfigParser()
+        cf.read_file(codecs.open(config_path, 'r', 'utf-8'))
+        if not section:
+            return cf.sections()
+        else:
+            values = cf.items(section)
+            self.host = values[0][1]
+            self.port = int(values[1][1])
+            self.user = values[2][1]
+            self.password = values[3][1]
+            self.db = values[4][1]
+            self.db_game = values[5][1]
+            self.ip = values[6][1]
+            self.serverport = values[7][1]
+
+    # 读取默认的服务器IP、端口
+    def set_server_port(self):
+        self.read_config_sections('server.conf', self.view.comboBox.currentText())
+        self.view.ipLineEdit.setText(self.ip)
+        self.view.portLineEdit.setText(self.serverport)
+
+    # 读取跳转配置文件
+    def read_config_jump(self, config_path):
+        cf = configparser.ConfigParser()
+        cf.read_file(codecs.open(config_path, 'r', 'utf-8'))
+        return cf
+
+    # 初始化db选择
+    def insert_combobox(self):
+        self.view.comboBox.addItems(self.read_config_sections('server.conf'))
+        self.set_server_port()
+
+    # 初始化自定义gm命令
+    def insert_combobox_2(self):
+        tree = ET.parse('customize_gm.xml')
+        root = tree.getroot()
+        desclist = []
+        gmcuslist = []
+        gmlist = []
+        for child in root[0]:
+            gmlist.append(child.text)
+        for child in root[1]:
+            desclist.append(child.attrib['desc'])
+            gmcuslist.append(child.text)
+        self.view.otherComboBox.addItems(gmlist)
+        self.view.comboBox_2.addItems(desclist)
+        return gmcuslist
+
+    # 初始化sql命令模板
+    def insert_sqlcombobox(self):
+        tree = ET.parse('sql.xml')
+        root = tree.getroot()
+        sqllist = []
+        desclist = []
+        for child in root[0]:
+            desclist.append(child.attrib['desc'])
+            sqllist.append(child.text)
+        self.view.sqlComboBox.addItems(desclist)
+        return sqllist
+
+    # endregion
+
+    # region 公用方法
+    def connect_db(self, istrue=True):
+        # self.read_config_sections('server.conf', self.view.comboBox.currentText())
+        dbname = None
+        if istrue:
+            dbname = self.db
+        else:
+            dbname = self.db_game
+        try:
+            coon = pymysql.connect(host=self.host,
+                                   user=self.user,
+                                   port=self.port,
+                                   password=self.password,
+                                   db=dbname,
+                                   charset='utf8'
+                                   )
+            return coon
+        except Exception as e:
+            self.showdialog('数据库连接失败', str(e))
+            return
+
+    # 查询数据库
+    def select(self, args=None, istrue=True):
+        cursor = None
+        result = None
+        coon = None
+        try:
+            if istrue:
+                coon = self.connect_db()
+            else:
+                coon = self.connect_db(False)
+            cursor = coon.cursor()
+            cursor.execute(args)
+            result = cursor.fetchall()
+            return result
+        except Exception as e:
+            self.showdialog('数据查询失败', str(e))
+            return
+        finally:
+            if cursor:
+                cursor.close()
+            if coon:
+                coon.close()
+
+    # 修改数据库
+    def update_db(self, sql, istrue=True):
+        cursor = None
+        rowcount = 0
+        coon = None
+        try:
+            if istrue:
+                coon = self.connect_db()
+            else:
+                coon = self.connect_db(False)
+            cursor = coon.cursor()
+            cursor.execute(sql)
+            coon.commit()
+            rowcount = cursor.rowcount
+        except Exception as e:
+            coon.rollback()
+            self.showdialog('数据库修改失败', str(e))
+            return
+        finally:
+            if coon:
+                coon.close()
+            if cursor:
+                cursor.close()
+            return rowcount
+
+    # 修改配置文件
+
+    # 字符串列表替换
+    def new_replace(self, str1, list1, list2):
+        for i in range(len(list1)):
+            str1 = str1.replace(list1[i], list2[i])
+        return str1
+
+    # 弹框提示
+    def showdialog(self, message, detailmessage=None):
+        msg = QMessageBox()
+        msg.setIcon(QMessageBox.Information)
+        msg.setText(message)
+        if detailmessage:
+            msg.setDetailedText(detailmessage)
+        msg.setWindowTitle("提示信息")
+        msg.exec_()
+
+    # endregion
+
+    def test(self):
+        print('------')
+
+if __name__ == '__main__':
+    client = Client()
+    client.run()

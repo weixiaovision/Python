@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<title>Ajax练习</title>
+	<script type="text/javascript" src="jq.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			// $('input[name="按钮"]').on('click',function(){
+			// 	//alert(1);
+			// 	$("#d1").load('message1.json',function(result,status){
+			// 		alert(status);
+			// 	});
+
+
+			// });
+//----------------------------------------------------------------------------------------------------------------------
+			// $('input[name="按钮"]').on('click',function(){
+			// 	//alert(1);
+			// 	$.getJSON('message2.json',function(result){
+			// 		alert(JSON.stringify(result))
+			// 		alert(result.persons[0].name)
+			// 		$.each(result.persons,function(i,n){
+			// 			alert(i+'TONY')
+			// 			alert(n.name)
+			// 			var li='<p>'+'name'+':'+n.name+'</p>';
+			// 			$('#d1').append(li);
+			// 		})
+			// 	});
+
+
+			// });
+
+//------------------------------------------------------------------------------------------------------------------------
+		 $('input[name="按钮"]').on('click',function(){
+
+		 		var params="骄傲·艾丽卡$clearpet";
+
+		 		$.ajax({
+		 			url:'http://10.10.4.180:6662/agent/testCommand?params=骄傲·艾丽卡$diamond 100',
+		 			type:'get',
+		 			data:{
+		 				// params:params
+		 				
+		 			},
+		 			success:function(result){
+		 				// alert(result.persons[0].name);
+		 				alert("成功");
+		 			},
+		 			error:function(){
+		 				alert(1);
+		 			},
+		 			dataType:"jsonp"
+
+		 		});
+		 });
+		
+
+//----------------------------------------------------------------------------------------------------------------------
+		 // $('input[name="按钮"]').on('click',function(){
+
+
+
+		 // 		$.ajax({
+		 // 			url:'http://e.hnce.com.cn/tools/ajax.aspx?jsoncallback=?',
+		 // 			type:'get',
+		 // 			async:true,
+		 // 			data:{
+		 // 				 "msg_title": "今日任务提醒",
+			//              "msg_content":"1",
+			//              "receiver": [{
+			//                  "user_name": "tony.cheng",
+			//                  "domain": ""
+			//              }]
+
+
+
+		 // 			},
+		 // 			success:function(result){
+		 // 				alert(JSON.stringify(result));
+		 // 			},
+		 // 			dataType:"jsonp",
+		 // 			jsonp: "callbackparam"
+		 // 		});
+		 // });
+
+
+
+
+
+
+//----------------------------------------------------------------------------------------
+		});
+	</script>
+	<style type="text/css">
+	/*	#s1{
+			widows: 300px;
+			height: 300px;
+			border:1px solid #000
+
+		}*/
+	</style>
+</head>
+<body>
+	<header>
+		<h1>局部传输</h1>
+		<div>
+			
+		</div>
+	</header>
+	<section>
+		<form action="">
+			
+		</form>
+	</section>
+
+			 <input type="submit" value="按钮" name="按钮">
+			<div id="d1">
+				
+			</div>
+
+	
+	<select>
+		  <option value ="volvo">Volvo</option>
+		  <option value ="saab">Saab</option>
+		  <option value="opel">Opel</option>
+		  <option value="audi">Audi</option>
+	</select>
+
+
+</body>
+</html>

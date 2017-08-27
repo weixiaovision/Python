@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ROOT>
+
+    <!--GM命令，命令和注释直接用'-'分割-->
+    <GMTools>
+
+        <GM>xy 10 --增加排位信用</GM>
+        <GM>clearquit --清除禁赛CD</GM>
+        <GM>pw XX --设置排位赛积分等级</GM>
+        <GM>military X --(齐射模式）增加军衔分数</GM>
+        <GM>su xxx（-xx）--(夏季锦标赛)增加/减少锦标赛分数</GM>
+        <GM>ghcd --清除公会主动退会cd</GM>
+        <GM>cleargpcd --清除公会聚会CD</GM>
+        <GM>closegp --关闭公会聚会</GM>
+        <GM>day xx --增加任务活跃度值</GM>
+        <GM>week xx --增加任务周活跃度值</GM>
+        <GM>ladderbox --发放排位赛季赛宝箱</GM>
+        <GM>skip 9999990 --跳过新手指引</GM>
+        <GM>fightpower 100 --设置战斗力（队伍实力)</GM>
+        <GM>clearbg --清空角色背包</GM>
+        <GM>petExp ID NUM --($petExp 71128012 100)宠物升级GM命令</GM>
+        <GM>wqsj 100 --武器升阶，参数100是单项值每一项为100</GM>
+        <GM>champion 1 --设置人物-达人（全亮） </GM>
+        <GM>ch XX --设置任务-称号(称号ID在t_s_title表)</GM>
+        <GM>dailyTaskFinsh --完成全部日常任务</GM>
+        <GM>taskFinsh 任务类型(1主线，2支线) 任务ID --主线和支线任务完成</GM>
+        <GM>resetGuildTask --重置当前的公会活动数据，完成状态全部清零</GM>
+        <GM>finGuildTask --完成个人全部公会任务</GM>
+        <GM>updateTask 类型ID 任务ID --设置单个任务完成:(类型ID：1是指公会任务,2是指主线和支线和活跃，3是指活动任务)</GM>
+        <GM>die2 --设置我方阵容全体死亡-输</GM>
+        <GM>die --自杀</GM>
+        <GM>kill --设置杀死对方全体阵容-赢</GM>
+
+    </GMTools>
+
+    <!--自定组，命令之间用'|'分割，支持换行输入-->
+    <Group>
+        <GM desc="自定义组1">exp 1000|
+            diamond 1000|
+            coin 10000|coin 1000|
+        </GM>
+        <GM desc="自定义组2">coin 1000|diamond 1000</GM>
+    </Group>
+
+</ROOT>

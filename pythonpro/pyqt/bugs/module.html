@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>禅道BUG统计</title>
+	<meta charset="utf-8">
+	<!-- 引入 ECharts 文件 -->
+	<script src="echarts.min.js"></script>
+</head>
+<body>
+<br />
+<b style="color:red;font-size:60px;">当前有127个BUG待修复</b>
+<br/ ><br/ >
+<!-- 为 ECharts 准备一个具备大小（宽高）的 DOM -->
+	<div id="main" style="width: 600px;height:400px;"></div>
+	<script type="text/javascript">
+		// 基于准备好的dom，初始化echarts实例
+		var myChart = echarts.init(document.getElementById('main'));
+
+		// 指定图表的配置项和数据
+		var option = {
+				title: {
+				text: ''
+			},
+			tooltip: {},
+			legend: {
+				data:['num']
+			},
+			series: [{
+				name: '',
+				type: 'pie',
+				roseType: 'angle',
+				data: [{value : 21,name : "战斗系统"},{value : 59,name : "社交系统"},{value : 1,name : "活动相关"},{value : 5,name : "服务器、bugly报错"},{value : 61,name : "其他"},{value : 0,name : "新增模块"}]
+		}]};
+
+		// 使用刚指定的配置项和数据显示图表。
+		myChart.setOption(option)
+	</script>
+
+<a href="/cgi-bin/index">返回主页</a>
+<br /><br />
+</body>
+</html>

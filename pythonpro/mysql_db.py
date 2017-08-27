@@ -95,7 +95,6 @@ class Mydb:
             cursor = self.coon.cursor()
             cursor.execute(sql, args)
             self.coon.commit()
-            cursor.fetchall()
             rowcount = cursor.rowcount
         except Exception as e:
             print(e)
@@ -125,16 +124,6 @@ class Mydb:
             return tables
 if __name__ == '__main__':
     mysql = Mydb('10.10.7.107', 'g_user', 2433, 'qqdba_changic', 'db_game_rh_0002')
-    sql = "show tables"
-    tables = mysql.gettables(sql)
-    tablesAlias = []
-    s = '{"tblist":[\n'
-    for tablename in tables:
-        if tablename[0].find('t_s_') != -1:
-            tablesAlias.append(tablename[0])
-            s = s + '"' + tablename[0] + '",\n'
-    s = s[:-2]
-    print(s)
-    s = s + '\n]}'
-    print(s)
-    print(tablesAlias)
+    sql = "UPDATE t_u_player SET LEVEL = 13 WHERE  nickname in ('生命的麦凯伦', '墙的罗素')"
+    rowcount = mysql.update_db(sql)
+    print(rowcount)

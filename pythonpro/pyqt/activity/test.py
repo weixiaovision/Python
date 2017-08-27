@@ -1,5 +1,10 @@
-import requests
+import xml.etree.ElementTree as ET
 
 
-response = requests.get('http://10.10.4.180:6692/agent/testCommand?params=0001$coin 30')
-print(response.text)
+tree = ET.parse('update.xml')
+root = tree.getroot()
+for child in root[0]:
+    print(child.text)
+
+for child in root[1]:
+    print(child.text)

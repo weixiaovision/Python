@@ -7,6 +7,7 @@ from PyQt5.QtWidgets import QMainWindow, QApplication, QFileDialog, QMessageBox
 import view
 import os
 from shutil import copy2, rmtree
+import zipfile
 
 
 class MainWindow(QMainWindow, view.Ui_MainWindow):
@@ -23,12 +24,16 @@ class Client():
         self.new_version = None
         self.svn_path = None
         self.output_path = None
+        self.diff_file_list = []
 
     def run(self):
         self.view.opendirPushButton.clicked.connect(self.select_dir)
-        self.view.outputPushButton.clicked.connect(self.select_dir)
+        self.view.outputPushButton.clicked.connect(self.select_out_dir)
+        self.view.oldPushButton.clicked.connect(self.select_file)
+        self.view.newPushButton.clicked.connect(self.select_new_file)
         self.view.startPushButton.clicked.connect(self.insert_listwidget)
         self.view.copyPushButton.clicked.connect(self.copy_start)
+        self.view.checkPushButton.clicked.connect(self.get_diff_zip)
         self.view.show()
         sys.exit(self.app.exec_())
 
@@ -41,7 +46,7 @@ class Client():
             f.close()
 
     def insert_listwidget(self):
-        self.clear()
+        self.diff_file_list = []
         self.get_version_path()
         if not self.old_version or not self.new_version:
             self.showdialog('输入框不能为空')
@@ -53,10 +58,13 @@ class Client():
         modify.reverse()
         add.reverse()
         delete.reverse()
-        self.view.modifyListWidget.addItems(modify)
-        self.view.addListWidget.addItems(add)
-        self.view.deleteListWidget.addItems(delete)
+        self.diff_file_list.extend(modify)
+        self.diff_file_list.extend(add)
+        self.view.modifyTextEdit.setText(modify)
+        self.view.addTextEdit.setText(add)
+        self.view.deleteTextEdit.setText(delete)
         self.view.copyPushButton.setEnabled(True)
+        self.view.checkPushButton.setEnabled(True)
 
     def copy_start(self):
         if not os.path.exists(self.output_path):
@@ -86,10 +94,10 @@ class Client():
         f.writelines([self.svn_path, self.output_path])
         f.close()
 
-    def clear(self):
-        self.view.modifyListWidget.clear()
-        self.view.addListWidget.clear()
-        self.view.deleteListWidget.clear()
+    # def clear(self):
+    #     self.view.modifyListWidget.clear()
+    #     self.view.addListWidget.clear()
+    #     self.view.deleteListWidget.clear()
 
     def getfilelist(self, old_version, new_version, path, istrue=True):
         modify_file_list = []
@@ -107,13 +115,13 @@ class Client():
         for line in text:
             linesplitlist = line.split()
             if linesplitlist[0] == 'M':
-                modify_file_list.append(linesplitlist[1].split('Develop')[1].replace('\\', '/'))
+                modify_file_list.append(linesplitlist[1].split('Resource')[1].replace('\\', '/'))
                 modify_file_list_path.append(linesplitlist[1].replace('\\', '/'))
             elif linesplitlist[0] == 'A':
-                add_file_list.append(linesplitlist[1].split('Develop')[1].replace('\\', '/'))
+                add_file_list.append(linesplitlist[1].split('Resource')[1].replace('\\', '/'))
                 add_file_list_path.append(linesplitlist[1].replace('\\', '/'))
             else:
-                delete_file_list.append(linesplitlist[1].split('Develop')[1].replace('\\', '/'))
+                delete_file_list.append(linesplitlist[1].split('Resource')[1].replace('\\', '/'))
                 delete_file_list_path.append(linesplitlist[1].replace('\\', '/'))
         if istrue:
             return modify_file_list, add_file_list, delete_file_list
@@ -143,6 +151,36 @@ class Client():
         dir_select = msg.getExistingDirectory()
         if dir_select:
             self.view.pathLineEdit.setText(dir_select)
+
+    def select_out_dir(self):
+        msg = QFileDialog()
+        dir_select = msg.getExistingDirectory()
+        if dir_select:
+            self.view.outputLineEdit.setText(dir_select)
+
+    def select_file(self):
+        msg = QFileDialog()
+        file_select = msg.getOpenFileName()
+        print(file_select)
+        if file_select:
+            self.view.oldLineEdit.setText(file_select[0])
+
+    def select_new_file(self):
+        msg = QFileDialog()
+        file_select = msg.getOpenFileName()
+        if file_select:
+            self.view.newLineEdit.setText(file_select[0])
+
+    def get_diff_zip(self):
+        old_file_list = zipfile.ZipFile(self.view.oldLineEdit.text()).namelist()
+        new_file_list = zipfile.ZipFile(self.view.newLineEdit.text()).namelist()
+        diff_zip_file = list(set(new_file_list).difference(set(old_file_list)))
+        for file in self.diff_file_list:
+            if file not in new_file_list:
+                print('漏更新：%s' % file)
+        for file in diff_zip_file:
+            if file not in self.diff_file_list:
+                print('多更新文件：%s' % file)
 
     # 弹框提示
     def showdialog(self, message, detailmessage=None):

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<msdk>
+		<serverName>msdk.qq.com</serverName>
+		<wxAppID>wxb693381ef5398b88</wxAppID>
+		<wxAppKey>61643af32a10da6dbf3c704690a6e28e</wxAppKey>
+		<qqAppID>1105192975</qqAppID>
+		<qqAppKey>DVDnYslMYzzTT4Lg</qqAppKey>
+	</msdk>
+	<l5>
+		<!-- L5正式环境 -->
+		<modid>64056577</modid>
+		<cmdid>65536</cmdid>
+		
+		<!-- 道具直购L5正式环境 -->
+		<modid-buy>64056833</modid-buy>
+		<cmdid-buy>65536</cmdid-buy>
+		
+		<!-- L5测试环境 -->
+		<modid-test>64056769</modid-test>
+		<cmdid-test>65536</cmdid-test>
+		<!-- 0:正式环  1：沙箱环境   -->
+		<l5-test>1</l5-test>
+	</l5>
+	<!-- 点卷配置 -->
+	<midas>
+		<serverName>msdk.qq.com</serverName>
+        <andAppID>1450007236</andAppID>
+        <andAppKey>vGgexljWEZvlrnqiql3uBbsDHRIw581m</andAppKey>
+        <iosAppID>1450007237</iosAppID>
+        <iosAppKey>WZdzXTTZN7cS1pBIkBqvjZygRyLspeWK</iosAppKey>
+		<!-- 米大师点券开关控制，请注意  0:关闭 米大师  1：打开米大师   -->
+		<midasflag>0</midasflag>
+
+		<!-- 沙箱key-->
+		<serverName-test>msdktest.qq.com</serverName-test>
+		<andAppKey-test>YXUq4fYM0m5iQh4Zoe0nMO6QH8FnOndC</andAppKey-test>
+		<iosAppKey-test>qLM4NhDymbgmjdHVZgxKKm3hYks8G66B</iosAppKey-test>
+		<!-- 0:正式环境米大师  1：沙箱环境米大师   -->
+		<midastest>1</midastest>
+		<!-- 是否使用L5环境，1:使用    0：不用   -->
+		<useL5>0</useL5>
+	</midas>
+
+	<!-- 直购外网环境配置 -->
+	<midas-direct>
+		<!--=======================测试外网环境配置========================== -->
+        <andAppID-out>1450012201</andAppID-out>
+        <iosAppID-out>1450012202</iosAppID-out>
+		<!-- 外网配置正式 -->
+		<andAppKey-out>E0R4WWOLhBUK6hxKOQyFBLHk6UrEGZtM</andAppKey-out>
+        <iosAppKey-out>IZn3yT4DHiNaMStQApj8QUNTFzj4l6bB</iosAppKey-out>
+		<!-- 外网配置沙箱 -->
+		<andAppKey-out-test>qswlorxqOIWmq82gH0DUTI8taUcMCxog</andAppKey-out-test>
+		<iosAppKey-out-test>mPLZO5MxeAMOEm9Ac2JTNiYpcVCtmh05</iosAppKey-out-test>
+
+		<!--=======================正式内网环境配置========================== -->
+		<!-- app id -->
+        <andAppID>1450012201</andAppID>
+        <iosAppID>1450012202</iosAppID>
+		<!-- 内网配置正式-->
+		<andAppKey>E0R4WWOLhBUK6hxKOQyFBLHk6UrEGZtM</andAppKey>
+        <iosAppKey>IZn3yT4DHiNaMStQApj8QUNTFzj4l6bB</iosAppKey>
+		<!-- 配置沙箱 -->
+		<andAppKey-test>qswlorxqOIWmq82gH0DUTI8taUcMCxog</andAppKey-test>
+		<iosAppKey-test>mPLZO5MxeAMOEm9Ac2JTNiYpcVCtmh05</iosAppKey-test>
+	</midas-direct>
+
+	<tribe>
+        <win32>https://buluo.qq.com/cgi-bin/bar/qqgame/handle_ticket?redirect_url=https%3A%2F%2Fbuluo.qq.com%2Fmobile%2Fbarindex.html%3F%26_wv%3D1027%26from%3Dgameblog_ddtank%26bid%3D21539&amp;sourcetype=1</win32>
+        <ios>https://buluo.qq.com/cgi-bin/bar/qqgame/handle_ticket?redirect_url=https%3A%2F%2Fbuluo.qq.com%2Fmobile%2Fbarindex.html%3F%26_wv%3D1027%26from%3Dgameblog_ddtank%26bid%3D21539&amp;sourcetype=1</ios>
+		<android>https://buluo.qq.com/cgi-bin/bar/qqgame/handle_ticket?redirect_url=https%3A%2F%2Fbuluo.qq.com%2Fmobile%2Fbarindex.html%3F%26_wv%3D1027%26from%3Dgameblog_ddtank%26bid%3D21539&amp;sourcetype=1</android>
+    </tribe>
+    <regionId>7212</regionId>
+    <dbCount>1</dbCount>
+	<!-- recommendRegNumA注册上限爆满（不能注册，老号能登录），recommendPcuNumA推荐PCU上限(不能注册又不能登录)，优先推荐注册数小于recommendRegNumB的小区-->
+   	<recommendRegNumA>150000</recommendRegNumA>
+	<recommendPcuNumA>35000</recommendPcuNumA>
+	<recommendRegNumB>50000</recommendRegNumB>
+	
+	<!-- 直播开关，0使用测试环境，1使用正式环境 -->
+	<liveSwitch>0</liveSwitch>
+	<database>
+		<pool>
+			<db name="MainDB">
+				<url>jdbc:mysql://10.10.7.107:2433/test_jun_game?allowMultiQueries=true&amp;characterEncoding=utf8</url>
+                <username>g_user</username>
+				<password>qqdba_changic</password>
+			</db>
+			<db name="LogDB">
+				<url>jdbc:mysql://10.10.7.107:2433/test_jun_logger?allowMultiQueries=true&amp;characterEncoding=utf8</url>
+				<username>g_user</username>
+				<password>qqdba_changic</password>
+			</db>
+		</pool>
+		<orm>
+			<db name="MainDB">
+				<url>jdbc:mysql://10.10.7.107:2433/test_jun_config?allowMultiQueries=true&amp;characterEncoding=utf8</url>
+				<username>g_user</username>
+				<password>qqdba_changic</password>
+			</db>
+		</orm>
+	</database>
+	<redisdb>
+		<node ip="127.0.0.1" port="6379" auth="7roadtest" timeout="1000000"></node>
+	</redisdb>
+	<tlogsvr>
+		<node ip="127.0.0.1" maximum="1" port="10001"></node>
+	</tlogsvr>
+	<web port="6600" resourcePath = "../CommonLib/webResource/" packages = "com.road.agent.web"></web>
+	<recharge-web port="9001" resourcePath = "../CommonLib/webResource/" packages = "com.road.idip.web"></recharge-web>
+	<auditConfig><!-- paltformID 1wx，2qq, 3youke -->
+		<version platOS="1" maxVersion="0" minVersion="0" ip="10.10.4.180" port="7000" paltformID="1"></version>
+		<version platOS="1" maxVersion="0" minVersion="0" ip="10.10.4.180" port="7000" paltformID="2"></version>
+		<version platOS="1" maxVersion="0" minVersion="0" ip="10.10.4.180" port="7000" paltformID="3"></version>
+	</auditConfig>
+	<urls>
+		<indulgeReport>http://maasapi.game.qq.com:12280/aas.fcg</indulgeReport>
+	</urls>
+	<!--腾讯cos cdn配置  -->
+	<cosCdn>
+		<appID>1251402091</appID>
+		<secretId>AKIDBRT9XMqs3bUz4Qu7L5FbhGkohB7Upw0T</secretId>
+		<secretKey>nJQCpjAbdObKWTx5VJgZ3xCxE6vNWJac</secretKey>
+		<endPoin>gz</endPoin>
+		<bucketVideo>video</bucketVideo>
+		<urlVideo>https://video-1251402091.file.myqcloud.com</urlVideo>
+		<bucketHead>head</bucketHead>
+		<urlHead>https://head-1251402091.file.myqcloud.com</urlHead>
+		<bucketMood>mood</bucketMood>
+		<urlMood>https://mood-1251402091.file.myqcloud.com</urlMood>
+		<bucketShare>share</bucketShare>
+		<urlShare>https://share-1251402091.file.myqcloud.com</urlShare>
+	</cosCdn>
+	<gcloud-ios>
+		<gameId>1493769602</gameId>
+		<gameKey>8e2c141ff734687732f5bc6fb1751755</gameKey>
+		<dolphinUpdateUrl>download.1.1493769602.gcloudcs.com</dolphinUpdateUrl>
+		<dolphinPreUpdateUrl>pre-download.2.1493769602.gcloudcs.com</dolphinPreUpdateUrl>
+		<dolohinChannelId>21704</dolohinChannelId>
+		<usePreUpdate>1</usePreUpdate>
+	</gcloud-ios>
+
+	<gcloud-android>
+		<gameId>1493769602</gameId>
+		<gameKey>8e2c141ff734687732f5bc6fb1751755</gameKey>
+		<dolphinUpdateUrl>download.1.1493769602.gcloudcs.com</dolphinUpdateUrl>
+		<dolphinPreUpdateUrl>pre-download.2.1493769602.gcloudcs.com</dolphinPreUpdateUrl>
+		<dolohinChannelId>21703</dolohinChannelId>
+		<usePreUpdate>1</usePreUpdate>
+	</gcloud-android>
+
+	<!-- 用来判断玩家是否属于审核服 -->
+	<checkRegion>
+		<qq>8001</qq>
+		<wx>8002</wx>
+		<guest>8003</guest>
+	</checkRegion>
+	<!-- 关闭APP检测更新 -->
+	<iosCloseAppUpdateVersionList>1.1|1.2</iosCloseAppUpdateVersionList>
+</config>

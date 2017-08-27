@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ROOT>
+
+    <!--战斗系统-->
+    <CombatSystem>
+
+        <Module id="102"> z自由对战 </Module>
+        <Module id="117"> 结算 </Module>
+        <Module id="132"> x限时PVE </Module>
+        <Module id="133"> x限时PVP </Module>
+        <Module id="205"> q齐射模式 </Module>
+        <Module id="22"> p排位赛 </Module>
+        <Module id="23"> x休闲赛 </Module>
+        <Module id="24"> z战斗 </Module>
+        <Module id="39"> 战术道具 </Module>
+        <Module id="40"> 操作模式 </Module>
+        <Module id="42"> 幽灵模式 </Module>
+        <Module id="26"> d多人副本 </Module>
+        <Module id="51"> 训练营 </Module>
+        <Module id="71"> 首战 </Module>
+        <Module id="206"> 夏季锦标赛 </Module>
+        <Module id="74"> j结算 </Module>
+
+    </CombatSystem>
+
+    <!--社交系统-->
+    <SocialSystem>
+
+        <Module id="28"> g公会 </Module>
+        <Module id="32"> s社交系统 </Module>
+        <Module id="54"> 聊天 </Module>
+        <Module id="55"> 语音 </Module>
+        <Module id="57"> 好友 </Module>
+        <Module id="68"> 群组 </Module>
+
+    </SocialSystem>
+
+    <!--活动相关-->
+    <ActivityRelatedSystem>
+
+        <Module id="207"> Datamore </Module>
+        <Module id="45"> h活动系统 </Module>
+        <Module id="66"> 活动中心 </Module>
+        <Module id="59"> 7天登录 </Module>
+        <Module id="60"> 月签到 </Module>
+        <Module id="78"> 公告 </Module>
+
+    </ActivityRelatedSystem>
+
+    <!--服务器、Bugly报错-->
+    <ServerErrorSystem>
+
+        <Module id="81"> bugly报错 </Module>
+        <Module id="0"> f服务器报错 </Module>
+
+    </ServerErrorSystem>
+
+    <!--其他所有-->
+    <OtherSystem>
+
+        <Module id="83"> j建议 </Module>
+        <Module id="85"> TAPD </Module>
+        <Module id="112"> y衣柜 </Module>
+        <Module id="119"> 时装 </Module>
+        <Module id="113"> p排行榜 </Module>
+        <Module id="114"> t通用规则 </Module>
+        <Module id="116"> 3Dtouch </Module>
+        <Module id="118"> 网络异常 </Module>
+        <Module id="120"> 跨服 </Module>
+        <Module id="125"> 音乐音效 </Module>
+        <Module id="126"> IOS </Module>
+        <Module id="127"> Android </Module>
+        <Module id="129"> 房间 </Module>
+        <Module id="131"> 跑马灯 </Module>
+        <Module id="128"> y疑难杂症 </Module>
+        <Module id="210"> d道具天赋 </Module>
+        <Module id="25"> w武器 </Module>
+        <Module id="27"> j角色 </Module>
+        <Module id="46"> 角色属性 </Module>
+        <Module id="47"> 称号 </Module>
+        <Module id="98"> 达人 </Module>
+        <Module id="29"> x新手系统 </Module>
+        <Module id="50"> 新手引导 </Module>
+        <Module id="30"> b宝珠 </Module>
+        <Module id="31"> r任务系统 </Module>
+        <Module id="52"> 活跃度任务 </Module>
+        <Module id="53"> 主线成长 </Module>
+        <Module id="56"> 邮件 </Module>
+        <Module id="69"> 空间 </Module>
+        <Module id="33"> s商城 </Module>
+        <Module id="34"> z支付 </Module>
+        <Module id="36"> j结婚 </Module>
+        <Module id="37"> p平台接入 </Module>
+        <Module id="107"> QQ特权 </Module>
+        <Module id="108"> 微信特权 </Module>
+        <Module id="130"> 米大师支付 </Module>
+        <Module id="106"> 弹弹宝藏 </Module>
+        <Module id="80"> 部落 </Module>
+        <Module id="65"> c宠物 </Module>
+        <Module id="70"> s设置 </Module>
+        <Module id="75"> UI </Module>
+        <Module id="77"> b背包 </Module>
+        <Module id="121"> 道具 </Module>
+        <Module id="79"> d登录 </Module>
+        <Module id="109"> 游客登录 </Module>
+        <Module id="110"> QQ登录 </Module>
+        <Module id="111"> 微信登录 </Module>
+        <Module id="88"> d大咖秀 </Module>
+        <Module id="122"> 录像 </Module>
+        <Module id="123"> 巅峰对决 </Module>
+        <Module id="124"> 热门分享 </Module>
+        <Module id="90"> VIP </Module>
+        <Module id="99"> g工艺系统 </Module>
+        <Module id="244"> 属性轮盘 </Module>
+
+    </OtherSystem>
+
+</ROOT>

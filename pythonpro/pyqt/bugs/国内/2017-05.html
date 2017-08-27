@@ -1,0 +1,73 @@
+<html>
+<head>
+<title>禅道BUG统计</title>
+	<meta charset="utf-8">
+	<!-- 引入 ECharts 文件 -->
+	<script src="../echarts.min.js"></script>
+</head>
+<body>
+
+<!-- 为 ECharts 准备一个具备大小（宽高）的 DOM -->
+	<div id="main" style="height:400px;"></div>
+	<script type="text/javascript">
+		// 基于准备好的dom，初始化echarts实例
+		var myChart = echarts.init(document.getElementById('main'));
+
+		// 指定图表的配置项和数据
+		var option = {
+				title: {
+				text: '2017-05每日BUG数,总计:5895'
+			},
+			tooltip: {
+				    trigger: 'axis'
+			},
+			legend: {
+				data:['bugs数']
+			},
+			grid: {
+            	left: '0%',
+				right: '4%',
+            	bottom: '3%',
+            	containLabel: true
+        	},
+			toolbox: {},
+			xAxis: {
+				axisLabel: {
+     				interval: 0
+//					偏转角度
+//     				rotate: 60,
+//					竖直显示
+//  					formatter:function(val){
+//     					return val.split("").join("\n");
+//     				}
+				},
+				type: 'category',
+				boundaryGap: false,
+				data: ["05-01","05-02","05-03","05-04","05-05","05-06","05-07","05-08","05-09","05-10","05-11","05-12","05-13","05-14","05-15","05-16","05-17","05-18","05-19","05-20","05-21","05-22","05-23","05-24","05-25","05-26","05-27","05-28","05-29","05-30","05-31"]
+			},
+			yAxis: {
+				    type: 'value'
+			},
+			series: [{
+				name: 'bug数',
+				type: 'line',
+				label:{ normal:{show:true} },
+				itemStyle : {
+					normal : {
+						lineStyle:{
+							color:'#0000ff'
+						}
+					}
+            	},
+				data: [4478,455,12,8,4,0,0,6,8,171,11,11,6,0,7,16,9,498,15,9,0,33,12,21,7,16,28,7,7,14,26]
+				}
+			]
+		};
+
+		// 使用刚指定的配置项和数据显示图表。
+		myChart.setOption(option);
+	</script>
+
+<a href="../bugs.html">返回上一页</a>
+</body>
+</html>

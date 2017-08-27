@@ -126,7 +126,7 @@ os.system(exit())
 #     f.close()
 #     return myhash.hexdigest()
 
-# # print(md5sum('/Users/runehero/Desktop/test.py'))
+# # print(md5sum('/Users/runehero/Desktop/test.html'))
 
 # # 输出文件夹中所有文件
 

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ROOT>
+
+    <!--是否开启自动更新,True开启更新，不填表示关闭更新-->
+    <Update>
+        <IsTrue></IsTrue>
+    </Update>
+
+    <!--配置文件-->
+    <FileList>
+        <NameMD5>config.conf</NameMD5>
+        <NameMD5>customize_gm.xml</NameMD5>
+        <NameMD5>jumplist.conf</NameMD5>
+        <NameMD5>server.conf</NameMD5>
+        <NameMD5>sql.xml</NameMD5>
+    </FileList>
+
+    <!--主程序MD5-->
+    <Exe>
+        <NameMD5>gmtools.exe_5d7c66e02db1121168b68b98afeab1e0</NameMD5>
+    </Exe>
+
+</ROOT>

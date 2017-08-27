@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Path>
+    <clientw>vision</clientw>
+    <clientd>主干同步到审核服</clientd>
+    <serverw>测试任务</serverw>
+    <serverd>vision</serverd>
+    <tablew>主干同步到审核服</tablew>
+    <tabled>测试任务</tabled>
+</Path>

@@ -179,6 +179,7 @@ class Client():
                 rewards_list = []
                 for reward in rewards:
                     rewards_list.append(reward[0])
+                reward_2 = ''
                 name_list = []
                 if len(rewards) != 0:
                     for reward in rewards_list:
@@ -191,7 +192,9 @@ class Client():
                                 name_2 = self.select(sql)
                                 if len(name_2) > 0:
                                     name_1 = name_2[0][0]
-                                    reward = reward.replace(reward_1.split(',')[0], name_1)
+                                    reward_2 = '(' + name_1 + ')' + reward_1
+                            if reward_2:
+                                reward = reward.replace(reward_1, reward_2)
                         name_list.append(reward)
                 for j in range(len(name_list)):
                     self.view.rewardTableWidget.setItem(j, 3, QTableWidgetItem(name_list[j]))
@@ -300,10 +303,10 @@ class Client():
             istrue = self.insert_goodstablewidget(id)
             if istrue:
                 if self.view.dropRadioButton.isChecked():
-                    sql_box = 'SELECT DropGroup,ItemID,ItemCount,AnnouncementId,ItemWeight FROM t_s_reward_missionitem ' \
+                    sql_box = 'SELECT DropGroup,ItemID,ItemCount,AnnouncementId,Lifetime,ItemWeight FROM t_s_reward_missionitem ' \
                               'WHERE DropID = %s' % id
                 else:
-                    sql_box = 'SELECT DropGroup,ItemID,ItemCount,AnnouncementId,ItemWeight FROM t_s_reward_missionitem ' \
+                    sql_box = 'SELECT DropGroup,ItemID,ItemCount,AnnouncementId,Lifetime,ItemWeight FROM t_s_reward_missionitem ' \
                               'WHERE DropID in (SELECT TargetID FROM t_s_item where id = %s)' % id
                 self.insert_goods_tablewidget(sql_box)
 
@@ -345,12 +348,18 @@ class Client():
         for weight in item_weight_add_list:
             for item in dropgroup_list_item[j]:
                 item_baifen = str(round(int(item[-1]) * 100 / weight, 2)) + '%'
-                item_weight.append(item + [item_baifen])
+                try:
+                    item[-2] = round(int(item[-2]) / 60)
+                except Exception as e:
+                    print(e)
+                    pass
+                item = item + [item_baifen]
+                item_weight.append(item)
             j += 1
 
         ann_list = []
         for item in box_item_list:
-            ann_list.append(item[-2])
+            ann_list.append(item[-3])
         if len(ann_list):
             self.insert_ann(ann_list)
 
@@ -360,7 +369,8 @@ class Client():
             sql = 'SELECT a.Description FROM t_s_language a,t_s_item b,t_s_item_performance c WHERE b.ItemDisplayID = c.ID ' \
                   'AND c.NameDisplay = a.ID AND b.ID = {0}'.format(itemid)
             itemname = self.select(sql)
-            item[1] = itemname[0][0] + ' (' + str(item[1]) + ')'
+            if itemname:
+                item[1] = itemname[0][0] + ' (' + str(item[1]) + ')'
 
         # 插入表格
         self.view.goods_TableWidget.setRowCount(len(item_weight))

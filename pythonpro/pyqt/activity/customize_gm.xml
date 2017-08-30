@@ -14,10 +14,10 @@
         <GM>closegp --关闭公会聚会</GM>
         <GM>day xx --增加任务活跃度值</GM>
         <GM>week xx --增加任务周活跃度值</GM>
-        <GM>ladderbox --发放排位赛季赛宝箱</GM>
+        <GM>ladderbox --发放排位赛季赛宝箱</GM>a
         <GM>skip 9999990 --跳过新手指引</GM>
         <GM>fightpower 100 --设置战斗力（队伍实力)</GM>
-        <GM>clearbg --清空角色背包</GM>
+        <GM>clearbag --清空角色背包</GM>
         <GM>petExp ID NUM --($petExp 71128012 100)宠物升级GM命令</GM>
         <GM>wqsj 100 --武器升阶，参数100是单项值每一项为100</GM>
         <GM>champion 1 --设置人物-达人（全亮） </GM>

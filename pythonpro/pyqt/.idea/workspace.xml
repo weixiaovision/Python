@@ -11,8 +11,9 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/pyqt$w_d_same.coverage" NAME="w_d_same Coverage Results" MODIFIED="1500860706216" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/w-d_same" />
-    <SUITE FILE_PATH="coverage/pyqt$gmtools.coverage" NAME="gmtools Coverage Results" MODIFIED="1503821645101" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/activity" />
+    <SUITE FILE_PATH="coverage/pyqt$gmtools.coverage" NAME="gmtools Coverage Results" MODIFIED="1504084492468" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/activity" />
     <SUITE FILE_PATH="coverage/pyqt$test.coverage" NAME="test Coverage Results" MODIFIED="1502356571073" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pyqt$test__2_.coverage" NAME="test (2) Coverage Results" MODIFIED="1504010014079" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/match" />
     <SUITE FILE_PATH="coverage/pyqt$svn.coverage" NAME="svn Coverage Results" MODIFIED="1501906076550" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/svn" />
     <SUITE FILE_PATH="coverage/pyqt$view1.coverage" NAME="view1 Coverage Results" MODIFIED="1502079574491" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DailyTasks" />
     <SUITE FILE_PATH="coverage/pyqt$main.coverage" NAME="main Coverage Results" MODIFIED="1502368900831" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/activity" />
@@ -24,45 +25,6 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="nowbugs.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bugs/nowbugs.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1875">
-              <caret line="153" column="17" lean-forward="false" selection-start-line="153" selection-start-column="17" selection-end-line="153" selection-end-column="17" />
-              <folding>
-                <element signature="e#696#1539#0" expanded="false" />
-                <marker date="1502250205000" expanded="true" signature="703:803" ph="SELECT assig... zt_bug" />
-                <marker date="1502250205000" expanded="true" signature="1172:1238" ph="SELECT realn... zt_user" />
-                <marker date="1502250205000" expanded="true" signature="1599:1636" ph="select id fr... zt_bug" />
-                <marker date="1502250205000" expanded="true" signature="1599:1674" ph="select id fr... zt_bug" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="2017-07.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bugs/国内/2017-07.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="33" column="20" lean-forward="false" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="modulebugs.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bugs/modulebugs.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1305">
-              <caret line="90" column="45" lean-forward="false" selection-start-line="90" selection-start-column="45" selection-end-line="90" selection-end-column="45" />
-              <folding>
-                <element signature="e#44#78#0" expanded="true" />
-                <marker date="1502157566000" expanded="true" signature="1701:1792" ph="SELECT modul... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="test.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/activity/test.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -76,8 +38,8 @@
       <file leaf-file-name="gmtools.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/activity/gmtools.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1641">
-              <caret line="296" column="14" lean-forward="true" selection-start-line="296" selection-start-column="14" selection-end-line="296" selection-end-column="14" />
+            <state relative-caret-position="165">
+              <caret line="361" column="37" lean-forward="true" selection-start-line="361" selection-start-column="37" selection-end-line="361" selection-end-column="37" />
               <folding>
                 <element signature="e#45#57#0" expanded="true" />
                 <element signature="e#472#539#0" expanded="false" />
@@ -85,47 +47,47 @@
                 <element signature="e#1149#3202#0" expanded="false" />
                 <element signature="e#1315#1328#0" expanded="false" />
                 <element signature="e#3208#3221#0" expanded="false" />
-                <element signature="e#12463#13685#0" expanded="false" />
-                <element signature="e#16940#18173#0" expanded="false" />
-                <element signature="e#19997#20010#0" expanded="false" />
-                <element signature="e#29135#29147#0" expanded="false" />
-                <element signature="e#29636#29651#0" expanded="false" />
-                <element signature="e#30554#30569#0" expanded="false" />
-                <element signature="e#33042#33055#0" expanded="false" />
-                <element signature="e#35589#35602#0" expanded="false" />
-                <marker date="1503815529000" expanded="true" signature="3532:3607" ph="select ID, H... t_s_activity_performance" />
-                <marker date="1503815529000" expanded="true" signature="4922:4994" ph="select Begin... t_s_activity" />
-                <marker date="1503815529000" expanded="true" signature="5030:5122" ph="select Headi... t_s_activity_performance" />
-                <marker date="1503815529000" expanded="true" signature="5160:5252" ph="select TimeS... t_s_activity_performance" />
-                <marker date="1503815529000" expanded="true" signature="5291:5345" ph="select rewar... t_s_activity_task" />
-                <marker date="1503815529000" expanded="true" signature="5385:5458" ph="select Comme... t_s_activity_task" />
-                <marker date="1503815529000" expanded="true" signature="5496:5553" ph="select Extra... t_s_activity_task" />
-                <marker date="1503815529000" expanded="true" signature="7963:8146" ph="SELECT a.Des... t_s_language" />
-                <marker date="1503815529000" expanded="true" signature="9249:9432" ph="SELECT a.Des... t_s_language" />
-                <marker date="1503815529000" expanded="true" signature="10147:10199" ph="select Cond t_s_activity_task" />
-                <marker date="1503815529000" expanded="true" signature="10463:10506" ph="select taskt... t_s_task" />
-                <marker date="1503815529000" expanded="true" signature="11131:11270" ph="select ID,It... t_s_mall" />
-                <marker date="1503815529000" expanded="true" signature="11540:11711" ph="SELECT a.Des... t_s_language" />
-                <marker date="1503815529000" expanded="true" signature="11877:12048" ph="SELECT a.Des... t_s_language" />
-                <marker date="1503815529000" expanded="true" signature="12771:12962" ph="SELECT b.ID,... t_s_language" />
-                <marker date="1503815529000" expanded="true" signature="13179:13349" ph="SELECT b.ID,... t_s_language" />
-                <marker date="1503815529000" expanded="true" signature="14183:14321" ph="SELECT DropG... t_s_reward_missionitem" />
-                <marker date="1503815529000" expanded="true" signature="14383:14567" ph="SELECT DropG... t_s_reward_missionitem" />
-                <marker date="1503815529000" expanded="true" signature="14523:14564" ph="SELECT Targe... t_s_item" />
-                <marker date="1503815529000" expanded="true" signature="16256:16419" ph="SELECT a.Des... t_s_language" />
-                <marker date="1503815529000" expanded="true" signature="17225:17372" ph="SELECT Descr... t_s_language" />
-                <marker date="1503815529000" expanded="true" signature="17314:17368" ph="SELECT Scrol... t_s_announcement" />
-                <marker date="1503815529000" expanded="true" signature="17426:17572" ph="SELECT Descr... t_s_language" />
-                <marker date="1503815529000" expanded="true" signature="17515:17568" ph="SELECT World... t_s_announcement" />
-                <marker date="1503815529000" expanded="true" signature="18600:18647" ph="select param... t_s_item" />
-                <marker date="1503815529000" expanded="true" signature="19019:19183" ph="SELECT a.Des... t_s_language" />
-                <marker date="1503815529000" expanded="true" signature="20219:20285" ph="select UserI... t_u_player" />
-                <marker date="1503815529000" expanded="true" signature="20774:20961" ph="SELECT b.ID,... t_s_language" />
-                <marker date="1503815529000" expanded="true" signature="21150:21318" ph="SELECT b.ID,... t_s_language" />
-                <marker date="1503815529000" expanded="true" signature="35753:35931" ph="select ShowR... t_s_activity_randombox" />
-                <marker date="1503815529000" expanded="true" signature="35966:36144" ph="select ShowR... t_s_activity_randombox" />
-                <marker date="1503815529000" expanded="true" signature="36496:36657" ph="select a.Des... t_s_language" />
-                <marker date="1503815529000" expanded="true" signature="36842:37003" ph="select a.Des... t_s_language" />
+                <element signature="e#12595#13817#0" expanded="false" />
+                <element signature="e#17318#18551#0" expanded="false" />
+                <element signature="e#20375#20388#0" expanded="false" />
+                <element signature="e#29513#29525#0" expanded="false" />
+                <element signature="e#30014#30029#0" expanded="false" />
+                <element signature="e#30932#30947#0" expanded="false" />
+                <element signature="e#33420#33433#0" expanded="false" />
+                <element signature="e#35967#35980#0" expanded="false" />
+                <marker date="1504085579000" expanded="true" signature="3532:3607" ph="select ID, H... t_s_activity_performance" />
+                <marker date="1504085579000" expanded="true" signature="4922:4994" ph="select Begin... t_s_activity" />
+                <marker date="1504085579000" expanded="true" signature="5030:5122" ph="select Headi... t_s_activity_performance" />
+                <marker date="1504085579000" expanded="true" signature="5160:5252" ph="select TimeS... t_s_activity_performance" />
+                <marker date="1504085579000" expanded="true" signature="5291:5345" ph="select rewar... t_s_activity_task" />
+                <marker date="1504085579000" expanded="true" signature="5385:5458" ph="select Comme... t_s_activity_task" />
+                <marker date="1504085579000" expanded="true" signature="5496:5553" ph="select Extra... t_s_activity_task" />
+                <marker date="1504085579000" expanded="true" signature="7993:8176" ph="SELECT a.Des... t_s_language" />
+                <marker date="1504085579000" expanded="true" signature="9381:9564" ph="SELECT a.Des... t_s_language" />
+                <marker date="1504085579000" expanded="true" signature="10279:10331" ph="select Cond t_s_activity_task" />
+                <marker date="1504085579000" expanded="true" signature="10595:10638" ph="select taskt... t_s_task" />
+                <marker date="1504085579000" expanded="true" signature="11263:11402" ph="select ID,It... t_s_mall" />
+                <marker date="1504085579000" expanded="true" signature="11672:11843" ph="SELECT a.Des... t_s_language" />
+                <marker date="1504085579000" expanded="true" signature="12009:12180" ph="SELECT a.Des... t_s_language" />
+                <marker date="1504085579000" expanded="true" signature="12903:13094" ph="SELECT b.ID,... t_s_language" />
+                <marker date="1504085579000" expanded="true" signature="13311:13481" ph="SELECT b.ID,... t_s_language" />
+                <marker date="1504085579000" expanded="true" signature="14315:14462" ph="SELECT DropG... t_s_reward_missionitem" />
+                <marker date="1504085579000" expanded="true" signature="14524:14717" ph="SELECT DropG... t_s_reward_missionitem" />
+                <marker date="1504085579000" expanded="true" signature="14673:14714" ph="SELECT Targe... t_s_item" />
+                <marker date="1504085579000" expanded="true" signature="16605:16768" ph="SELECT a.Des... t_s_language" />
+                <marker date="1504085579000" expanded="true" signature="17603:17750" ph="SELECT Descr... t_s_language" />
+                <marker date="1504085579000" expanded="true" signature="17692:17746" ph="SELECT Scrol... t_s_announcement" />
+                <marker date="1504085579000" expanded="true" signature="17804:17950" ph="SELECT Descr... t_s_language" />
+                <marker date="1504085579000" expanded="true" signature="17893:17946" ph="SELECT World... t_s_announcement" />
+                <marker date="1504085579000" expanded="true" signature="18978:19025" ph="select param... t_s_item" />
+                <marker date="1504085579000" expanded="true" signature="19397:19561" ph="SELECT a.Des... t_s_language" />
+                <marker date="1504085579000" expanded="true" signature="20597:20663" ph="select UserI... t_u_player" />
+                <marker date="1504085579000" expanded="true" signature="21152:21339" ph="SELECT b.ID,... t_s_language" />
+                <marker date="1504085579000" expanded="true" signature="21528:21696" ph="SELECT b.ID,... t_s_language" />
+                <marker date="1504085579000" expanded="true" signature="36131:36309" ph="select ShowR... t_s_activity_randombox" />
+                <marker date="1504085579000" expanded="true" signature="36344:36522" ph="select ShowR... t_s_activity_randombox" />
+                <marker date="1504085579000" expanded="true" signature="36874:37035" ph="select a.Des... t_s_language" />
+                <marker date="1504085579000" expanded="true" signature="37220:37381" ph="select a.Des... t_s_language" />
               </folding>
             </state>
           </provider>
@@ -141,8 +103,40 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.spec" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/activity/main.spec">
+      <file leaf-file-name="view.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/activity/view.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="430">
+              <caret line="925" column="53" lean-forward="false" selection-start-line="925" selection-start-column="53" selection-end-line="925" selection-end-column="53" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="customize_gm.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/activity/customize_gm.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="660">
+              <caret line="44" column="7" lean-forward="false" selection-start-line="44" selection-start-column="7" selection-end-line="44" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/match/test.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="25" column="22" lean-forward="false" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
+              <folding>
+                <element signature="e#43#52#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="gmtools.py.bank" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/activity/gmtools.py.bank">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -151,11 +145,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="view.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/activity/view.py">
+      <file leaf-file-name="match.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/match/match.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="12120">
-              <caret line="808" column="50" lean-forward="false" selection-start-line="808" selection-start-column="50" selection-end-line="808" selection-end-column="50" />
+            <state relative-caret-position="45">
+              <caret line="3" column="6" lean-forward="true" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="svn.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/svn/svn.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1500">
+              <caret line="105" column="34" lean-forward="false" selection-start-line="105" selection-start-column="34" selection-end-line="105" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -166,16 +170,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="105">
               <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bugs/test.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="780">
-              <caret line="52" column="29" lean-forward="false" selection-start-line="52" selection-start-column="29" selection-end-line="52" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -194,7 +188,6 @@
     <findStrings>
       <find>rewardTableWidget</find>
       <find>headingRadioButton</find>
-      <find>print</find>
       <find>comment</find>
       <find>deleteListWidget</find>
       <find>open</find>
@@ -207,6 +200,8 @@
       <find>cursor</find>
       <find>exception</find>
       <find>if len</find>
+      <find>sql_reward</find>
+      <find>print</find>
     </findStrings>
   </component>
   <component name="IdeDocumentHistory">
@@ -232,14 +227,16 @@
         <option value="$PROJECT_DIR$/activity/sql.html" />
         <option value="$PROJECT_DIR$/activity/sql.xml" />
         <option value="$PROJECT_DIR$/activity/server.conf" />
-        <option value="$PROJECT_DIR$/activity/customize_gm.xml" />
         <option value="$PROJECT_DIR$/bugs/test.html" />
         <option value="$PROJECT_DIR$/bugs/国内/2017-01.html" />
         <option value="$PROJECT_DIR$/bugs/nowbugs.py" />
         <option value="$PROJECT_DIR$/test.py" />
-        <option value="$PROJECT_DIR$/activity/view.py" />
         <option value="$PROJECT_DIR$/activity/main.py" />
         <option value="$PROJECT_DIR$/activity/test.py" />
+        <option value="$PROJECT_DIR$/activity/customize_gm.xml" />
+        <option value="$PROJECT_DIR$/match/match.xml" />
+        <option value="$PROJECT_DIR$/match/test.py" />
+        <option value="$PROJECT_DIR$/activity/view.py" />
         <option value="$PROJECT_DIR$/activity/gmtools.py" />
       </list>
     </option>
@@ -270,8 +267,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -281,6 +278,48 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="pyqt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pyqt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pyqt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="svn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pyqt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pyqt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="match" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pyqt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pyqt" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bugs" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -349,9 +388,6 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="2017-01.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/pyqt/bugs/国内/2017-01.html">
-      <method />
-    </configuration>
     <configuration default="false" name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -404,6 +440,25 @@
       <module name="pyqt" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/activity/gmtools.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="test (2)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/match" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="pyqt" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/match/test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -559,18 +614,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.main" />
-      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.2017-01.html" />
-      <item index="2" class="java.lang.String" itemvalue="Python.test" />
-      <item index="3" class="java.lang.String" itemvalue="Python.test (1)" />
-      <item index="4" class="java.lang.String" itemvalue="Python.gmtools" />
+      <item index="1" class="java.lang.String" itemvalue="Python.test" />
+      <item index="2" class="java.lang.String" itemvalue="Python.test (1)" />
+      <item index="3" class="java.lang.String" itemvalue="Python.gmtools" />
+      <item index="4" class="java.lang.String" itemvalue="Python.test (2)" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Python.gmtools" />
-        <item index="1" class="java.lang.String" itemvalue="Python.test (1)" />
-        <item index="2" class="java.lang.String" itemvalue="Python.main" />
-        <item index="3" class="java.lang.String" itemvalue="Python.test" />
-        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.2017-01.html" />
+        <item index="1" class="java.lang.String" itemvalue="Python.test (2)" />
+        <item index="2" class="java.lang.String" itemvalue="Python.test (1)" />
+        <item index="3" class="java.lang.String" itemvalue="Python.main" />
+        <item index="4" class="java.lang.String" itemvalue="Python.test" />
       </list>
     </recent_temporary>
   </component>
@@ -632,27 +687,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/DailyTasks/ini">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DailyTasks/log/2017-07-21.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DailyTasks/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="19" column="26" lean-forward="true" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/activity/jumplist.conf">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -755,13 +789,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/svn/svn.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1500">
-          <caret line="105" column="34" lean-forward="false" selection-start-line="105" selection-start-column="34" selection-end-line="105" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bugs/国内/2017-08.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -850,6 +877,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-197">
           <caret line="23" column="19" lean-forward="true" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -875,19 +903,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/activity/customize_gm.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="36" column="11" lean-forward="false" selection-start-line="36" selection-start-column="11" selection-end-line="36" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bugs/test.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="780">
           <caret line="52" column="29" lean-forward="false" selection-start-line="52" selection-start-column="29" selection-end-line="52" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -895,10 +914,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1305">
           <caret line="90" column="45" lean-forward="false" selection-start-line="90" selection-start-column="45" selection-end-line="90" selection-end-column="45" />
-          <folding>
-            <element signature="e#44#78#0" expanded="true" />
-            <marker date="1502157566000" expanded="true" signature="1701:1792" ph="SELECT modul... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -913,7 +928,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="495">
           <caret line="33" column="20" lean-forward="false" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -921,13 +935,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1875">
           <caret line="153" column="17" lean-forward="false" selection-start-line="153" selection-start-column="17" selection-end-line="153" selection-end-column="17" />
-          <folding>
-            <element signature="e#696#1539#0" expanded="false" />
-            <marker date="1502250205000" expanded="true" signature="703:803" ph="SELECT assig... zt_bug" />
-            <marker date="1502250205000" expanded="true" signature="1172:1238" ph="SELECT realn... zt_user" />
-            <marker date="1502250205000" expanded="true" signature="1599:1636" ph="select id fr... zt_bug" />
-            <marker date="1502250205000" expanded="true" signature="1599:1674" ph="select id fr... zt_bug" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -935,7 +942,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -943,14 +949,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/activity/view.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="12120">
-          <caret line="808" column="50" lean-forward="false" selection-start-line="808" selection-start-column="50" selection-end-line="808" selection-end-column="50" />
           <folding />
         </state>
       </provider>
@@ -972,10 +970,60 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/activity/customize_gm.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="44" column="7" lean-forward="false" selection-start-line="44" selection-start-column="7" selection-end-line="44" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/svn/svn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1500">
+          <caret line="105" column="34" lean-forward="false" selection-start-line="105" selection-start-column="34" selection-end-line="105" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/match/match.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="6" lean-forward="true" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/match/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="25" column="22" lean-forward="false" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
+          <folding>
+            <element signature="e#43#52#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/activity/gmtools.py.bank">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/activity/view.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="430">
+          <caret line="925" column="53" lean-forward="false" selection-start-line="925" selection-start-column="53" selection-end-line="925" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/activity/gmtools.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1641">
-          <caret line="296" column="14" lean-forward="true" selection-start-line="296" selection-start-column="14" selection-end-line="296" selection-end-column="14" />
+        <state relative-caret-position="165">
+          <caret line="361" column="37" lean-forward="true" selection-start-line="361" selection-start-column="37" selection-end-line="361" selection-end-column="37" />
           <folding>
             <element signature="e#45#57#0" expanded="true" />
             <element signature="e#472#539#0" expanded="false" />
@@ -983,47 +1031,47 @@
             <element signature="e#1149#3202#0" expanded="false" />
             <element signature="e#1315#1328#0" expanded="false" />
             <element signature="e#3208#3221#0" expanded="false" />
-            <element signature="e#12463#13685#0" expanded="false" />
-            <element signature="e#16940#18173#0" expanded="false" />
-            <element signature="e#19997#20010#0" expanded="false" />
-            <element signature="e#29135#29147#0" expanded="false" />
-            <element signature="e#29636#29651#0" expanded="false" />
-            <element signature="e#30554#30569#0" expanded="false" />
-            <element signature="e#33042#33055#0" expanded="false" />
-            <element signature="e#35589#35602#0" expanded="false" />
-            <marker date="1503815529000" expanded="true" signature="3532:3607" ph="select ID, H... t_s_activity_performance" />
-            <marker date="1503815529000" expanded="true" signature="4922:4994" ph="select Begin... t_s_activity" />
-            <marker date="1503815529000" expanded="true" signature="5030:5122" ph="select Headi... t_s_activity_performance" />
-            <marker date="1503815529000" expanded="true" signature="5160:5252" ph="select TimeS... t_s_activity_performance" />
-            <marker date="1503815529000" expanded="true" signature="5291:5345" ph="select rewar... t_s_activity_task" />
-            <marker date="1503815529000" expanded="true" signature="5385:5458" ph="select Comme... t_s_activity_task" />
-            <marker date="1503815529000" expanded="true" signature="5496:5553" ph="select Extra... t_s_activity_task" />
-            <marker date="1503815529000" expanded="true" signature="7963:8146" ph="SELECT a.Des... t_s_language" />
-            <marker date="1503815529000" expanded="true" signature="9249:9432" ph="SELECT a.Des... t_s_language" />
-            <marker date="1503815529000" expanded="true" signature="10147:10199" ph="select Cond t_s_activity_task" />
-            <marker date="1503815529000" expanded="true" signature="10463:10506" ph="select taskt... t_s_task" />
-            <marker date="1503815529000" expanded="true" signature="11131:11270" ph="select ID,It... t_s_mall" />
-            <marker date="1503815529000" expanded="true" signature="11540:11711" ph="SELECT a.Des... t_s_language" />
-            <marker date="1503815529000" expanded="true" signature="11877:12048" ph="SELECT a.Des... t_s_language" />
-            <marker date="1503815529000" expanded="true" signature="12771:12962" ph="SELECT b.ID,... t_s_language" />
-            <marker date="1503815529000" expanded="true" signature="13179:13349" ph="SELECT b.ID,... t_s_language" />
-            <marker date="1503815529000" expanded="true" signature="14183:14321" ph="SELECT DropG... t_s_reward_missionitem" />
-            <marker date="1503815529000" expanded="true" signature="14383:14567" ph="SELECT DropG... t_s_reward_missionitem" />
-            <marker date="1503815529000" expanded="true" signature="14523:14564" ph="SELECT Targe... t_s_item" />
-            <marker date="1503815529000" expanded="true" signature="16256:16419" ph="SELECT a.Des... t_s_language" />
-            <marker date="1503815529000" expanded="true" signature="17225:17372" ph="SELECT Descr... t_s_language" />
-            <marker date="1503815529000" expanded="true" signature="17314:17368" ph="SELECT Scrol... t_s_announcement" />
-            <marker date="1503815529000" expanded="true" signature="17426:17572" ph="SELECT Descr... t_s_language" />
-            <marker date="1503815529000" expanded="true" signature="17515:17568" ph="SELECT World... t_s_announcement" />
-            <marker date="1503815529000" expanded="true" signature="18600:18647" ph="select param... t_s_item" />
-            <marker date="1503815529000" expanded="true" signature="19019:19183" ph="SELECT a.Des... t_s_language" />
-            <marker date="1503815529000" expanded="true" signature="20219:20285" ph="select UserI... t_u_player" />
-            <marker date="1503815529000" expanded="true" signature="20774:20961" ph="SELECT b.ID,... t_s_language" />
-            <marker date="1503815529000" expanded="true" signature="21150:21318" ph="SELECT b.ID,... t_s_language" />
-            <marker date="1503815529000" expanded="true" signature="35753:35931" ph="select ShowR... t_s_activity_randombox" />
-            <marker date="1503815529000" expanded="true" signature="35966:36144" ph="select ShowR... t_s_activity_randombox" />
-            <marker date="1503815529000" expanded="true" signature="36496:36657" ph="select a.Des... t_s_language" />
-            <marker date="1503815529000" expanded="true" signature="36842:37003" ph="select a.Des... t_s_language" />
+            <element signature="e#12595#13817#0" expanded="false" />
+            <element signature="e#17318#18551#0" expanded="false" />
+            <element signature="e#20375#20388#0" expanded="false" />
+            <element signature="e#29513#29525#0" expanded="false" />
+            <element signature="e#30014#30029#0" expanded="false" />
+            <element signature="e#30932#30947#0" expanded="false" />
+            <element signature="e#33420#33433#0" expanded="false" />
+            <element signature="e#35967#35980#0" expanded="false" />
+            <marker date="1504085579000" expanded="true" signature="3532:3607" ph="select ID, H... t_s_activity_performance" />
+            <marker date="1504085579000" expanded="true" signature="4922:4994" ph="select Begin... t_s_activity" />
+            <marker date="1504085579000" expanded="true" signature="5030:5122" ph="select Headi... t_s_activity_performance" />
+            <marker date="1504085579000" expanded="true" signature="5160:5252" ph="select TimeS... t_s_activity_performance" />
+            <marker date="1504085579000" expanded="true" signature="5291:5345" ph="select rewar... t_s_activity_task" />
+            <marker date="1504085579000" expanded="true" signature="5385:5458" ph="select Comme... t_s_activity_task" />
+            <marker date="1504085579000" expanded="true" signature="5496:5553" ph="select Extra... t_s_activity_task" />
+            <marker date="1504085579000" expanded="true" signature="7993:8176" ph="SELECT a.Des... t_s_language" />
+            <marker date="1504085579000" expanded="true" signature="9381:9564" ph="SELECT a.Des... t_s_language" />
+            <marker date="1504085579000" expanded="true" signature="10279:10331" ph="select Cond t_s_activity_task" />
+            <marker date="1504085579000" expanded="true" signature="10595:10638" ph="select taskt... t_s_task" />
+            <marker date="1504085579000" expanded="true" signature="11263:11402" ph="select ID,It... t_s_mall" />
+            <marker date="1504085579000" expanded="true" signature="11672:11843" ph="SELECT a.Des... t_s_language" />
+            <marker date="1504085579000" expanded="true" signature="12009:12180" ph="SELECT a.Des... t_s_language" />
+            <marker date="1504085579000" expanded="true" signature="12903:13094" ph="SELECT b.ID,... t_s_language" />
+            <marker date="1504085579000" expanded="true" signature="13311:13481" ph="SELECT b.ID,... t_s_language" />
+            <marker date="1504085579000" expanded="true" signature="14315:14462" ph="SELECT DropG... t_s_reward_missionitem" />
+            <marker date="1504085579000" expanded="true" signature="14524:14717" ph="SELECT DropG... t_s_reward_missionitem" />
+            <marker date="1504085579000" expanded="true" signature="14673:14714" ph="SELECT Targe... t_s_item" />
+            <marker date="1504085579000" expanded="true" signature="16605:16768" ph="SELECT a.Des... t_s_language" />
+            <marker date="1504085579000" expanded="true" signature="17603:17750" ph="SELECT Descr... t_s_language" />
+            <marker date="1504085579000" expanded="true" signature="17692:17746" ph="SELECT Scrol... t_s_announcement" />
+            <marker date="1504085579000" expanded="true" signature="17804:17950" ph="SELECT Descr... t_s_language" />
+            <marker date="1504085579000" expanded="true" signature="17893:17946" ph="SELECT World... t_s_announcement" />
+            <marker date="1504085579000" expanded="true" signature="18978:19025" ph="select param... t_s_item" />
+            <marker date="1504085579000" expanded="true" signature="19397:19561" ph="SELECT a.Des... t_s_language" />
+            <marker date="1504085579000" expanded="true" signature="20597:20663" ph="select UserI... t_u_player" />
+            <marker date="1504085579000" expanded="true" signature="21152:21339" ph="SELECT b.ID,... t_s_language" />
+            <marker date="1504085579000" expanded="true" signature="21528:21696" ph="SELECT b.ID,... t_s_language" />
+            <marker date="1504085579000" expanded="true" signature="36131:36309" ph="select ShowR... t_s_activity_randombox" />
+            <marker date="1504085579000" expanded="true" signature="36344:36522" ph="select ShowR... t_s_activity_randombox" />
+            <marker date="1504085579000" expanded="true" signature="36874:37035" ph="select a.Des... t_s_language" />
+            <marker date="1504085579000" expanded="true" signature="37220:37381" ph="select a.Des... t_s_language" />
           </folding>
         </state>
       </provider>
